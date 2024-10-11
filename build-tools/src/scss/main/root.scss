@@ -1,0 +1,69 @@
+:root {
+    --black: #000000;
+    --gray: #9B9B9B;
+    --bg-gray: #EEEEEE;
+    --bg-light-gray: #F8F8F8;
+    --dark-grey: #6F6F6F;
+    --white: #FFFFFF;
+
+    --bg-violet: #15006ABD;
+
+    --dark-blue: #618ADC;
+    --blue: #4F2CE0;
+    --light-blue: #A493E8;
+    --light-light-blue: #00D0FF;
+    --violet: #9747FF;
+    --dark-pink: #FF007B;
+    --light-pink: #FF25A7;
+    --pink: #EB48A9;
+    --green: #86D53B;
+    --dark-green: #72C255;
+    --orange: #FF9C1A;
+    --red: #D5483B;
+
+
+    //color цвета для отметок на карточке тура
+    --violet-50: #2000A380; // лошадь
+    --dark-green-50: #0C4A2780; // машина грузовичок
+    --dark-blue-50: #004FA380; // кораблик
+    --dark-pink-50: #A3009B80; // пешие прогулки
+    --light-green-50: #D4FF0080; //молния
+    --light-blue-50: #05A9BF80; // гора
+    --orange-50: #FF3C0080; // фотоаппарат
+    --light-red-50: #BA000380; // вилка ложка
+    --dark-dark-blue-50: #0038A080; // вершина горы с флагом
+    --green-50: #00A06580; // театр
+    --blue-50: #0070A080; //машина
+    --light-orange-50: #DE760080; // мотоцикл
+    --pink-50: #D902C080; // крест с круглыми концами
+    --light-violet-50: #3B02D980; // автобус
+    --light-light-green-50: #00A76780; // флаг
+    --gradient-50: linear-gradient(46.17deg, rgba(0, 123, 255, 0.7) 0%, rgba(255, 0, 152, 0.7) 102.13%); // снежинка
+
+
+    --main-gradient: linear-gradient(90deg, #4F2CE0 0%, #EB48A9 100%);
+    --button-gradient: linear-gradient(0deg, #A62AFF 0%, #4F2CE0 100%);
+    --bg-gradient-without-img: linear-gradient(90deg, #A493E8 0%, #FFD0EC 100%);
+    --blue-gradient: linear-gradient(0deg, #4F2CE0 25%, #2000A3 100%);
+    --light-gradient: linear-gradient(180deg, #F8F8F8 74.5%, #E7F5FF 100%);
+    --bg-gradient: linear-gradient(0deg, #FFFFFF 52.48%, #D0ECFD 105.65%);
+
+
+    --border-radius: 8px;
+    --border-radius-little: 4px;
+
+    --border: 4px solid;
+
+    --width-page: 1200px;
+
+
+    //fonts
+    --font-sans: 'PT Sans Caption', sans-serif;
+    --font-unbounded: 'Unbounded', sans-serif;
+
+    //logo-font
+    --logo-font-size: 30.75px;
+    --logo-font-weight: 900;
+    --logo-line-height: 24.98px;
+    
+}

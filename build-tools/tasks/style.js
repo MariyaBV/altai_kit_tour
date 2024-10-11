@@ -1,5 +1,5 @@
 const { src, dest } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
+const sass = require("gulp-dart-sass");//(require("sass"));
 const bulk = require("gulp-sass-bulk-importer");
 const prefixer = require("autoprefixer");
 const clean = require("gulp-clean-css");
@@ -15,6 +15,7 @@ module.exports = function style() {
     .pipe(
       sass({
         outputStyle: "compressed",
+        silenceDeprecations: ['legacy-js-api'],
       }).on("error", sass.logError)
     )
     .pipe(
@@ -39,7 +40,7 @@ module.exports = function style() {
       })
     )
     .pipe(concat("style.css"))
-    .pipe(map.write("/css/sourcemaps/"))
+    //.pipe(map.write("/css/sourcemaps/"))
     .pipe(dest("../altai_kit_tour/"))
     .pipe(bs.stream());
 };

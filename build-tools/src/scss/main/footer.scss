@@ -1,0 +1,206 @@
+.footer {
+    background-image: url("css/img/bg-footer.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--bg-violet);
+    position: relative;
+    color: var(--white);
+    max-height: 489px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bg-violet);
+    }
+
+    .footer-bg {
+        padding-top: 120px;
+        position: relative;
+        background-image: url("css/img/mountain.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+
+    .footer-wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__messengers-block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        .block-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            position: relative;
+
+            .link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .logo-text {
+                font-size: var(--logo-font-size);
+                font-weight: var(--logo-font-weight);
+                line-height: var(--logo-line-height);
+                font-family: var(--font-unbounded);
+                text-transform: uppercase;
+                max-width: 85px;
+                background: var(--main-gradient);
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-left: -60px;
+
+                @media screen and (max-width: 1190px) {
+                    margin-left: 0;
+                }
+            }
+
+            .description-title {
+                font-family: var(--font-unbounded);
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 17px;
+                text-transform: uppercase;
+                max-width: 156px;
+            }
+        }
+
+        .contact-messengers {
+            display: flex;
+            gap: 26px;
+            margin-top: 7px;
+
+            a {
+                color: var(--white);
+                font-size: 40px;
+            }
+        }
+    }
+
+    .footer-menu-info,
+    .footer-policy {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-menu-info {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 36px;
+
+        &__row-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 428px;
+            position: relative;
+
+            .contact-email,
+            .contact-phone,
+            .contact-address {
+                display: flex;
+                gap: 8px;
+                position: relative;
+                margin-bottom: 7px;
+
+                a {
+                    color: var(--white);
+                    font-family: var(--font-sans);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                p {
+                    font-family: var(--font-sans);
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+
+                &::before {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__row-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 295px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-left: 0;
+
+            a {
+                color: var(--white);
+            }
+
+            li {
+                flex: 48%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+
+    .footer-policy {
+        align-items: flex-end;
+
+        &__row1 {
+            font-family: var(--font-sans);
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            max-width: 446px;
+
+            a {
+                color: var(--white);
+                flex: 48%;
+            }
+        }
+
+        &__row2 {
+            position: relative;
+
+            img {
+                max-width: 200px;
+            }
+
+            .link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
