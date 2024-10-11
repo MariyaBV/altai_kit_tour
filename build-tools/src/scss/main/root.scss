@@ -49,6 +49,7 @@
     --bg-gradient: linear-gradient(0deg, #FFFFFF 52.48%, #D0ECFD 105.65%);
 
 
+    --border-radius-big: 24px;
     --border-radius: 8px;
     --border-radius-little: 4px;
 
@@ -65,5 +66,12 @@
     --logo-font-size: 30.75px;
     --logo-font-weight: 900;
     --logo-line-height: 24.98px;
+
+
+    //h3
+    --h3-font-family: var(--font-unbounded);
+    --h3-font-size: 32px;
+    --h3-font-weight: 800;
+    --h3-line-height: 40px;
     
 }

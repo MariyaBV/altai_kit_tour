@@ -37,7 +37,7 @@ module.exports = function style_other() {
       })
     )
     //.pipe(map.write("../sourcemaps/"))
-    .pipe(concat("other_style.css"))
-    .pipe(dest("../altai_kit_tour/css/"))
+    //.pipe(concat("other_style.css"))
+    .pipe(dest("../altai_kit_tour/css/other/"))
     .pipe(bs.stream());
 };

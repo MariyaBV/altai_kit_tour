@@ -6,8 +6,17 @@
     <div id="page">
       @@include('components/const/_header.html')
       <main id="main">
+        <div class="achievements">
+          <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
+          <link rel="stylesheet" href="css/other/achievements.css">
+          @@include('components/components/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
+          @@include('components/components/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
+          @@include('components/components/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
+          @@include('components/components/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
+        </div>
         <div class="wrap">
-
+          
+         
         </div>
       </main>
       @@include('components/const/_footer.html')
