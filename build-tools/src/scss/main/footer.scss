@@ -39,18 +39,14 @@
         margin-top: 30px;
         margin-bottom: 40px;
 
-        .block-logo {
+        .block-logo a {
             display: flex;
             align-items: center;
             gap: 14px;
             position: relative;
 
-            .link {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            .description-title {
+                color: var(--white);
             }
 
             .logo-text {
