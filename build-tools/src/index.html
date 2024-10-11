@@ -14,9 +14,48 @@
           @@include('components/components/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
           @@include('components/components/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
         </div>
-        <div class="wrap">
-          
-         
+        <div class="popular-destinations">
+          <div class="wrap">
+            <link rel="stylesheet" href="css/other/popular-destinations.css">
+            <h2 class="popular-destinations__title">Популярные направления</h2>
+            <div class="popular-destinations__block">
+              @@include('components/components/popular-destinations.html', {
+                "class": "full", 
+                "image": "img1.jpeg", 
+                "alt": "Гармония Алтая", 
+                "date": "10 дней", 
+                "title": "Гармония Алтая",
+                "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
+                "discount": "100 000 ₽.", 
+                "price": "98 000 ₽.", 
+                "link": "#", 
+                "button": "Подробнее"})
+  
+                @@include('components/components/popular-destinations.html', {
+                  "class": "", 
+                  "image": "img2.png", 
+                  "alt": "Гармония Алтая", 
+                  "date": "10 дней", 
+                  "title": "Гармония Алтая",
+                  "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
+                  "discount": "100 000 ₽.", 
+                  "price": "98 000 ₽.", 
+                  "link": "#", 
+                  "button": "Подробнее"})
+
+                  @@include('components/components/popular-destinations.html', {
+                    "class": "", 
+                    "image": "img2.png", 
+                    "alt": "Гармония Алтая", 
+                    "date": "10 дней", 
+                    "title": "Гармония Алтая",
+                    "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
+                    "discount": "100 000 ₽.", 
+                    "price": "98 000 ₽.", 
+                    "link": "#", 
+                    "button": "Подробнее"})
+            </div>
+          </div>
         </div>
       </main>
       @@include('components/const/_footer.html')

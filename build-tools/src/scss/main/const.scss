@@ -21,9 +21,52 @@ body {
     justify-content: space-between;
 }
 
+h2 {
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+}
+
 h3 {
     font-family: var(--h3-font-family);
     font-weight: var(--h3-font-weight);
     font-size: var(--h3-font-size);
     line-height: var(--h3-line-height);
+}
+
+h4 {
+    font-weight: var(--h4-font-weight);
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+}
+
+.price {
+    font-size: var(--price-font-size);
+    font-weight: var(--price-font-weight);
+    line-height: var(--price-line-height);
+}
+
+.discount {
+    font-size: var(--discount-font-size);
+    font-weight: var(--discount-font-weight);
+    line-height: var(--discount-line-height);
+    color: var(--discount-color);
+    text-decoration: line-through;
+}
+
+.button {
+    padding: 16.5px 0;
+    max-width: 236px;
+    width: 100%;
+    background: var(--blue);
+    border-radius: var(--border-radius);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: block;
 }

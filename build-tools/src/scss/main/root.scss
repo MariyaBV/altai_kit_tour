@@ -50,6 +50,7 @@
 
 
     --border-radius-big: 24px;
+    --border-radius-medium: 16px;
     --border-radius: 8px;
     --border-radius-little: 4px;
 
@@ -67,11 +68,36 @@
     --logo-font-weight: 900;
     --logo-line-height: 24.98px;
 
+    //h2
+    --h2-font-family: var(--font-unbounded);
+    --h2-font-size: 40px;
+    --h2-font-weight: 400;
+    --h2-line-height: 27px;
 
     //h3
     --h3-font-family: var(--font-unbounded);
     --h3-font-size: 32px;
     --h3-font-weight: 800;
     --h3-line-height: 40px;
-    
+
+    //h4
+    --h4-font-family: var(--font-unbounded);
+    --h4-font-size: 20px;
+    --h4-font-weight: 700;
+    --h4-line-height: 27px;
+
+    //price
+    --price-font-family: var(--font-unbounded);
+    --price-font-size: 24px;
+    --price-font-weight: 700;
+    --price-line-height: 27px;
+
+    //discount
+    --discount-font-family: var(--font-unbounded);
+    --discount-font-size: 16px;
+    --discount-font-weight: 400;
+    --discount-line-height: 27px;
+    --discount-color: var(--pink);
+
+
 }

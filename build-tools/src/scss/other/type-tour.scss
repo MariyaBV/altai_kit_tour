@@ -1,0 +1,25 @@
+.type-tour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    border-top-left-radius: var(--border-radius-medium);
+
+    span {
+        width: 60px;
+        height: 60px;
+        position: relative;
+
+        &::before {
+            color: var(--white);
+            font-size: 25px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+}

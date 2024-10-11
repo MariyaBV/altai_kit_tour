@@ -1,0 +1,13 @@
+.promotion-block {
+    display: flex;
+
+    .promotion {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0.11em;
+        color: var(--white);
+        padding: 16.5px 12px;
+        display: block;
+    }
+}
