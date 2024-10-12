@@ -3,6 +3,7 @@
         <img src="css/img/popular-destinations/@@image" alt="@@alt" srcset="">
         <div class="type-tour">
             <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
             @@include('type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
             @@include('type-tour.html', {"class": "icon-ship", "color": "var(--dark-blue-50)"})
         </div>
@@ -11,6 +12,7 @@
         <div class="about">
             <link rel="stylesheet" href="css/other/promotion.css">
             <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
                 @@include('promotion.html', {"color": "var(--pink)", "text": "HIT!"})
                 @@include('promotion.html', {"color": "var(--violet)", "text": "%%"})
             </div>

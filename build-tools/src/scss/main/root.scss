@@ -13,6 +13,7 @@
     --light-blue: #A493E8;
     --light-light-blue: #00D0FF;
     --violet: #9747FF;
+    --dark-violet: #2000A3;
     --dark-pink: #FF007B;
     --light-pink: #FF25A7;
     --pink: #EB48A9;
@@ -47,6 +48,7 @@
     --blue-gradient: linear-gradient(0deg, #4F2CE0 25%, #2000A3 100%);
     --light-gradient: linear-gradient(180deg, #F8F8F8 74.5%, #E7F5FF 100%);
     --bg-gradient: linear-gradient(0deg, #FFFFFF 52.48%, #D0ECFD 105.65%);
+    --white-gradient: linear-gradient(#fff, #fff);
 
 
     --border-radius-big: 24px;
@@ -58,6 +60,7 @@
 
     --width-page: 1200px;
 
+    --transition: all 0.8s ease;
 
     //fonts
     --font-sans: 'PT Sans Caption', sans-serif;

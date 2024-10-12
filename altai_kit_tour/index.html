@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/other/icon-other.css">
@@ -8,9 +8,10 @@
   <title>Главная</title>
 </head>
 
-  <body>
-    <div id="page">
-      <header class="header" id="main-header">
+
+<body>
+  <div id="page">
+    <header class="header" id="main-header">
   <div class="wrap">
     <div class="header-menu-container">
       <div class="header-operating-mode">
@@ -35,37 +36,38 @@
   </div>
 </header>
 
-      <main id="main">
-        <div class="achievements">
-          <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
-          <link rel="stylesheet" href="css/other/achievements.css">
-          <div class="achievements__item background-gradient">
+    <main id="main">
+      <div class="achievements">
+        <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
+        <link rel="stylesheet" href="css/other/achievements.css">
+        <div class="achievements__item background-gradient">
     <h3 class="achievements__subtitle">16 лет</h3>
     <p class="achievements__text">работы в туризме</p>
 </div>
-          <div class="achievements__item ">
+        <div class="achievements__item ">
     <h3 class="achievements__subtitle">20+</h3>
     <p class="achievements__text">регионов по всему миру</p>
 </div>
-          <div class="achievements__item ">
+        <div class="achievements__item ">
     <h3 class="achievements__subtitle">300+</h3>
     <p class="achievements__text">маршрутов</p>
 </div>
-          <div class="achievements__item heart">
+        <div class="achievements__item heart">
     <h3 class="achievements__subtitle">97%</h3>
     <p class="achievements__text">туристов хотят поехать с&nbsp;нами снова</p>
 </div>
-        </div>
-        <div class="popular-destinations">
-          <div class="wrap">
-            <link rel="stylesheet" href="css/other/popular-destinations.css">
-            <h2 class="popular-destinations__title">Популярные направления</h2>
-            <div class="popular-destinations__block">
-              <div class="popular-destinations__item full">
+      </div>
+      <div class="popular-destinations">
+        <div class="wrap">
+          <link rel="stylesheet" href="css/other/popular-destinations.css">
+          <h2 class="popular-destinations__title">Популярные направления</h2>
+          <div class="popular-destinations__block">
+            <div class="popular-destinations__item full">
     <div class="popular-destinations__image">
         <img src="css/img/popular-destinations/img1.jpeg" alt="Гармония Алтая" srcset="">
         <div class="type-tour">
             <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
             <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
             <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
         </div>
@@ -74,38 +76,7 @@
         <div class="about">
             <link rel="stylesheet" href="css/other/promotion.css">
             <div class="promotion-block">
-                <span class="promotion" style="background-color: var(--pink)">HIT!</span>
-                <span class="promotion" style="background-color: var(--violet)">%%</span>
-            </div>
-            <p class="date"><span class="icon-calendar"></span>10 дней</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Гармония Алтая</h4>
-            <p class="popular-destinations__text">Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.</p>
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount">100 000 ₽.</p>
-                    <p class="price">98 000 ₽.</p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-  
-                <div class="popular-destinations__item ">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/img2.png" alt="Гармония Алтая" srcset="">
-        <div class="type-tour">
-            <link rel="stylesheet" href="css/other/type-tour.css">
-            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
-            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
-        </div>
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
                 <span class="promotion" style="background-color: var(--pink)">HIT!</span>
                 <span class="promotion" style="background-color: var(--violet)">%%</span>
             </div>
@@ -125,11 +96,12 @@
     </div>
 </div>
 
-                  <div class="popular-destinations__item ">
+            <div class="popular-destinations__item ">
     <div class="popular-destinations__image">
         <img src="css/img/popular-destinations/img2.png" alt="Гармония Алтая" srcset="">
         <div class="type-tour">
             <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
             <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
             <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
         </div>
@@ -138,6 +110,7 @@
         <div class="about">
             <link rel="stylesheet" href="css/other/promotion.css">
             <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
                 <span class="promotion" style="background-color: var(--pink)">HIT!</span>
                 <span class="promotion" style="background-color: var(--violet)">%%</span>
             </div>
@@ -156,11 +129,200 @@
         </div>
     </div>
 </div>
+
+            <div class="popular-destinations__item ">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/img2.png" alt="Гармония Алтая" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                <span class="promotion" style="background-color: var(--pink)">HIT!</span>
+                <span class="promotion" style="background-color: var(--violet)">%%</span>
             </div>
+            <p class="date"><span class="icon-calendar"></span>10 дней</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Гармония Алтая</h4>
+            <p class="popular-destinations__text">Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.</p>
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount">100 000 ₽.</p>
+                    <p class="price">98 000 ₽.</p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
           </div>
         </div>
-      </main>
-      <footer class="footer" id="main-footer">
+      </div>
+      <div class="wrap">
+        <div class="tours-by-type-recreation">
+          <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
+          <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
+          <div class="tours-by-type-recreation__block">
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation1.jpeg" alt="Комби-туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Комби-туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation2.jpeg" alt="Пешие туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Пешие туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation3.jpeg" alt="Конные туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Конные туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation4.jpeg" alt="Водные туры / сплавы" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Водные туры / сплавы</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+          </div>
+          <a id="tours-more" class="button-border" href="#">Смотреть все</a>
+          <div class="tours-by-type-recreation__block-more">
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation1.jpeg" alt="Комби-туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Комби-туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation2.jpeg" alt="Пешие туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Пешие туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation3.jpeg" alt="Конные туры" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Конные туры</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+            <div class="tours-by-type-recreation__item @@class">
+    <div class="tours-by-type-recreation__image">
+        <img src="css/img/tours-by-type-recreation/tours-by-type-recreation4.jpeg" alt="Водные туры / сплавы" srcset="">
+        <div class="type-tour">
+            <link rel="stylesheet" href="css/other/type-tour.css">
+            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+            <span class="icon-truck" style="background-color: var(--dark-green-50)"></span>
+            <span class="icon-ship" style="background-color: var(--dark-blue-50)"></span>
+        </div>
+        <div class="tours-by-type-recreation__about">
+            <p class="subtitle">Водные туры / сплавы</p>
+            <p class="count-tours">2 тура</p>
+        </div>
+        <a class="tours-by-type-recreation__link" href="#"></a>
+    </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="main-footer">
   <div class="footer-bg">
     <div class="footer-wrap">
       <div class="footer__messengers-block">
@@ -218,7 +380,8 @@
     </div>
   </div>
 </footer>
-    </div>
-    <script src="js/main.min.js"></script>
-  </body>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

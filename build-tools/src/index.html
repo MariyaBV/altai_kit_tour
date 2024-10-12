@@ -1,65 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('components/const/_head.html', { "lang":"ru", "title":"Главная",
-  "other_css":false } )
-  <body>
-    <div id="page">
-      @@include('components/const/_header.html')
-      <main id="main">
-        <div class="achievements">
-          <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
-          <link rel="stylesheet" href="css/other/achievements.css">
-          @@include('components/components/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
-          @@include('components/components/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
-          @@include('components/components/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
-          @@include('components/components/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
-        </div>
-        <div class="popular-destinations">
-          <div class="wrap">
-            <link rel="stylesheet" href="css/other/popular-destinations.css">
-            <h2 class="popular-destinations__title">Популярные направления</h2>
-            <div class="popular-destinations__block">
-              @@include('components/components/popular-destinations.html', {
-                "class": "full", 
-                "image": "img1.jpeg", 
-                "alt": "Гармония Алтая", 
-                "date": "10 дней", 
-                "title": "Гармония Алтая",
-                "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
-                "discount": "100 000 ₽.", 
-                "price": "98 000 ₽.", 
-                "link": "#", 
-                "button": "Подробнее"})
-  
-                @@include('components/components/popular-destinations.html', {
-                  "class": "", 
-                  "image": "img2.png", 
-                  "alt": "Гармония Алтая", 
-                  "date": "10 дней", 
-                  "title": "Гармония Алтая",
-                  "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
-                  "discount": "100 000 ₽.", 
-                  "price": "98 000 ₽.", 
-                  "link": "#", 
-                  "button": "Подробнее"})
+@@include('components/const/_head.html', { "lang":"ru", "title":"Главная",
+"other_css":false } )
 
-                  @@include('components/components/popular-destinations.html', {
-                    "class": "", 
-                    "image": "img2.png", 
-                    "alt": "Гармония Алтая", 
-                    "date": "10 дней", 
-                    "title": "Гармония Алтая",
-                    "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.",
-                    "discount": "100 000 ₽.", 
-                    "price": "98 000 ₽.", 
-                    "link": "#", 
-                    "button": "Подробнее"})
-            </div>
+<body>
+  <div id="page">
+    @@include('components/const/_header.html')
+    <main id="main">
+      <div class="achievements">
+        <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
+        <link rel="stylesheet" href="css/other/achievements.css">
+        @@include('components/components/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
+        @@include('components/components/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
+        @@include('components/components/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
+        @@include('components/components/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
+      </div>
+      <div class="popular-destinations">
+        <div class="wrap">
+          <link rel="stylesheet" href="css/other/popular-destinations.css">
+          <h2 class="popular-destinations__title">Популярные направления</h2>
+          <div class="popular-destinations__block">
+            @@include('components/components/popular-destinations.html', {
+            "class": "full", 
+            "image": "img1.jpeg", 
+            "alt": "Гармония Алтая", 
+            "date": "10 дней", 
+            "title": "Гармония Алтая", 
+            "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "discount": "100 000 ₽.", 
+            "price": "98 000 ₽.", 
+            "link": "#", 
+            "button": "Подробнее"})
+
+            @@include('components/components/popular-destinations.html', {
+            "class": "", 
+            "image": "img2.png", 
+            "alt": "Гармония Алтая", 
+            "date": "10 дней", 
+            "title": "Гармония Алтая", 
+            "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "discount": "100 000 ₽.", 
+            "price": "98 000 ₽.", 
+            "link": "#", 
+            "button": "Подробнее"})
+
+            @@include('components/components/popular-destinations.html', {
+            "class": "", 
+            "image": "img2.png", 
+            "alt": "Гармония Алтая", 
+            "date": "10 дней", 
+            "title": "Гармония Алтая", 
+            "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "discount": "100 000 ₽.", 
+            "price": "98 000 ₽.", 
+            "link": "#", 
+            "button": "Подробнее"})
           </div>
         </div>
-      </main>
-      @@include('components/const/_footer.html')
-    </div>
-    <script src="js/main.min.js"></script>
-  </body>
+      </div>
+      <div class="wrap">
+        <div class="tours-by-type-recreation">
+          <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
+          <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
+          <div class="tours-by-type-recreation__block">
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation1.jpeg", 
+            "alt": "Комби-туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Комби-туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation2.jpeg", 
+            "alt": "Пешие туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Пешие туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation3.jpeg", 
+            "alt": "Конные туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Конные туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation4.jpeg", 
+            "alt": "Водные туры / сплавы", 
+            "count_tours": "2 тура", 
+            "subtitle": "Водные туры / сплавы", 
+            "link": "#"})
+          </div>
+          <a id="tours-more" class="button-border" href="#">Смотреть все</a>
+          <div class="tours-by-type-recreation__block-more">
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation1.jpeg", 
+            "alt": "Комби-туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Комби-туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation2.jpeg", 
+            "alt": "Пешие туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Пешие туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation3.jpeg", 
+            "alt": "Конные туры", 
+            "count_tours": "2 тура", 
+            "subtitle": "Конные туры", 
+            "link": "#"})
+            @@include('components/components/tours-by-type-recreation.html', {
+            "image": "tours-by-type-recreation4.jpeg", 
+            "alt": "Водные туры / сплавы", 
+            "count_tours": "2 тура", 
+            "subtitle": "Водные туры / сплавы", 
+            "link": "#"})
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('components/const/_footer.html')
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
