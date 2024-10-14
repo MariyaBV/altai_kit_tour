@@ -83,3 +83,15 @@ h4 {
     display: inline-block;
     border-radius: var(--border-radius-little);
 }
+
+.txt {
+    font-size: var(--txt-font-size);
+    font-weight: var(--txt-font-weight);
+    line-height: var(--txt-line-height);
+}
+
+.txt-s {
+    font-size: var(--txt-s-font-size);
+    font-weight: var(--txt-s-font-weight);
+    line-height: var(--txt-s-line-height);
+}

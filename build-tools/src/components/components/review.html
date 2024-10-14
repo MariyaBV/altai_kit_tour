@@ -1,0 +1,28 @@
+<div class="reviews__item swiper-slide">
+    <div class="reviews__author-photo-container">
+        @@if (author_photo) {
+            <img class="reviews__author-photo" src="css/img/reviews/@@author_photo" alt="автор отзыва">
+        } 
+        @@if (author_photo) == false {
+            <img class="reviews__author-photo" src="css/img/reviews/not-author-photo.png" alt="автор отзыва">
+        }
+    </div>
+    <div class="reviews__text-container">
+        <p class="txt">@@text</p>
+        <div class="reviews__images">
+            @@for (var i = 0; i < images.length; i++) {
+                <img src="css/img/reviews/`+images[i]+`" alt="Изображение тура">
+            }
+        </div>
+        <div class="reviews__info">
+            <p class="reviews__author">@@author_name_city</p>
+            <div class="reviews__review-info">
+                <div>
+                    <p class="date">@@date</p>
+                    <p>тур: <a class="tour-name" href="@@tour_link">@@tour_name</a></p>
+                </div>
+                <p class="txt-s source">источник: <a href="@@source_link"><img src="css/img/source/@@source_logo" alt="источник отзыва"></a></p>
+            </div>
+        </div>
+    </div>
+</div>

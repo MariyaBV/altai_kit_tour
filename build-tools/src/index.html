@@ -117,10 +117,109 @@
           </div>
         </div>
       </div>
+      <div class="reviews">
+        <link rel="stylesheet" href="css/other/reviews.css">
+        <div class="reviews__bg">
+          <h2 class="reviews__title">отзывы</h2>
+          <h4 class="reviews__subtitle">впечатления туристов</h4>
+          <div class="__slider">
+            <div class="swiper">
+              <div class="reviews-swiper">
+                <div class="swiper-wrapper">
+                  @@include('components/components/review.html', {
+                    author_photo: "photo_alex.jpeg", 
+                    text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
+                    images: [
+                      'tours-by-type-recreation1.jpeg', 
+                      'tours-by-type-recreation2.jpeg', 
+                      'tours-by-type-recreation3.jpeg', 
+                    ], 
+                    author_name_city: "Алексей, Нижний Новгород", 
+                    date: "02.09.2023", 
+                    tour_name: "Гармония Алтая", 
+                    tour_link: "#", 
+                    source_logo: "2gis.png", 
+                    source_link: "#"}) 
+                    @@include('components/components/review.html', {
+                      author_photo: "", 
+                      text: "И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны.", 
+                      images: [
+                        'tours-by-type-recreation1.jpeg', 
+                        'tours-by-type-recreation2.jpeg', 
+                        'tours-by-type-recreation3.jpeg', 
+                      ], 
+                      author_name_city: "Алексей, Нижний Новгород", 
+                      date: "02.09.2023", 
+                      tour_name: "Гармония Алтая", 
+                      tour_link: "#", 
+                      source_logo: "yandex.png", 
+                      source_link: "#"}) 
+                      @@include('components/components/review.html', {
+                        author_photo: "photo_alex.jpeg", 
+                        text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
+                        images: [
+                          'tours-by-type-recreation1.jpeg', 
+                          'tours-by-type-recreation2.jpeg', 
+                        ], 
+                        author_name_city: "Алексей, Нижний Новгород", 
+                        date: "02.09.2023", 
+                        tour_name: "Гармония Алтая", 
+                        tour_link: "#", 
+                        source_logo: "vk.png", 
+                        source_link: "#"}) 
+                        @@include('components/components/review.html', {
+                          author_photo: "photo_alex.jpeg", 
+                          text: "И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны.", 
+                          images: [
+                            'tours-by-type-recreation1.jpeg', 
+                            'tours-by-type-recreation2.jpeg', 
+                            'tours-by-type-recreation3.jpeg', 
+                          ], 
+                          author_name_city: "Алексей, Нижний Новгород", 
+                          date: "02.09.2023", 
+                          tour_name: "Гармония Алтая", 
+                          tour_link: "#", 
+                          source_logo: "yandex.png", 
+                          source_link: "#"}) 
+                          @@include('components/components/review.html', {
+                            author_photo: "photo_alex.jpeg", 
+                            text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
+                            images: [
+                              'tours-by-type-recreation1.jpeg', 
+                            ], 
+                            author_name_city: "Алексей, Нижний Новгород", 
+                            date: "02.09.2023", 
+                            tour_name: "Гармония Алтая", 
+                            tour_link: "#", 
+                            source_logo: "yandex.png", 
+                            source_link: "#"}) 
+                            @@include('components/components/review.html', {
+                              author_photo: "", 
+                              text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
+                              images: [
+                                'tours-by-type-recreation1.jpeg', 
+                                'tours-by-type-recreation2.jpeg', 
+                                'tours-by-type-recreation3.jpeg', 
+                              ], 
+                              author_name_city: "Алексей, Нижний Новгород", 
+                              date: "02.09.2023", 
+                              tour_name: "Гармония Алтая", 
+                              tour_link: "#", 
+                              source_logo: "vk.png", 
+                              source_link: "#"}) 
+                </div>
+                <div class="swiper-button-prev reviews__swiper-button-prev icon-left"></div>
+                <div class="swiper-button-next reviews__swiper-button-next icon-right"></div>
+                <div class="swiper-pagination reviews__swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     @@include('components/const/_footer.html')
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>
