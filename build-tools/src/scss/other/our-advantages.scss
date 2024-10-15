@@ -1,8 +1,9 @@
 .our-advantages {
     background: var(--light-gradient);
+    padding: 80px 0 0 0;
 
     &__title {
-        padding: 80px 0 10px;
+        margin-bottom: 10px;
         color: transparent;
         background: var(--main-gradient);
         background-clip: text;
@@ -26,7 +27,8 @@
 
     &__content {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 80px auto 0;
+        padding-bottom: 28px;
     }
 
     &__list {
@@ -34,7 +36,6 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 32px;
-        padding-bottom: 28px;
         padding-left: 28px;
     }
 

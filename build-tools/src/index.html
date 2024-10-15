@@ -285,7 +285,7 @@
         <div class="video-about-us__bg">
           <div class="wrap">
             <h2 class="video-about-us__title">Видео о нас</h2>
-            <div class="youtube" id="youtube-video">
+            <div class="youtube-iframe" id="youtube-video">
               <iframe class="youtube__iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h2 class="video-about-us__subtitle">Подпишитесь на нас!</h2>
@@ -353,6 +353,32 @@
                 <div class="swiper-pagination photoes-tour__swiper-pagination"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-booking">
+        <link rel="stylesheet" href="css/other/how-booking.css">
+        <div class="wrap">
+          <h2 class="how-booking__title">Как забронировать</h2>
+          <h4 class="how-booking__subtitle">Если возникли трудности с выбором тура, вы можете связаться с наши менеджерами и они с удовольствием подберут для вас подходящий тур.</h4>
+          <div class="how-booking__advantages">
+            @@loop('components/component/how-booking.html',
+              [ 
+                {"num": 1, "title": "Выбрали тур", 
+                "text": "Возникли трудности с выбором тура? Свяжитесь нами и наши менеджеры с удовольствием подберут для вас подходящий тур.", }, 
+                {"num": 2, "title": "Отправить заявку", 
+                "text": "Отправляете заявку на нашем сайте или на почту info@tur-altai.com, либо по телефону.", }, 
+                {"num": 3, "title": "Менеджер свяжется с вами", 
+                "text": "Наши менеджеры уточняют основные моменты, делают предварительную бронь, отправляют договор и выставляют счёт.", }, 
+                {"num": 4, "title": "Предоплата", 
+                "text": "Внести предоплату в размере 30%. Оставшуюся сумму оплачиваете на месте, при личной встрече с представителем фирмы.", },  
+                {"num": 5, "title": "Обязательно", 
+                "text": "Сообщите номер поезда, время прибытия, номер вагона; или если самолёт, то номер рейса. Информация необходима для трансфера.", },  
+                {"num": "!!!", "title": "", 
+                "text": "В случае если после выставления счета оплата не поступает в течение 5 банковских дней, заявка аннулируется.", },  
+              
+              ] 
+            )
           </div>
         </div>
       </div>

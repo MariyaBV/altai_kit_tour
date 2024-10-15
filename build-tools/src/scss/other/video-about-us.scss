@@ -56,7 +56,7 @@
     }
 
     &__bg {
-        padding-top: 60px;
+        padding: 60px 0 80px;
         position: relative;
         background-image: url(../../css/img/mountain.png);
         background-repeat: no-repeat;
@@ -64,9 +64,9 @@
         background-size: contain;
     }
 
-    .youtube {
+    .youtube-iframe {
         margin-bottom: 80px;
-        border-radius: var(--border-radius-medium);
+        border-radius: var(--border-radius-big);
         overflow: hidden;
 
         iframe {
