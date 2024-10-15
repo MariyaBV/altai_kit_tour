@@ -1,0 +1,94 @@
+.our-advantages {
+    background: var(--light-gradient);
+
+    &__title {
+        padding: 80px 0 10px;
+        color: transparent;
+        background: var(--main-gradient);
+        background-clip: text;
+        text-transform: uppercase;
+        background-size: 82%;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__advantages {
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        margin-top: 24px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 28px;
+        padding-left: 28px;
+    }
+
+    &__item {
+        flex: calc(100% / 2 - 40px);
+        display: flex;
+        justify-content: flex-end;
+
+        &:nth-child(2n) {
+            justify-content: flex-start;
+        }
+
+        &:first-child {
+            .number {
+                margin-right: -3px;
+            }
+        }
+
+        .text {
+            margin-top: 24px;
+        }
+
+        .number {
+            font-family: var(--font-unbounded);
+            font-size: 120px;
+            font-weight: 500;
+            line-height: 148.8px;
+            color: var(--light-blue);
+            margin-right: -16px;
+        }
+
+        .text-container {
+            max-width: 400px;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius-medium);
+            padding: 24px;
+            transition: var(--transition);
+            background-color: var(--white);
+            position: relative;
+
+            .icon {
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                font-size: 40px;
+            }
+
+        }
+
+        .subtitle {
+            color: transparent;
+            background: var(--main-gradient);
+            background-clip: text;
+            background-size: 82%;
+        }
+    }
+}
