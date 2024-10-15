@@ -1,0 +1,133 @@
+.frequently-asked-questions {
+    padding: 80px 0 93px;
+
+    .wrap {
+        max-width: 692px;
+        padding: 0;
+    }
+
+    &__info {
+        background: var(--light-gradient);
+        border-radius: var(--border-radius-medium);
+        padding: 44px 60px 50px;
+        margin-top: 64px;
+
+        .description {
+            max-width: 475px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .title {
+            color: transparent;
+            background: var(--main-gradient);
+            background-clip: text;
+            text-transform: uppercase;
+            line-height: 39px;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__questions {
+        padding: 0 40px;
+    }
+
+    &__item {
+        border-bottom: 1px solid #DFDFDF;
+        position: relative;
+
+        &:first-child {
+            .circle.turn {
+                top: 36px;
+            }
+        }
+
+        .circle {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: #4F2CE0;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 4px;
+            transform: translate(0, -50%);
+            z-index: -1;
+
+            &.turn {
+                background-color: var(--pink);
+                top: 24px;
+                transform: unset;
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                .cross {
+                    transform: rotate(45deg);
+                    left: 24%;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 20px;
+                background-color: white;
+                top: 10px;
+                left: 19px;
+            }
+        }
+
+        .cross {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .question-block {
+            padding: 33px 52px 33px 0;
+            display: flex;
+            gap: 8px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .number {
+                font-weight: normal;
+            }
+
+            .vopros {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+        }
+
+        .otvet {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 0 0 24px 26px;
+            padding-right: 52px;
+        }
+    }
+}
