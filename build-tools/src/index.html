@@ -10,17 +10,17 @@
       <div class="achievements">
         <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
         <link rel="stylesheet" href="css/other/achievements.css">
-        @@include('components/components/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
-        @@include('components/components/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
-        @@include('components/components/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
-        @@include('components/components/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
+        @@include('components/component/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
+        @@include('components/component/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
+        @@include('components/component/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
+        @@include('components/component/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
       </div>
       <div class="popular-destinations">
         <div class="wrap">
           <link rel="stylesheet" href="css/other/popular-destinations.css">
           <h2 class="popular-destinations__title">Популярные направления</h2>
           <div class="popular-destinations__block">
-            @@include('components/components/popular-destinations.html', {
+            @@include('components/component/popular-destinations.html', {
             "class": "full", 
             "image": "img1.jpeg", 
             "alt": "Гармония Алтая", 
@@ -31,8 +31,8 @@
             "price": "98 000 ₽.", 
             "link": "#", 
             "button": "Подробнее"})
-
-            @@include('components/components/popular-destinations.html', {
+    
+            @@include('components/component/popular-destinations.html', {
             "class": "", 
             "image": "img2.png", 
             "alt": "Гармония Алтая", 
@@ -43,8 +43,8 @@
             "price": "98 000 ₽.", 
             "link": "#", 
             "button": "Подробнее"})
-
-            @@include('components/components/popular-destinations.html', {
+    
+            @@include('components/component/popular-destinations.html', {
             "class": "", 
             "image": "img2.png", 
             "alt": "Гармония Алтая", 
@@ -63,25 +63,25 @@
           <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
           <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
           <div class="tours-by-type-recreation__block">
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation1.jpeg", 
             "alt": "Комби-туры", 
             "count_tours": "2 тура", 
             "subtitle": "Комби-туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation2.jpeg", 
             "alt": "Пешие туры", 
             "count_tours": "2 тура", 
             "subtitle": "Пешие туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation3.jpeg", 
             "alt": "Конные туры", 
             "count_tours": "2 тура", 
             "subtitle": "Конные туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation4.jpeg", 
             "alt": "Водные туры / сплавы", 
             "count_tours": "2 тура", 
@@ -90,25 +90,25 @@
           </div>
           <a id="tours-more" class="button-border" href="#">Смотреть все</a>
           <div class="tours-by-type-recreation__block-more">
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation1.jpeg", 
             "alt": "Комби-туры", 
             "count_tours": "2 тура", 
             "subtitle": "Комби-туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation2.jpeg", 
             "alt": "Пешие туры", 
             "count_tours": "2 тура", 
             "subtitle": "Пешие туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation3.jpeg", 
             "alt": "Конные туры", 
             "count_tours": "2 тура", 
             "subtitle": "Конные туры", 
             "link": "#"})
-            @@include('components/components/tours-by-type-recreation.html', {
+            @@include('components/component/tours-by-type-recreation.html', {
             "image": "tours-by-type-recreation4.jpeg", 
             "alt": "Водные туры / сплавы", 
             "count_tours": "2 тура", 
@@ -126,7 +126,7 @@
             <div class="swiper">
               <div class="reviews-swiper">
                 <div class="swiper-wrapper">
-                  @@include('components/components/review.html', {
+                  @@include('components/component/review.html', {
                     author_photo: "photo_alex.jpeg", 
                     text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
                     images: [
@@ -140,7 +140,7 @@
                     tour_link: "#", 
                     source_logo: "2gis.png", 
                     source_link: "#"}) 
-                    @@include('components/components/review.html', {
+                    @@include('components/component/review.html', {
                       author_photo: "", 
                       text: "И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны.", 
                       images: [
@@ -154,7 +154,7 @@
                       tour_link: "#", 
                       source_logo: "yandex.png", 
                       source_link: "#"}) 
-                      @@include('components/components/review.html', {
+                      @@include('components/component/review.html', {
                         author_photo: "photo_alex.jpeg", 
                         text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
                         images: [
@@ -167,7 +167,7 @@
                         tour_link: "#", 
                         source_logo: "vk.png", 
                         source_link: "#"}) 
-                        @@include('components/components/review.html', {
+                        @@include('components/component/review.html', {
                           author_photo: "photo_alex.jpeg", 
                           text: "И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны.", 
                           images: [
@@ -181,7 +181,7 @@
                           tour_link: "#", 
                           source_logo: "yandex.png", 
                           source_link: "#"}) 
-                          @@include('components/components/review.html', {
+                          @@include('components/component/review.html', {
                             author_photo: "photo_alex.jpeg", 
                             text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
                             images: [
@@ -193,7 +193,7 @@
                             tour_link: "#", 
                             source_logo: "yandex.png", 
                             source_link: "#"}) 
-                            @@include('components/components/review.html', {
+                            @@include('components/component/review.html', {
                               author_photo: "", 
                               text: "Как известно, весной период дня увеличивается, а ночь укорачивается. И в этом году 20 марта наступил момент, когда длительности дня и ночи оказались равны. Такой день называется днём весеннего равноденствия", 
                               images: [
@@ -224,7 +224,7 @@
           <div class="swiper">
             <div class="our-team-swiper">
               <div class="swiper-wrapper">
-                @@include('components/components/our-team.html', {
+                @@include('components/component/our-team.html', {
                   guide_photo: "sergey.png", 
                   text: "Работает с нами уже 7 лет, отлично знает историю края, умеет готовить пирожки, знает 100500 анекдотов и мастерски ездит на лошади.", 
                   bg_guide_photo: 'tours-by-type-recreation1.jpeg', 
@@ -232,7 +232,7 @@
                   date: "02.09.2023", 
                   button_name: "Подробнее", 
                   guide_link: "#"}) 
-                  @@include('components/components/our-team.html', {
+                  @@include('components/component/our-team.html', {
                     guide_photo: "tatjana.png", 
                     text: "Знает 39 сказок про Алтай, заядлая рыбачка, отлично водит машину и поёт Алтайские народные песни. Спросите её про народные костюмы Алтая", 
                     bg_guide_photo: 'tours-by-type-recreation2.jpeg', 
@@ -240,7 +240,7 @@
                     date: "02.09.2023", 
                     button_name: "", 
                     guide_link: ""}) 
-                    @@include('components/components/our-team.html', {
+                    @@include('components/component/our-team.html', {
                       guide_photo: "alexandr.png", 
                       text: "Если вы боитесь воды — он научит, как не бояться и полюбить её. Заядлый рыбак и капитан лодки «Морячка». К.м.с. по плаванию. С ним вы в надёжных руках!", 
                       bg_guide_photo: 'tours-by-type-recreation3.jpeg', 
@@ -248,7 +248,7 @@
                       date: "02.09.2023", 
                       button_name: "Подробнее", 
                       guide_link: "#"}) 
-                      @@include('components/components/our-team.html', {
+                      @@include('components/component/our-team.html', {
                         guide_photo: "tatjana.png", 
                         text: "Работает с нами уже 7 лет, отлично знает историю края, умеет готовить пирожки, знает 100500 анекдотов и мастерски ездит на лошади.", 
                         bg_guide_photo: 'tours-by-type-recreation2.jpeg', 
@@ -256,7 +256,7 @@
                         date: "02.09.2023", 
                         button_name: "Подробнее", 
                         guide_link: "#"}) 
-                        @@include('components/components/our-team.html', {
+                        @@include('components/component/our-team.html', {
                           guide_photo: "sergey.png", 
                           text: "Если вы боитесь воды — он научит, как не бояться и полюбить её. Заядлый рыбак и капитан лодки «Морячка». К.м.с. по плаванию. С ним вы в надёжных руках!", 
                           bg_guide_photo: 'tours-by-type-recreation3.jpeg', 
@@ -264,7 +264,7 @@
                           date: "02.09.2023", 
                           button_name: "", 
                           guide_link: ""}) 
-                          @@include('components/components/our-team.html', {
+                          @@include('components/component/our-team.html', {
                             guide_photo: "alexandr.png", 
                             text: "Знает 39 сказок про Алтай, заядлая рыбачка, отлично водит машину и поёт Алтайские народные песни. Спросите её про народные костюмы Алтая", 
                             bg_guide_photo: 'tours-by-type-recreation1.jpeg', 
@@ -276,6 +276,23 @@
               <div class="swiper-button-prev our-team__swiper-button-prev icon-left"></div>
               <div class="swiper-button-next our-team__swiper-button-next icon-right"></div>
               <div class="swiper-pagination our-team__swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-about-us">
+        <link rel="stylesheet" href="css/other/video-about-us.css">
+        <div class="video-about-us__bg">
+          <div class="wrap">
+            <h2 class="video-about-us__title">Видео о нас</h2>
+            <div class="youtube" id="youtube-video">
+              <iframe class="youtube__iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2 class="video-about-us__subtitle">Подпишитесь на нас!</h2>
+            <p class="video-about-us__text">Посмотрите сами на фото с наших туров и почитайте отзывы от наших путешественников</p>
+            <div class="contact-messengers">
+              <a class="vk icon-vk" href=""></a>
+              <a class="youtube icon-youtube" href=""></a>
             </div>
           </div>
         </div>

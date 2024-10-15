@@ -27,7 +27,7 @@
     &__item {
         position: relative;
         display: block;
-        box-shadow: 0px 2px 16px 0px #0000001A;
+        box-shadow: var(--box-shadow);
         border-bottom: 4px solid transparent;
         transition: var(--transition);
         border-radius: var(--border-radius-medium);
