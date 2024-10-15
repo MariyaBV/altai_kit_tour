@@ -1,0 +1,20 @@
+<div class="our-team__item swiper-slide">
+    <div class="our-team__guide-photo-container">
+        <img class="our-team__guide-photo" src="css/img/our-team/@@guide_photo" alt="экскурсовод">
+        <img class="our-team__bg-guide-photo" src="css/img/our-team/@@bg_guide_photo" alt="">
+    </div>
+    <div class="our-team__text-container">
+        <h3 class="our-team__guide">@@guide_name</h3>
+        <p class="txt">@@text</p>
+        <div class="our-team__info">
+            @@include('type-tour.html', {"class": "icon-horse"})
+            @@include('type-tour.html', {"class": "icon-truck"})
+            @@include('type-tour.html', {"class": "icon-car"})
+            @@include('type-tour.html', {"class": "icon-gastro_tour"})
+            @@include('type-tour.html', {"class": "icon-hiking"})
+        </div>
+        @@if (button_name) {
+            <a class="our-team__link button" href="@@guide_link">@@button_name</a>
+        }
+    </div>
+</div>

@@ -6,6 +6,10 @@
     position: relative;
     color: var(--white);
 
+    .__slider>.swiper {
+        max-width: 1360px;
+    }
+
     &__bg {
         padding-top: 58px;
         position: relative;

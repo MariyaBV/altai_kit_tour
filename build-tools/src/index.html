@@ -216,6 +216,70 @@
           </div>
         </div>
       </div>
+      <div class="our-team wrap">
+        <link rel="stylesheet" href="css/other/our-team.css">
+        <h2 class="our-team__title">наша команда</h2>
+        <h4 class="our-team__subtitle">это 17 удивительных людей</h4>
+        <div class="__slider">
+          <div class="swiper">
+            <div class="our-team-swiper">
+              <div class="swiper-wrapper">
+                @@include('components/components/our-team.html', {
+                  guide_photo: "sergey.png", 
+                  text: "Работает с нами уже 7 лет, отлично знает историю края, умеет готовить пирожки, знает 100500 анекдотов и мастерски ездит на лошади.", 
+                  bg_guide_photo: 'tours-by-type-recreation1.jpeg', 
+                  guide_name: "Сергей", 
+                  date: "02.09.2023", 
+                  button_name: "Подробнее", 
+                  guide_link: "#"}) 
+                  @@include('components/components/our-team.html', {
+                    guide_photo: "tatjana.png", 
+                    text: "Знает 39 сказок про Алтай, заядлая рыбачка, отлично водит машину и поёт Алтайские народные песни. Спросите её про народные костюмы Алтая", 
+                    bg_guide_photo: 'tours-by-type-recreation2.jpeg', 
+                    guide_name: "Татьяна", 
+                    date: "02.09.2023", 
+                    button_name: "", 
+                    guide_link: ""}) 
+                    @@include('components/components/our-team.html', {
+                      guide_photo: "alexandr.png", 
+                      text: "Если вы боитесь воды — он научит, как не бояться и полюбить её. Заядлый рыбак и капитан лодки «Морячка». К.м.с. по плаванию. С ним вы в надёжных руках!", 
+                      bg_guide_photo: 'tours-by-type-recreation3.jpeg', 
+                      guide_name: "Александр", 
+                      date: "02.09.2023", 
+                      button_name: "Подробнее", 
+                      guide_link: "#"}) 
+                      @@include('components/components/our-team.html', {
+                        guide_photo: "tatjana.png", 
+                        text: "Работает с нами уже 7 лет, отлично знает историю края, умеет готовить пирожки, знает 100500 анекдотов и мастерски ездит на лошади.", 
+                        bg_guide_photo: 'tours-by-type-recreation2.jpeg', 
+                        guide_name: "Татьяна", 
+                        date: "02.09.2023", 
+                        button_name: "Подробнее", 
+                        guide_link: "#"}) 
+                        @@include('components/components/our-team.html', {
+                          guide_photo: "sergey.png", 
+                          text: "Если вы боитесь воды — он научит, как не бояться и полюбить её. Заядлый рыбак и капитан лодки «Морячка». К.м.с. по плаванию. С ним вы в надёжных руках!", 
+                          bg_guide_photo: 'tours-by-type-recreation3.jpeg', 
+                          guide_name: "Сергей", 
+                          date: "02.09.2023", 
+                          button_name: "", 
+                          guide_link: ""}) 
+                          @@include('components/components/our-team.html', {
+                            guide_photo: "alexandr.png", 
+                            text: "Знает 39 сказок про Алтай, заядлая рыбачка, отлично водит машину и поёт Алтайские народные песни. Спросите её про народные костюмы Алтая", 
+                            bg_guide_photo: 'tours-by-type-recreation1.jpeg', 
+                            guide_name: "Александр", 
+                            date: "02.09.2023", 
+                            button_name: "", 
+                            guide_link: ""}) 
+              </div>
+              <div class="swiper-button-prev our-team__swiper-button-prev icon-left"></div>
+              <div class="swiper-button-next our-team__swiper-button-next icon-right"></div>
+              <div class="swiper-pagination our-team__swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     @@include('components/const/_footer.html')
   </div>
