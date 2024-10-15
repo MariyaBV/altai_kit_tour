@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var swiper_block_reviews = new Swiper('.our-team-swiper', {
+    var swiper_block_rour_team = new Swiper('.our-team-swiper', {
         direction: 'horizontal',
         slidesPerView: 3,
         slidesPerGroup: 3,
