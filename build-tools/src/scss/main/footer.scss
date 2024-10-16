@@ -8,6 +8,10 @@
     color: var(--white);
     max-height: 489px;
 
+    @media screen and (max-width: 660px) {
+        max-height: unset;
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -25,12 +29,20 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: contain;
+
+        @media screen and (max-width: 660px) {
+            padding-top: 60px;
+        }
     }
 
     .footer-wrap {
         max-width: 980px;
         margin: 0 auto;
         padding: 0 20px;
+
+        @media screen and (max-width: 660px) {
+            max-width: 305px;
+        }
     }
 
     &__messengers-block {
@@ -38,6 +50,12 @@
         justify-content: space-between;
         margin-top: 30px;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 660px) {
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: 28px;
+        }
 
         .block-logo a {
             display: flex;
@@ -82,6 +100,12 @@
             gap: 26px;
             margin-top: 7px;
 
+            &.desktop {
+                @media screen and (max-width: 660px) {
+                    display: none;
+                }
+            }
+
             a {
                 color: var(--white);
                 font-size: 40px;
@@ -94,6 +118,11 @@
         margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 660px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     .footer-menu-info {
@@ -102,12 +131,17 @@
         line-height: 22px;
         margin-bottom: 36px;
 
+        @media screen and (max-width: 660px) {
+            margin-bottom: 20px;
+        }
+
         &__row-1 {
             display: flex;
             flex-direction: column;
             gap: 8px;
             max-width: 428px;
             position: relative;
+
 
             .contact-email,
             .contact-phone,
@@ -131,6 +165,12 @@
                     font-family: var(--font-sans);
                     font-weight: 700;
                     line-height: 22px;
+
+                    @media screen and (max-width: 660px) {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
                 }
 
                 &::before {
@@ -144,6 +184,23 @@
             flex-direction: column;
             gap: 8px;
             max-width: 295px;
+
+            .contact-messengers {
+                &.mobile {
+                    display: none;
+
+                    @media screen and (max-width: 660px) {
+                        display: flex;
+                        gap: 24px;
+                        margin: 30px 0 35px;
+                    }
+                }
+
+                a {
+                    color: var(--white);
+                    font-size: 40px;
+                }
+            }
         }
 
         &__list {
@@ -151,6 +208,11 @@
             flex-wrap: wrap;
             gap: 8px;
             padding-left: 0;
+
+            @media screen and (max-width: 660px) {
+                flex-direction: column;
+                align-items: center;
+            }
 
             a {
                 color: var(--white);
@@ -160,6 +222,13 @@
                 flex: 48%;
                 display: flex;
                 justify-content: flex-end;
+
+                @media screen and (max-width: 660px) {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    padding: 8px 0;
+                }
             }
         }
     }
@@ -167,6 +236,11 @@
 
     .footer-policy {
         align-items: flex-end;
+
+        @media screen and (max-width: 660px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &__row1 {
             font-family: var(--font-sans);
@@ -178,17 +252,36 @@
             gap: 4px;
             max-width: 446px;
 
+            @media screen and (max-width: 660px) {
+                flex-direction: column;
+            }
+
             a {
                 color: var(--white);
                 flex: 48%;
+
+                @media screen and (max-width: 660px) {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    padding: 8px 0;
+                }
             }
         }
 
         &__row2 {
             position: relative;
 
+            @media screen and (max-width: 660px) {
+                margin-top: 14px;
+            }
+
             img {
                 max-width: 200px;
+
+                @media screen and (max-width: 660px) {
+                    max-width: 272px;
+                }
             }
 
             .link {
