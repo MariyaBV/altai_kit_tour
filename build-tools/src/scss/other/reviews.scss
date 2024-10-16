@@ -6,6 +6,23 @@
     position: relative;
     color: var(--white);
 
+    &-swiper {
+        max-width: 1160px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1290px) {
+            padding: 0 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 0 10px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: unset;
+        }
+    }
+
     .__slider>.swiper {
         max-width: 1360px;
     }
@@ -39,17 +56,37 @@
     &__title {
         margin-bottom: 12px;
         font-size: 47px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
     }
 
     &__subtitle {
         margin-bottom: 48px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
     }
 
     &__item {
-        max-width: 360px;
+        //max-width: 360px;
         min-width: 270px;
         color: var(--black);
         position: relative;
+
+        @media screen and (max-width: 460px) {
+            min-width: 240px;
+        }
+
+        @media screen and (max-width: 340px) {
+            min-width: 200px;
+        }
     }
 
     &__text-container {
@@ -57,6 +94,19 @@
         border-radius: var(--border-radius-medium);
         padding: 91px 24px 16px 24px;
         margin-top: -75px;
+
+        @media screen and (max-width: 460px) {
+            padding: 35px 24px 16px 24px;
+            margin-top: -30px;
+        }
+
+        p.txt {
+            @media screen and (max-width: 460px) {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
     }
 
     &__author-photo-container {
@@ -69,6 +119,10 @@
         border-radius: 50%;
         max-width: 120px;
         margin: 0 auto;
+
+        @media screen and (max-width: 460px) {
+            max-width: 80px;
+        }
     }
 
     &__images {
@@ -81,6 +135,9 @@
             max-width: 80px;
             object-fit: cover;
 
+            @media screen and (max-width: 460px) {
+                max-width: 60px;
+            }
         }
     }
 
@@ -88,6 +145,11 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 27px;
+
+        @media screen and (max-width: 460px) {
+            font-size: 12px;
+            line-height: 12px;
+        }
     }
 
     &__review-info {
@@ -95,8 +157,17 @@
         justify-content: space-between;
         margin-top: 6px;
 
+        @media screen and (max-width: 460px) {
+            flex-direction: column;
+        }
+
         .source {
             color: var(--dark-grey);
+
+            @media screen and (max-width: 460px) {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         .tour-name {
@@ -109,6 +180,12 @@
 
         .date {
             margin-bottom: 5px;
+
+            @media screen and (max-width: 460px) {
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 12px;
+            }
         }
     }
 }

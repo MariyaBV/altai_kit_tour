@@ -16,6 +16,10 @@
   /* Fix of Webkit flickering */
   z-index: 0;
   display: block;
+
+  @media screen and (max-width: 500px) {
+    padding: 0 5px;
+  }
 }
 
 .swiper-wrapper {
@@ -37,11 +41,6 @@
 .swiper-horizontal {
   touch-action: pan-y;
   overflow: hidden;
-}
-
-.reviews-swiper {
-  max-width: 1160px;
-  margin: 0 auto;
 }
 
 .swiper-slide {
@@ -170,6 +169,11 @@
   left: 0;
   right: auto;
   font-size: 60px;
+
+  @media screen and (max-width: 500px) {
+    left: -45px;
+    font-size: 40px;
+  }
 }
 
 .swiper-button-next,
@@ -177,6 +181,11 @@
   right: 0;
   left: auto;
   font-size: 60px;
+
+  @media screen and (max-width: 500px) {
+    right: -45px;
+    font-size: 40px;
+  }
 }
 
 
@@ -186,6 +195,7 @@
   z-index: 10;
   left: 50%;
   bottom: -46px;
+  transform: translate(-50%, 0);
 
   &.swiper-pagination-hidden {
     opacity: 0;
@@ -305,10 +315,10 @@
   }
 
   @media screen and (max-width: 460px) {
-    max-width: 320px;
+    max-width: 260px;
   }
 
-  @media screen and (max-width: 360px) {
-    max-width: 280px;
+  @media screen and (max-width: 340px) {
+    max-width: 240px;
   }
 }

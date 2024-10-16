@@ -1,6 +1,10 @@
 .promotion-block {
     display: flex;
 
+    @media screen and (max-width: 630px) {
+        height: 36px;
+    }
+
     .promotion {
         font-size: 20px;
         font-weight: 700;
@@ -9,5 +13,12 @@
         color: var(--white);
         padding: 16.5px 12px;
         display: block;
+
+        @media screen and (max-width: 630px) {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+         }
     }
 }

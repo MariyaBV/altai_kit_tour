@@ -1,6 +1,14 @@
 .seo-block {
+    @media screen and (max-width: 500px) {
+        margin: 40px 0;
+    }
+
     &__title {
         text-transform: uppercase;
         margin-bottom: 24px;
+
+        @media screen and (max-width: 500px) {
+            font-weight: 700;
+        }
     }
 }

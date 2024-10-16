@@ -2,6 +2,11 @@
     background: var(--light-gradient);
     padding: 80px 0 0 0;
 
+    @media screen and (max-width: 500px) {
+        padding-top: 36px;
+        background: var(--bg-light-gray);
+    }
+
     &__title {
         margin-bottom: 10px;
         color: transparent;
@@ -11,11 +16,32 @@
         background-size: 82%;
         line-height: 39px;
         text-align: center;
+
+        @media screen and (max-width: 500px) {
+            line-height: 32px;
+            background-size: 95%;
+            margin-bottom: 0;
+        }
     }
 
     &__subtitle {
         text-align: center;
         margin-bottom: 80px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 13px;
+        }
+
+        .mobile {
+            display: none;
+
+            @media screen and (max-width: 500px) {
+                display: block;
+            }
+        }
     }
 
     &__advantages {
@@ -23,12 +49,28 @@
         gap: 80px;
         flex-wrap: wrap;
         align-items: center;
+
+        @media screen and (max-width: 1030px) {
+            gap: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            gap: 0;
+        }
     }
 
     &__content {
         max-width: 1000px;
         margin: 80px auto 0;
         padding-bottom: 28px;
+
+        @media screen and (max-width: 500px) {
+            margin-top: 48px;
+        }
     }
 
     &__list {
@@ -37,12 +79,30 @@
         font-weight: 400;
         line-height: 32px;
         padding-left: 28px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
     }
 
     &__item {
         flex: calc(100% / 2 - 40px);
         display: flex;
         justify-content: flex-end;
+
+        @media screen and (max-width: 1030px) {
+            flex: calc(50% - 20px);
+        }
+
+        @media screen and (max-width: 768px) {
+            flex: calc(50% - 10px);
+        }
+
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
 
         &:nth-child(2n) {
             justify-content: flex-start;
@@ -51,11 +111,27 @@
         &:first-child {
             .number {
                 margin-right: -3px;
+
+                @media screen and (max-width: 500px) {
+                    margin-left: 20px;
+                    margin-bottom: -50px;
+                }
             }
         }
 
         .text {
             margin-top: 24px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width: 500px) {
+                margin-top: 17px;
+            }
         }
 
         .number {
@@ -65,6 +141,12 @@
             line-height: 148.8px;
             color: var(--light-blue);
             margin-right: -16px;
+
+            @media screen and (max-width: 500px) {
+                margin-right: 0;
+                margin-left: 0px;
+                margin-bottom: -38px;
+            }
         }
 
         .text-container {
@@ -90,6 +172,14 @@
             background: var(--main-gradient);
             background-clip: text;
             background-size: 82%;
+            padding-right: 42px;
+
+            @media screen and (max-width: 1000px) {
+                background-size: auto;
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 32px;
+            }
         }
     }
 }

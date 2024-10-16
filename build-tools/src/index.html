@@ -58,63 +58,61 @@
           </div>
         </div>
       </div>
-      <div class="wrap">
-        <div class="tours-by-type-recreation">
-          <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
-          <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
-          <div class="tours-by-type-recreation__block">
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation1.jpeg", 
-            "alt": "Комби-туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Комби-туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation2.jpeg", 
-            "alt": "Пешие туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Пешие туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation3.jpeg", 
-            "alt": "Конные туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Конные туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation4.jpeg", 
-            "alt": "Водные туры / сплавы", 
-            "count_tours": "2 тура", 
-            "subtitle": "Водные туры / сплавы", 
-            "link": "#"})
-          </div>
-          <a id="tours-more" class="button-border" href="#">Смотреть все</a>
-          <div class="tours-by-type-recreation__block-more">
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation1.jpeg", 
-            "alt": "Комби-туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Комби-туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation2.jpeg", 
-            "alt": "Пешие туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Пешие туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation3.jpeg", 
-            "alt": "Конные туры", 
-            "count_tours": "2 тура", 
-            "subtitle": "Конные туры", 
-            "link": "#"})
-            @@include('components/component/tours-by-type-recreation.html', {
-            "image": "tours-by-type-recreation4.jpeg", 
-            "alt": "Водные туры / сплавы", 
-            "count_tours": "2 тура", 
-            "subtitle": "Водные туры / сплавы", 
-            "link": "#"})
-          </div>
+      <div class="tours-by-type-recreation wrap">
+        <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
+        <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
+        <div class="tours-by-type-recreation__block">
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation1.jpeg", 
+          "alt": "Комби-туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Комби-туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation2.jpeg", 
+          "alt": "Пешие туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Пешие туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation3.jpeg", 
+          "alt": "Конные туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Конные туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation4.jpeg", 
+          "alt": "Водные туры / сплавы", 
+          "count_tours": "2 тура", 
+          "subtitle": "Водные туры / сплавы", 
+          "link": "#"})
+        </div>
+        <a id="tours-more" class="button-border" href="#">Смотреть все</a>
+        <div class="tours-by-type-recreation__block-more">
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation1.jpeg", 
+          "alt": "Комби-туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Комби-туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation2.jpeg", 
+          "alt": "Пешие туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Пешие туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation3.jpeg", 
+          "alt": "Конные туры", 
+          "count_tours": "2 тура", 
+          "subtitle": "Конные туры", 
+          "link": "#"})
+          @@include('components/component/tours-by-type-recreation.html', {
+          "image": "tours-by-type-recreation4.jpeg", 
+          "alt": "Водные туры / сплавы", 
+          "count_tours": "2 тура", 
+          "subtitle": "Водные туры / сплавы", 
+          "link": "#"})
         </div>
       </div>
       <div class="reviews">
@@ -288,7 +286,7 @@
             <div class="youtube-iframe" id="youtube-video">
               <iframe class="youtube__iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <h2 class="video-about-us__subtitle">Подпишитесь на нас!</h2>
+            <h2 class="video-about-us__subtitle">Подпишитесь на&nbsp;нас!</h2>
             <p class="video-about-us__text">Посмотрите сами на фото с наших туров и почитайте отзывы от наших путешественников</p>
             <div class="contact-messengers">
               <a class="vk icon-vk" href=""></a>
@@ -317,7 +315,8 @@
             )
           </div>
           <div class="our-advantages__content">
-            <h2 class="our-advantages__title">Что вы получите?</h2>
+            <h2 class="our-advantages__title">Что&nbsp;вы получите?</h2>
+            <h4 class="our-advantages__subtitle mobile">Выгоды клиента</h4>
             <ol class="our-advantages__list">
               @@include('components/component/our-advantage-list.html', {
               our_advantages: [
@@ -386,6 +385,7 @@
         <link rel="stylesheet" href="css/other/frequently-asked-questions.css">
         <div class="wrap">
           <h2 class="frequently-asked-questions__title">Частые вопросы</h2>
+          <p class="txt mobile">Если возникли трудности с выбором тура, вы можете связаться с наши менеджерами и они с удовольствием подберут для вас подходящий тур.</p>
           <div class="frequently-asked-questions__questions">
             <ul class="frequently-asked-questions__list">
               @@loop('components/component/frequently-asked-questions.html',
@@ -410,7 +410,7 @@
           <div class="frequently-asked-questions__info">
             <h2 class="frequently-asked-questions__title title">остались вопросы?</h2>
             <p class="description">Вы можете задать вопросы по телефону: <a href="tel:+7 903 947-96-38">+7 903 947-96-38</a>
-              или по электронной почте: <a href="mailto:info@tur-altai.com">info@tur-altai.com</a></p>
+              или&nbsp;по&nbsp;электронной&nbsp;почте: <a href="mailto:info@tur-altai.com">info@tur-altai.com</a></p>
           </div>
         </div>
       </div>
