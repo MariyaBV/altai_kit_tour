@@ -1,6 +1,205 @@
 .header {
     background-color: var(--bg-light-gray);
 
+    .banner-block {
+        background-image: url("css/img/bg-reviews.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: var(--white);
+        height: 720px;
+
+        .wrap {
+            padding: 0;
+        }
+
+        &::after {
+            content: "";
+            background-image: url("css/img/mountain-banner.png");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: contain;
+            height: 189px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .header-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--white);
+            border-bottom-left-radius: var(--border-radius-medium);
+            border-bottom-right-radius: var(--border-radius-medium);
+            padding: 7px 43px;
+            gap: 98px;
+        }
+
+        .menu-list {
+            flex: 70%;
+
+            &__item {
+                &_all_tours {
+                    max-width: 141px;
+                    width: 100%;
+
+                    a {
+                        span {
+                            vertical-align: bottom;
+                            font-size: 24px;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+
+            &__list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10.5px 0;
+            }
+
+        }
+
+        .block-tours {
+            opacity: 0;
+            z-index: -1;
+            margin-top: 2px;
+            background-color: var(--white);
+            border-radius: var(--border-radius-medium);
+            padding: 24px 24px 24px 0;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            &.visible {
+                opacity: 1;
+                z-index: 111;
+            }
+
+            &__logo {
+                max-width: 290px;
+                width: 100%;
+                padding: 23px 16px 0px 18px;
+
+                img {
+                    overflow: hidden;
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                    object-position: left;
+                }
+            }
+
+            &__list {
+                padding-left: 0;
+                max-width: 250px;
+
+                &_item {
+                    border-bottom: 0.5px solid var(--light-blue);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        font-family: var(--font-sans);
+                        color: var(--black);
+                    }
+
+                    a.link {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 13px 20px;
+                    }
+
+
+                    &:hover,
+                    &:active {
+                        background-color: var(--bg-light-gray);
+                    }
+
+                    span[class^="icon-"] {
+                        font-size: 21px;
+                    }
+
+                    &__inner {
+                        padding: 0;
+                        max-width: 620px;
+                        width: 100%;
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        display: flex;
+                        flex-wrap: wrap;
+                        top: 81px;
+
+                        li {
+                            flex: calc(50% - 20px);
+
+                            a {
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                padding: 8px 12px;
+                                display: block;
+                            }
+
+                            &:hover,
+                            &:active {
+                                background-color: var(--bg-light-gray);
+                            }
+                        }
+                    }
+                }
+            }
+
+            #close-catalog-menu {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+
+                span {
+                    font-size: 24px;
+                }
+            }
+
+            &__block {
+                max-width: 250px;
+                width: 100%;
+            }
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 16px 32px 16px;
+
+                h4 {
+                    color: var(--black);
+                }
+
+                .link {
+                    color: var(--blue);
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
     .header-menu-container {
         display: flex;
         justify-content: space-between;

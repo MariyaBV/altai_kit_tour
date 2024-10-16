@@ -57,41 +57,17 @@
             margin-bottom: 28px;
         }
 
-        .block-logo a {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            position: relative;
-
+        .block-logo .link {
             .description-title {
                 color: var(--white);
             }
 
             .logo-text {
-                font-size: var(--logo-font-size);
-                font-weight: var(--logo-font-weight);
-                line-height: var(--logo-line-height);
-                font-family: var(--font-unbounded);
-                text-transform: uppercase;
-                max-width: 85px;
-                background: var(--main-gradient);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
                 margin-left: -60px;
 
                 @media screen and (max-width: 1190px) {
                     margin-left: 0;
                 }
-            }
-
-            .description-title {
-                font-family: var(--font-unbounded);
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 17px;
-                text-transform: uppercase;
-                max-width: 156px;
             }
         }
 

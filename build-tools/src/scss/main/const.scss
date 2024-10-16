@@ -98,6 +98,20 @@ h4 {
     }
 }
 
+.button-gradient {
+    background: var(--button-gradient);
+    border-radius: var(--border-radius);
+    color: var(--white);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: block;
+    padding: 10.5px 0;
+}
+
 .button {
     padding: 16.5px 0;
     max-width: 236px;
@@ -152,4 +166,36 @@ h4 {
     font-size: var(--txt-s-font-size);
     font-weight: var(--txt-s-font-weight);
     line-height: var(--txt-s-line-height);
+}
+
+.block-logo {
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        position: relative;
+
+        .logo-text {
+            font-size: var(--logo-font-size);
+            font-weight: var(--logo-font-weight);
+            line-height: var(--logo-line-height);
+            font-family: var(--font-unbounded);
+            text-transform: uppercase;
+            width: 85px;
+            background: var(--main-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .description-title {
+            font-family: var(--font-unbounded);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 17px;
+            text-transform: uppercase;
+            max-width: 156px;
+        }
+    }
+    
 }
