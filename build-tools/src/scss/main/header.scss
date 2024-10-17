@@ -36,11 +36,12 @@
             border-bottom-left-radius: var(--border-radius-medium);
             border-bottom-right-radius: var(--border-radius-medium);
             padding: 7px 43px;
-            gap: 98px;
+            gap: 5px;
         }
 
         .menu-list {
             flex: 70%;
+            max-width: 761px;
 
             &__item {
                 &_all_tours {
@@ -129,20 +130,43 @@
                         background-color: var(--bg-light-gray);
                     }
 
+                    &.hidden {
+                        background-color: unset;
+                      }
+                      
+                    &.visible {
+                        background-color: var(--bg-light-gray);
+                    }
+
                     span[class^="icon-"] {
                         font-size: 21px;
                     }
 
                     &__inner {
                         padding: 0;
-                        max-width: 620px;
+                        max-width: 610px;
                         width: 100%;
                         position: absolute;
-                        left: 50%;
-                        transform: translate(-50%, 0);
+                        left: 290px;
                         display: flex;
                         flex-wrap: wrap;
                         top: 81px;
+
+                        @media screen and (max-width: 1215px) {
+                            max-width: 500px;
+                        }
+
+                        @media screen and (max-width: 1105px) {
+                            max-width: 397px;
+                        }
+
+                        &.hidden {
+                            display: none;
+                          }
+                          
+                        &.visible {
+                            display: flex;
+                        }
 
                         li {
                             flex: calc(50% - 20px);
