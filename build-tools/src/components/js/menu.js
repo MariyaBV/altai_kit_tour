@@ -3,12 +3,15 @@ $(document).ready(function ($) {
     function checkCatalogInUrl() {
         var url = window.location.href;
         var blockCatalog = $('#block-tours');
+        var header = $('#main-header');
 
         if (url.includes('#all_tours')) {
             blockCatalog.addClass('visible');
+            header.addClass('z_index');
             openFirstItem();
         } else {
             blockCatalog.removeClass('visible');
+            header.removeClass('z_index');
             resetToFirstItem();
         }
     }
@@ -17,15 +20,18 @@ $(document).ready(function ($) {
     function toggleCatalog(event) {
         event.preventDefault();
         var blockCatalog = $('#block-tours');
+        var header = $('#main-header');
         var url = window.location.href;
 
         if (blockCatalog.hasClass('visible')) {
             blockCatalog.removeClass('visible');
+            header.removeClass('z_index');
             resetToFirstItem();
             history.pushState(null, null, window.location.pathname + window.location.search);
         } else {
             setTimeout(function () {
                 blockCatalog.addClass('visible');
+                header.addClass('z_index');
                 openFirstItem();
             }, 200);
             history.pushState(null, null, '#all_tours');
@@ -35,6 +41,7 @@ $(document).ready(function ($) {
     // закрываем католог
     function closeCatalogMenu(event) {
         event.preventDefault();
+        $('#main-header').removeClass('z_index');
         $('#block-tours').removeClass('visible');
         resetToFirstItem(); // Скрываем все, кроме первого элемента
         history.pushState(null, null, window.location.pathname + window.location.search);

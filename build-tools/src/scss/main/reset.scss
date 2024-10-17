@@ -44,7 +44,7 @@ input[type=number]{
 
 input:invalid,
 input:invalid:focus {
-  border: 1px solid var(--light-red);
+  border: 1px solid var(--red);
 }
 
 a {
@@ -59,3 +59,53 @@ ul li {
 img, video, canvas {
   overflow: hidden;
 }
+
+/* Скрываем встроенную иконку календаря */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 11;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  opacity: 0;
+  z-index: 11;
+}
+
+/* Для IE и Edge */
+input[type="date"]::-ms-clear {
+  opacity: 0;
+  z-index: 11;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  height: 20px;
+  width: 24px;
+  z-index: 5;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border: 1px solid var(--light-blue);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--light-blue);
+  border: 1px solid var(--light-blue);
+}
+

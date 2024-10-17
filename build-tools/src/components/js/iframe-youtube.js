@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let youtubeDiv = document.getElementById('youtube-video');
-    let iframe = youtubeDiv.querySelector('iframe');
-    let iframeWidth = iframe.offsetWidth;
-    let iframeHeight = iframeWidth * 1.71;
-    iframe.style.height = iframeHeight + 'px';
-})
+$(document).ready(function() {
+    let $youtubeDiv = $('#youtube-video');
+    let $iframe = $youtubeDiv.find('iframe');
+  
+    if ($iframe.length) {
+      let iframeWidth = $iframe.width();
+      let iframeHeight = iframeWidth * 1.71;
+      $iframe.css('height', iframeHeight + 'px');
+    }
+  });
+  

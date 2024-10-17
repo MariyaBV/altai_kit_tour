@@ -1,0 +1,273 @@
+<div class="sidebar" id="sidebar">
+    <div class="sidebar__title">
+        <h4>Туры<span class="sidebar__title_count">303</span></h4>
+        <a id="clear_filters" href="" class="clear-filters">Очистить фильтры</a>
+    </div>
+    <form class="sidebar__form" method="get">
+        <div class="form__block">
+            <p class="txt">Дата тура</p>
+            <div class="form__block_date">
+                <div class="form__block_date_calendar">
+                    <input class="txt-s" required="" placeholder="Выберите дату" type="text" name="date" id="min_days"
+                        onfocus="(this.type='date')">
+                    <span class="icon-calendar"></span>
+                </div>
+                <select placeholder="дней" name="days" id="days">
+                    <option value="">дней</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </div>
+        <div class="form__block">
+            <p class="txt">Длительность, дней</p>
+            <div class="form__block_date">
+                <input placeholder="от" type="number" name="duration" id="min_days" value>
+                <input placeholder="до" type="number" name="duration" id="max_days" value>
+            </div>
+        </div>
+        <div class="form__block">
+            <p class="txt">Бюджет</p>
+            <div class="form__block_date">
+                <input placeholder="11 000" type="number" name="duration" id="min_rub" value>
+                <input placeholder="999 999" type="number" name="duration" id="max_rub" value>
+            </div>
+        </div>
+        <div id="type_tour" class="form__block">
+            <p class="txt">Вид тура</p>
+            <div>
+                <label for="type_tours_1">
+                    <input type="checkbox" name="type_tours_1" id="type_tours_1" value="type_tours_1">
+                    <span class="icon-checkbox-outline"></span>
+                    Водные туры / сплавы
+                </label>
+            </div>
+            <div>
+                <label for="type_tours_2">
+                    <input type="checkbox" name="type_tours_2" id="type_tours_2" value="type_tours_2">
+                    <span class="icon-checkbox-outline"></span>
+                    Экскурсионные
+                </label>
+            </div>
+            <div>
+                <label for="type_tours_3">
+                    <input type="checkbox" name="type_tours_3" id="type_tours_3" value="type_tours_3">
+                    <span class="icon-checkbox-outline"></span>
+                    Автомобильные туры
+                </label>
+            </div>
+            <div>
+                <label for="type_tours_4">
+                    <input type="checkbox" name="type_tours_4" id="type_tours_4" value="type_tours_4">
+                    <span class="icon-checkbox-outline"></span>
+                    Джип-туры
+                </label>
+            </div>
+            <div>
+                <label for="type_tours_5">
+                    <input type="checkbox" name="type_tours_5" id="type_tours_5" value="type_tours_5">
+                    <span class="icon-checkbox-outline"></span>
+                    Экстремальные туры
+                </label>
+            </div>
+            <a class="show-all" id="show_all_type_tour" href="">Показать все<span class="icon-down-little"></span></a>
+            <div id="block_more_type_tour" class="form__block_more">
+                <div>
+                    <label for="type_tours_6">
+                        <input type="checkbox" name="type_tours_6" id="type_tours_6" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Обзорные туры
+                    </label>
+                </div>
+                <div>
+                    <label for="type_tours_7">
+                        <input type="checkbox" name="type_tours_7" id="type_tours_7" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Треккинг
+                    </label>
+                </div>
+                <div>
+                    <label for="type_tours_8">
+                        <input type="checkbox" name="type_tours_8" id="type_tours_8" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Туры на квадроциклах
+                    </label>
+                </div>
+                <div>
+                    <label for="type_tours_9">
+                        <input type="checkbox" name="type_tours_9" id="type_tours_9" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Экспедиции
+                    </label>
+                </div>
+                <div>
+                    <label for="type_tours_10">
+                        <input type="checkbox" name="type_tours_10" id="type_tours_10" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Этнотуры
+                    </label>
+                </div>
+                <a class="hide-all" id="hidden_type_tour" href="">Свернуть<span class="icon-up-little"></span></a>
+            </div>
+
+        </div>
+        <div id="by_region" class="form__block">
+            <p class="txt">По региону</p>
+            <div>
+                <label for="by_region_1">
+                    <input type="checkbox" name="by_region_1" id="by_region_1" value>
+                    <span class="icon-checkbox-outline"></span>
+                    Алтай
+                </label>
+            </div>
+            <div>
+                <label for="by_region_2">
+                    <input type="checkbox" name="by_region_2" id="by_region_2" value>
+                    <span class="icon-checkbox-outline"></span>
+                    Омск
+                </label>
+            </div>
+            <div>
+                <label for="by_region_3">
+                    <input type="checkbox" name="by_region_3" id="by_region_3" value>
+                    <span class="icon-checkbox-outline"></span>
+                    Байкал
+                </label>
+            </div>
+            <div>
+                <label for="by_region_4">
+                    <input type="checkbox" name="by_region_4" id="by_region_4" value>
+                    <span class="icon-checkbox-outline"></span>
+                    Санкт-Петербург
+                </label>
+            </div>
+            <div>
+                <label for="by_region_5">
+                    <input type="checkbox" name="by_region_5" id="by_region_5" value>
+                    <span class="icon-checkbox-outline"></span>
+                    Барнаул
+                </label>
+            </div>
+            <a class="show-all" id="show_all_by_region" href="">Показать все<span class="icon-down-little"></span></a>
+            <div id="block_more_by_region" class="form__block_more">
+                <div>
+                    <label for="by_region_6">
+                        <input type="checkbox" name="by_region_6" id="by_region_6" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Москва
+                    </label>
+                </div>
+                <div>
+                    <label for="by_region_7">
+                        <input type="checkbox" name="by_region_7" id="by_region_7" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Калининград
+                    </label>
+                </div>
+                <div>
+                    <label for="by_region_8">
+                        <input type="checkbox" name="by_region_8" id="by_region_8" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Новосибирск
+                    </label>
+                </div>
+                <a class="hide-all" id="hidden_by_region" href="">Свернуть<span class="icon-up-little"></span></a>
+            </div>
+
+        </div>
+        <div class="form__block">
+            <p class="txt">Месяц</p>
+            <div class="form__block_three_column">
+                <div>
+                    <label for="month_1">
+                        <input type="checkbox" name="month_1" id="month_1" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Январь
+                    </label>
+                </div>
+                <div>
+                    <label for="month_2">
+                        <input type="checkbox" name="month_2" id="month_2" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Февраль
+                    </label>
+                </div>
+                <div>
+                    <label for="month_3">
+                        <input type="checkbox" name="month_3" id="month_3" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Март
+                    </label>
+                </div>
+                <div>
+                    <label for="month_4">
+                        <input type="checkbox" name="month_4" id="month_4" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Апрель
+                    </label>
+                </div>
+                <div>
+                    <label for="month_5">
+                        <input type="checkbox" name="month_5" id="month_5" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Май
+                    </label>
+                </div>
+                <div>
+                    <label for="month_6">
+                        <input type="checkbox" name="month_6" id="month_6" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Июнь
+                    </label>
+                </div>
+                <div>
+                    <label for="month_7">
+                        <input type="checkbox" name="month_7" id="month_7" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Июль
+                    </label>
+                </div>
+                <div>
+                    <label for="month_8">
+                        <input type="checkbox" name="month_8" id="month_8" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Август
+                    </label>
+                </div>
+                <div>
+                    <label for="month_9">
+                        <input type="checkbox" name="month_9" id="month_9" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Сентябрь
+                    </label>
+                </div>
+                <div>
+                    <label for="month_10">
+                        <input type="checkbox" name="month_10" id="month_10" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Октябрь
+                    </label>
+                </div>
+                <div>
+                    <label for="month_11">
+                        <input type="checkbox" name="month_11" id="month_11" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Ноябрь
+                    </label>
+                </div>
+                <div>
+                    <label for="month_12">
+                        <input type="checkbox" name="month_12" id="month_12" value>
+                        <span class="icon-checkbox-outline"></span>
+                        Декабрь
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__form_button-block">
+            <a id="clear_filters_2" href="" class="button-border">Очистить фильтр</a>
+            <input class="button-gradient"  type="submit" value="Применить">
+        </div>
+    </form>
+</div>

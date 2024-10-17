@@ -1,0 +1,160 @@
+.sidebar {
+    max-width: 315px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 25px;
+
+        &_count {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14px;
+            color: var(--pink);
+            vertical-align: super;
+        }
+    }
+
+    &__form {
+
+        &_button-block {
+            display: flex;
+            gap: 8px;
+            max-width: 324px;
+            justify-content: space-between;
+
+            .button-border {
+                display: flex;
+                align-items: center;
+            }
+
+            .button-gradient {
+                border: none;
+                max-width: 150px;
+                width: 100%;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+
+    .form {
+        &__block {
+            margin: 4px 0 15px 7px;
+
+            &_more {
+                display: none;
+            }
+
+            .show-all,
+            .hide-all {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 14px;
+                color: var(--blue);
+
+                span[class^="icon-"] {
+                    font-size: 16px;
+                    color: var(--blue);
+                    vertical-align: middle;
+                }
+            }
+
+            p.txt {
+                margin-bottom: 5px;
+            }
+
+            input {
+                border: 1px solid #DFDFDF;
+                padding: 5px;
+                border-radius: var(--border-radius-little);
+            }
+
+            .icon-checkbox-outline {
+                margin-left: -28px;
+                z-index: 0;
+                position: relative;
+                font-size: 24px;
+                vertical-align: sub;
+
+
+                &::before {
+                    content: "\e90b";
+                    opacity: 1;
+                }
+            }
+
+            input[type="checkbox"] + label {
+                font-family: 'PT Sans Caption', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            input[type="checkbox"]:checked + .icon-checkbox-outline::before {
+                content: "\e908";
+            }
+
+            &_date {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+
+                &_calendar {
+                    position: relative;
+
+                    input {
+                        padding: 8px;
+                    }
+                }
+
+                select {
+                    border: 1px solid #DFDFDF;
+                    padding: 8px;
+                    border-radius: var(--border-radius-little);
+                    width: 83px;
+                }
+
+
+                input[type="text"] {
+                    &::placeholder {
+                        color: var(--black);
+                    }
+                }
+
+                input[type="number"] {
+                    &::placeholder {
+                        color: var(--gray);
+                    }
+                }
+
+                input.txt-s {
+                    width: 217px;
+                }
+
+                span[class^="icon-"] {
+                    font-size: 24px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    right: 8px;
+                }
+            }
+
+            &_three_column {
+                grid-template-rows: repeat(4, 1fr);
+                grid-auto-flow: column;
+                margin: 2px auto 8px;
+                grid-gap: 2px;
+                gap: 2px 8px;
+                display: grid;
+            }
+        }
+    }
+
+}

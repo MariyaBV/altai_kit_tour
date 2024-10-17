@@ -7,7 +7,7 @@
     <div id="page">
         @@include('components/const/_header.html')
         <main id="main" class="not-index">
-            <div class="container wrap">
+            <div class="wrap">
                 <p id="breadcrumbs">
                     <span>
                         <span>
@@ -18,11 +18,11 @@
                         <span class="breadcrumb_last" aria-current="page">Туры</span>
                     </span>
                 </p>
+            </div>
+            <div class="container wrap">
                 <div class="row">
                     <div class="col-md-3 col-sm-0">
-                        <div class="sidebar">
-
-                        </div>
+                        @@include('components/component/sidebar.html')
                     </div>
                     <div class="col-md-9 col-sm-12">
                         <div class="popular-destinations inner-page" style="background: var(--white);">

@@ -311,7 +311,7 @@ nav.woocommerce-pagination {
 
 #breadcrumbs {
     margin: 0;
-    padding: 16px 0;
+    padding: 8px 23px;
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -319,6 +319,7 @@ nav.woocommerce-pagination {
     color: var(--gray);
 
     span a {
+        padding: 12px 0;
         color: var(--gray);
         text-decoration: none;
         position: relative;
@@ -335,7 +336,7 @@ nav.woocommerce-pagination {
         &::after {
             content: "\e901";
             color: var(--blue);
-            font-size: 16px;
+            font-size: 20px;
             vertical-align: text-bottom;
         }
     }
@@ -348,4 +349,17 @@ nav.woocommerce-pagination {
     .breadcrumb_last {
         color: var(--blue);
     }
+}
+
+a.clear-filters {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--light-blue);
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-underline-offset: 0.1em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
