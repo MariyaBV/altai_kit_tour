@@ -13,8 +13,12 @@
             <link rel="stylesheet" href="css/other/promotion.css">
             <div class="promotion-block">
                 <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                @@include('promotion.html', {"color": "var(--pink)", "text": "HIT!"})
-                @@include('promotion.html', {"color": "var(--violet)", "text": "%%"})
+                 @@if (promotionHIT) {
+                    @@include('promotion.html', {"color": "var(--pink)", "text": "HIT!"})
+                 }
+                 @@if (promotionProcent) {
+                    @@include('promotion.html', {"color": "var(--violet)", "text": "%%"})
+                 }
             </div>
             <p class="date"><span class="icon-calendar"></span>@@date</p>
         </div>

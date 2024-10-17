@@ -137,6 +137,30 @@ h4 {
     }
 }
 
+.button-sort {
+    color: var(--black);
+    border: 1px solid #DFDFDF;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 150px;
+    border-radius: var(--border-radius-little);
+
+    .icon-sort-1 {
+        font-size: 16px;
+    }
+
+    .icon-sort-2 {
+        font-size: 22px;
+    }
+}
+
 .button-border {
     color: var(--black);
     font-size: 14px;
@@ -187,7 +211,7 @@ h4 {
             background-clip: text;
             color: transparent;
         }
-        
+
         .description-title {
             font-family: var(--font-unbounded);
             font-size: 16px;
@@ -197,5 +221,131 @@ h4 {
             max-width: 156px;
         }
     }
-    
+
+}
+
+
+.banner-block {
+    background-image: url("css/img/bg-reviews.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: var(--white);
+    height: 720px;
+    display: block;
+
+    &::after {
+        content: "";
+        background-image: url("css/img/mountain-banner.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        height: 189px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.not-index {
+    margin-top: 85px;
+}
+
+.container {
+    &.wrap {
+        max-width: 1300px;
+    }
+
+    .row {
+        display: flex;
+        gap: 40px;
+
+        .col-md-3 {
+            flex: 28%;
+        }
+
+        .col-md-9 {
+            flex: 72%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-sm-0 {
+                flex: 0;
+            }
+
+            .col-sm-12 {
+                flex: 100%;
+            }
+        }
+
+    }
+}
+
+nav.woocommerce-pagination {
+    padding: 10px 0;
+    margin-bottom: 64px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+
+
+    a.page-numbers.current {
+        background: var(--pink);
+        color: var(--white);
+        border-radius: var(--border-radius-little);
+        padding: 4px 7px;
+        text-decoration: none;
+    }
+
+    a.page-numbers {
+        padding: 4px 7px;
+        text-decoration: none;
+        color: var(--black);
+    }
+}
+
+#breadcrumbs {
+    margin: 0;
+    padding: 16px 0;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: var(--gray);
+
+    span a {
+        color: var(--gray);
+        text-decoration: none;
+        position: relative;
+        font-family: icomoon !important;
+        speak: never;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        vertical-align: bottom;
+
+        &::after {
+            content: "\e901";
+            color: var(--blue);
+            font-size: 16px;
+            vertical-align: text-bottom;
+        }
+    }
+
+    .breadcrums-link-text {
+        font-family: "Inter", sans-serif;
+        vertical-align: super;
+    }
+
+    .breadcrumb_last {
+        color: var(--blue);
+    }
 }

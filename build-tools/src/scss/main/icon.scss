@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sort-1:before {
+  content: "\e93d";
+  color: #6f6f6f;
+}
 .icon-wind-rose:before {
   content: "\e905";
   color: #fff;
@@ -52,6 +56,10 @@
 .icon-up-little:before {
   content: "\e902";
   color: #4f2ce0;
+}
+.icon-sort-2:before {
+  content: "\e93e";
+  color: #6f6f6f;
 }
 .icon-autobus .path1:before {
   content: "\e91d";
