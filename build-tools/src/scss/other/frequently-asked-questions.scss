@@ -82,7 +82,7 @@
     }
 
     &__item {
-        border-bottom: 1px solid #DFDFDF;
+        border-bottom: 1px solid var(--light-gray);
         position: relative;
 
         &:first-child {

@@ -27,7 +27,11 @@
                     <div class="col-md-9 col-sm-12">
                         <div class="popular-destinations inner-page" style="background: var(--white);">
                             <link rel="stylesheet" href="css/other/popular-destinations.css">
-                            <a href="" class="button-sort"><span class="icon-sort-1"></span><span class="icon-sort-2"></span>Сортировать</a>
+                            <div>
+                                <link rel="stylesheet" href="css/other/custom-ordering.css">
+                                @@include('components/component/custom-select.html')
+                            </div>
+                            
                             <div class="popular-destinations__block">
                                 @@include('components/component/popular-destinations.html', { 
                                 "class": "little", 

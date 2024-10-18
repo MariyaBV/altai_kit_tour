@@ -181,7 +181,7 @@
                     <span class="icon-calendar"></span>
                 </div>
                 <select placeholder="дней" name="days" id="days">
-                    <option value="">дней</option>
+                    <option value="">&#177; дней</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -443,7 +443,49 @@
                     <div class="col-md-9 col-sm-12">
                         <div class="popular-destinations inner-page" style="background: var(--white);">
                             <link rel="stylesheet" href="css/other/popular-destinations.css">
-                            <a href="" class="button-sort"><span class="icon-sort-1"></span><span class="icon-sort-2"></span>Сортировать</a>
+                            <div>
+                                <link rel="stylesheet" href="css/other/custom-ordering.css">
+                                <form class="woocommerce-ordering custom-ordering" method="get">
+    <input type="hidden" name="paged" value="1">
+    <input type="hidden" name="orderby" value="default">
+    <div class="custom-ordering__select" data-attribute="orderby">
+        <div class="custom-ordering-select">
+            <div class="custom-ordering-trigger button-sort" data-attribute-label="Сортировать">
+                <span class="icon-sort-1"></span>
+                <span class="icon-sort-2"></span>Сортировать
+            </div>
+            <ul class="custom-ordering-options">
+                <li class="custom-ordering-option selected" data-value="default">
+                    <input type="radio" name="orderby" value="default" checked="checked">
+                    <span class="icon-sort-1"></span>
+                    <span class="icon-sort-2"></span>Сортировать
+                </li>
+                <li class="custom-ordering-option " data-value="price">
+                    <input type="radio" name="orderby" value="price_esc">
+                    <span class="icon-up-little"></span>
+                    По возрастанию цены
+                </li>
+                <li class="custom-ordering-option " data-value="price-desc">
+                    <input type="radio" name="orderby" value="price_desc">
+                    <span class="icon-down-little"></span>
+                    По убыванию цены
+                </li>
+                <li class="custom-ordering-option " data-value="long_asc">
+                    <input type="radio" name="orderby" value="long_asc">
+                    <span class="icon-car"></span>
+                    Длительные вначале
+                </li>
+                <li class="custom-ordering-option " data-value="long_desc">
+                    <input type="radio" name="orderby" value="long_desc">
+                    <span class="icon-horse"></span>
+                    Длительные в конце
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>
+                            </div>
+                            
                             <div class="popular-destinations__block">
                                 <div class="popular-destinations__item little">
     <div class="popular-destinations__image">

@@ -1,0 +1,88 @@
+.custom-ordering {
+    &__select {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .custom-ordering-select {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        min-width: 224px;
+
+        &.opened {
+            .custom-ordering-options {
+                display: block;
+            }
+        }
+
+        .custom-ordering-options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            padding: 0;
+            display: none;
+            z-index: 12;
+            padding: 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius-little);
+
+            .custom-ordering-option {
+                position: relative;
+                list-style-type: none;
+                padding: 12px 16px;
+                cursor: pointer;
+                position: relative;
+                font-size: var(--txt-s-font-size);
+                font-weight: var(--txt-s-font-weight);
+                line-height: var(--txt-s-line-height);
+                border-bottom: 0.5px solid var(--light-gray);
+                text-wrap: nowrap;
+
+                &:hover {
+                    background-color: var(--light-gray);
+                    cursor: pointer;
+                }
+
+                span[class^="icon-"] {
+                    font-size: 24px;
+                    vertical-align: middle;
+                    margin-right: 16px;
+
+                    &::before {
+                        color: var(--dark-grey);
+                    }
+                }
+
+                &.selected {
+                    background-color: var(--light-gray);
+                    color: var(--black);
+                }
+
+                input[type="radio"] {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .custom-ordering-trigger {
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius-little);
+            padding: 5px 6px 5px 8px;
+            cursor: pointer;
+            position: relative;
+            background-color: var(--white);
+            font-size: var(--txt-s-font-size);
+            font-weight: var(--txt-s-font-weight);
+            line-height: var(--txt-s-line-height);
+        }
+    }
+}

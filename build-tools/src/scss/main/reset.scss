@@ -109,3 +109,9 @@ textarea:focus {
   border: 1px solid var(--light-blue);
 }
 
+
+select {
+  appearance: none;
+  background: url(css/img/icon-down-little.svg) no-repeat right;
+  background-position-x: calc(100% - 8px);
+}

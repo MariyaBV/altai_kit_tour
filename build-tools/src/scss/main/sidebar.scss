@@ -70,7 +70,7 @@
             }
 
             input {
-                border: 1px solid #DFDFDF;
+                border: 1px solid var(--light-gray);
                 padding: 5px;
                 border-radius: var(--border-radius-little);
             }
@@ -114,8 +114,8 @@
                 }
 
                 select {
-                    border: 1px solid #DFDFDF;
-                    padding: 8px;
+                    border: 1px solid var(--light-gray);
+                    padding: 8px 8px 8px 10px;
                     border-radius: var(--border-radius-little);
                     width: 83px;
                 }
@@ -135,6 +135,7 @@
 
                 input.txt-s {
                     width: 217px;
+                    font-family: var(--font-sans);
                 }
 
                 span[class^="icon-"] {
