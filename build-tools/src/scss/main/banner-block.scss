@@ -1,0 +1,129 @@
+.banner-block {
+    background-image: url("css/img/bg-reviews.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: var(--white);
+    height: 720px;
+    display: block;
+
+    &.inner-page {
+        padding-top: 97px;
+        max-height: 561px;
+
+        &::after {
+            display: none;
+        }
+
+        .title {
+            font-family: var(--font-unbounded);
+            font-size: 80px;
+            font-weight: 800;
+            line-height: 99.2px;
+            text-align: center;
+
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 32px 0;
+        }
+
+        .link {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .type-tour {
+            margin-top: 32px;
+
+            span {
+                width: 80px;
+                height: 80px;
+                display: block;
+
+                &::before {
+                    color: var(--white);
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+
+
+    &.main-page {
+
+        .banner-block__block-title {
+
+            padding-top: 116px;
+            max-width: 860px;
+            margin: 0 auto;
+
+
+            .top-subtitle {
+                font-family: var(--font-unbounded);
+                font-size: 64px;
+                font-weight: 900;
+                line-height: 79.36px;
+                letter-spacing: 0.11em;
+                text-transform: uppercase;
+                filter: drop-shadow(0px 4.87px 29.22px rgba(36, 83, 125, 0.3));
+            }
+
+            .title {
+                font-family: var(--font-unbounded);
+                font-size: 183.87px;
+                font-weight: 800;
+                line-height: 138px;
+                background: linear-gradient(84.71deg, #FFFFFF 5.9%, #D6EEFF 64.51%, #FFFFFF 98.19%);
+                background-clip: text;
+                color: transparent;
+                filter: drop-shadow(0px 4.87px 29.22px rgba(36, 83, 125, 0.3));
+            }
+
+            .under-subtitle {
+                font-family: var(--font-unbounded);
+                font-size: 82.62px;
+                font-weight: 800;
+                line-height: 102.44px;
+                background: linear-gradient(84.71deg, #FFFFFF 5.9%, #D6EEFF 64.51%, #FFFFFF 98.19%);
+                background-clip: text;
+                color: transparent;
+                filter: drop-shadow(0px 4.87px 29.22px rgba(36, 83, 125, 0.3));
+            }
+
+            .description-block {
+                background: var(--main-gradient);
+                padding: 10px 139px 10px 40px;
+                max-width: 950px;
+                box-shadow: 0px 5.01px 30.06px 0px #24537D4D;
+                clip-path: polygon(0 0, 61% 0, 59% 100%, 0% 100%);
+            }
+
+            .description {
+                font-family: var(--font-unbounded);
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 29.76px;
+                letter-spacing: 0.04em;
+                color: var(--white);
+                display: inline-block;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        background-image: url("css/img/mountain-banner.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        height: 189px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+}

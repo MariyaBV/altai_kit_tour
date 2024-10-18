@@ -2,8 +2,6 @@
     max-width: var(--width-page);
     margin: 0 auto;
     padding: 0 20px;
-    z-index: 10;
-    position: relative;
 
     @media screen and (max-width: 500px) {
         padding: 0 16px;
@@ -222,32 +220,6 @@ h4 {
         }
     }
 
-}
-
-
-.banner-block {
-    background-image: url("css/img/bg-reviews.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: var(--white);
-    height: 720px;
-    display: block;
-
-    &::after {
-        content: "";
-        background-image: url("css/img/mountain-banner.png");
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-size: contain;
-        height: 189px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-        z-index: 1;
-    }
 }
 
 .not-index {

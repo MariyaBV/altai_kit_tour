@@ -1,0 +1,40 @@
+.tour-schedule {
+    background-image: url(../../css/img/bg-reviews.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+
+    &::after {
+        background-color: var(--light-violet-50);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__block {
+        max-width: 567px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: var(--white);
+        position: relative;
+        z-index: 1;
+        border-radius: var(--border-radius-medium);
+
+        .link {
+            margin: 16px auto 0;
+            max-width: 200px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: var(--blue);
+        text-transform: uppercase;
+        padding: 24px 0 37px;
+    }
+}

@@ -1,0 +1,66 @@
+.schedule {
+    border: 1px solid var(--light-blue);
+    padding: 0;
+
+    .vopros {
+        border-bottom: 1px solid var(--light-blue);
+        padding: 10px 24px;
+    }
+
+    .question {
+        position: relative;
+        border-bottom: 1px solid var(--light-blue);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+    }
+
+    .otvet {
+        padding: 0;
+
+        li {
+            padding: 10px 24px;
+            border-bottom: 1px solid var(--light-blue);
+            text-align: center;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: var(--bg-light-gray);
+                cursor: pointer;
+            }
+
+            span[class^="icon-"] {
+                vertical-align: bottom;
+                margin-right: 10px;
+
+                &::before {
+                    background: var(--main-gradient);
+                    background-clip: text;
+                    color: transparent;
+                    font-size: 24px;
+                }
+
+            }
+        }
+    }
+
+    .plus {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        top: 10px;
+        font-size: 24px;
+        color: var(--light-blue);
+
+        &.turn {
+            &::before {
+                content: "\e902";
+            }
+        }
+    }
+}

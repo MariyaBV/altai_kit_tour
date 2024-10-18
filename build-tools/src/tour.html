@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/const/_head.html', { "lang":"ru", "title":"Тур",
+"other_css":false } )
+
+<body>
+    <div id="page">
+        @@include('components/const/_header.html')
+        <main id="main" class="not-index">
+            <div class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
+                <div class="wrap">
+                    <p class="title">К Шавлинским озерам</p>
+                    <h3 class="subtitle">Конный туристический маршрут</h3>
+                    <a class="link button-gradient" href="">Забронировать</a>
+                    <div class="type-tour" style="position: relative;">
+                        <link rel="stylesheet" href="css/other/type-tour.css">
+                        @@include('components/component/type-tour.html', {"class": "icon-horse", "color": "var(--dark-blue-50)"})
+                        @@include('components/component/type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
+                    </div>
+                </div>
+            </div>
+            <div class="achievements" style="background-color: var(--bg-light-gray);">
+                <div class="wrap">
+                    <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
+                    <link rel="stylesheet" href="css/other/achievements.css">
+                    @@include('components/component/achievements.html', {"subtitle": "Сложность", "text": "Подходит для начинающих", "class": "background-gradient"})
+                    @@include('components/component/achievements.html', {"subtitle": "10 дней", "text": "Продолжительность", "class": ""})
+                    @@include('components/component/achievements.html', {"subtitle": "125 км", "text": "На лошадях", "class": ""})
+                    @@include('components/component/achievements.html', {"subtitle": "Еда", "text": "Трехразовое питание*", "class": ""})
+                </div>
+            </div>
+            <div class="photoes-tour inner-page">
+                <link rel="stylesheet" href="css/other/photoes-tour.css">
+                <div class="wrap">
+                  <h2 class="photoes-tour__title">Фотографии из поездок</h2>
+                  <div class="__slider">
+                    <div class="swiper">
+                      <div class="photoes-tour-swiper">
+                        <div class="swiper-wrapper">
+                          @@include('components/component/photoes-tour.html', {
+                            photoes_tour: [
+                                    'tours-by-type-recreation1.jpeg', 
+                                    'tours-by-type-recreation2.jpeg', 
+                                    'tours-by-type-recreation3.jpeg', 
+                                    'tours-by-type-recreation4.jpeg', 
+                                  ], 
+                            })
+                        </div>
+                        <div class="swiper-button-prev photoes-tour__swiper-button-prev icon-left"></div>
+                        <div class="swiper-button-next photoes-tour__swiper-button-next icon-right"></div>
+                        <div class="swiper-pagination photoes-tour__swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="tour-schedule">
+                <link rel="stylesheet" href="css/other/tour-schedule.css">
+                <div class="tour-schedule__block">
+                    <h2 class="tour-schedule__title">Расписание тура</h2>
+                    <ul class="schedule txt accordion open_one">
+                        <link rel="stylesheet" href="css/other/schedule.css">
+                        @@include('components/component/schedule.html', {
+                            "month_year":"Сентябрь 2024", 
+                            date_price: [
+                              '10.09.2024 - 20.09.2024 20 000 р.', 
+                              '23.09.2024 - 27.09.2024 25 000 р.', 
+                              '23.09.2024 - 27.09.2024 19 000 р.', 
+                            ], 
+                        })
+                        @@include('components/component/schedule.html', {
+                            "month_year":"Октябрь 2024", 
+                            date_price: [
+                              '10.10.2024 - 20.10.2024 20 000 р.', 
+                              '23.10.2024 - 27.10.2024 25 000 р.', 
+                              '23.10.2024 - 27.10.2024 19 000 р.', 
+                            ], 
+                        })
+                    </ul>
+                    <a class="link button" href="">Забронировать</a>
+                </div>
+            </div>
+        
+            <div class="wrap">
+                <link rel="stylesheet" href="css/other/popular-destinations.css">
+                @@include('components/component/popular-destinations.html', {
+                    "class": "full with_schedule", 
+                    "image": "tour1.png", 
+                    "type_tour": false, 
+                    "alt": "Гармония Алтая", 
+                    "date": "7 дней", 
+                    "title": "Сроки проведения", 
+                    "text": "", 
+                    "dates_of_event": true, 
+                    "discount": "", 
+                    "price": "51 200 ₽.", 
+                    "link": "#", 
+                    "button": "Забронировать", 
+                    "promotionHIT": true, 
+                    "promotionProcent": true})
+            </div>
+
+        </main>
+        @@include('components/const/_footer.html')
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

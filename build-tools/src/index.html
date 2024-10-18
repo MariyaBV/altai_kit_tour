@@ -7,15 +7,25 @@
   <div id="page">
     @@include('components/const/_header.html')
     <main id="main">
-      <div class="banner-block">
+      <div class="banner-block main-page">
+        <div class="banner-block__block-title">
+          <p class="top-subtitle">туры на</p>
+          <p class="title">АЛТАЙ</p>
+          <p class="under-subtitle">с комфортом</p>
+          <div class="description-block">
+            <p class="description">ближайший тур 22.10.2024</p>
+          </div>
+        </div>
       </div>
       <div class="achievements">
-        <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
-        <link rel="stylesheet" href="css/other/achievements.css">
-        @@include('components/component/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
-        @@include('components/component/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
-        @@include('components/component/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
-        @@include('components/component/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
+        <div class="wrap">
+          <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
+          <link rel="stylesheet" href="css/other/achievements.css">
+          @@include('components/component/achievements.html', {"subtitle": "16 лет", "text": "работы в туризме", "class": "background-gradient"})
+          @@include('components/component/achievements.html', {"subtitle": "20+", "text": "регионов по всему миру", "class": ""})
+          @@include('components/component/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
+          @@include('components/component/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
+        </div>
       </div>
       <div class="popular-destinations">
         <div class="wrap">
@@ -25,10 +35,12 @@
             @@include('components/component/popular-destinations.html', {
             "class": "full", 
             "image": "img1.jpeg", 
+            "type_tour": true, 
             "alt": "Гармония Алтая", 
             "date": "10 дней", 
             "title": "Гармония Алтая", 
             "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "dates_of_event": false, 
             "discount": "100 000 ₽.", 
             "price": "98 000 ₽.", 
             "link": "#", 
@@ -39,10 +51,12 @@
             @@include('components/component/popular-destinations.html', {
             "class": "", 
             "image": "img2.png", 
+            "type_tour": true, 
             "alt": "Гармония Алтая", 
             "date": "10 дней", 
             "title": "Гармония Алтая", 
             "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "dates_of_event": false, 
             "discount": "100 000 ₽.", 
             "price": "98 000 ₽.", 
             "link": "#", 
@@ -53,10 +67,12 @@
             @@include('components/component/popular-destinations.html', {
             "class": "", 
             "image": "img2.png", 
+            "type_tour": true, 
             "alt": "Гармония Алтая", 
             "date": "10 дней", 
             "title": "Гармония Алтая", 
             "text": "Комфорт-тур. Ваше путешествие будет не только интересным и насыщенным, но и комфортным.", 
+            "dates_of_event": false, 
             "discount": "100 000 ₽.", 
             "price": "98 000 ₽.", 
             "link": "#", 
@@ -395,7 +411,7 @@
           <h2 class="frequently-asked-questions__title">Частые вопросы</h2>
           <p class="txt mobile">Если возникли трудности с выбором тура, вы можете связаться с наши менеджерами и они с удовольствием подберут для вас подходящий тур.</p>
           <div class="frequently-asked-questions__questions">
-            <ul class="frequently-asked-questions__list">
+            <ul class="frequently-asked-questions__list accordion">
               @@loop('components/component/frequently-asked-questions.html',
               [ 
                 {"num": 1, "question": "Какой‑то вопрос на который нужно ответить Какой‑то вопрос на который нужно ответить Какой‑то вопрос", 

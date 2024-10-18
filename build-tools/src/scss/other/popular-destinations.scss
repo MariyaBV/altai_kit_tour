@@ -262,6 +262,33 @@
                 }
             }
         }
+
+        &.with_schedule {
+            .popular-destinations__about-block {
+                max-width: 400px;
+            }
+
+            .popular-destinations__image {
+                max-height: 544px;
+            }
+
+            .popular-destinations__subtitle {
+                font-size: var(--txt-font-size);
+                font-weight: var(--txt-font-weight);
+                line-height: var(--txt-line-height);
+                text-align: center;
+            }
+
+            .popular-destinations__price {
+                .price-block {
+                    margin: 40px 0 16px;
+                }
+            }
+
+            .popular-destinations__button {
+                max-width: unset;
+            }
+        }
     }
 
     &__image {

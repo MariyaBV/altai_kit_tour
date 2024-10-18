@@ -1,12 +1,14 @@
 <div class="popular-destinations__item @@class">
     <div class="popular-destinations__image">
         <img src="css/img/popular-destinations/@@image" alt="@@alt" srcset="">
-        <div class="type-tour">
-            <link rel="stylesheet" href="css/other/type-tour.css">
-            <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
-            @@include('type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
-            @@include('type-tour.html', {"class": "icon-ship", "color": "var(--dark-blue-50)"})
-        </div>
+        @@if (type_tour) {
+            <div class="type-tour">
+                <link rel="stylesheet" href="css/other/type-tour.css">
+                <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
+                @@include('type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
+                @@include('type-tour.html', {"class": "icon-ship", "color": "var(--dark-blue-50)"})
+            </div>
+        }
     </div>
     <div class="popular-destinations__about-block">
         <div class="about">
@@ -24,7 +26,30 @@
         </div>
         <div class="popular-destinations__content">
             <h4 class="popular-destinations__subtitle">@@title</h4>
-            <p class="txt">@@text</p>
+            @@if (text) {
+                <p class="txt">@@text</p>
+            }
+            @@if (dates_of_event === true) {
+                <ul class="schedule txt accordion open_one">
+                    <link rel="stylesheet" href="css/other/schedule.css">
+                    @@include('schedule.html', {
+                        "month_year":"Сентябрь 2024", 
+                        date_price: [
+                        '10.09.2024 - 20.09.2024', 
+                        '23.09.2024 - 27.09.2024', 
+                        '23.09.2024 - 27.09.2024', 
+                        ], 
+                    })
+                    @@include('schedule.html', {
+                        "month_year":"Октябрь 2024", 
+                        date_price: [
+                        '10.10.2024 - 20.10.2024', 
+                        '23.10.2024 - 27.10.2024', 
+                        '23.10.2024 - 27.10.2024', 
+                        ], 
+                    })
+                </ul>
+            }
             <div class="popular-destinations__price">
                 <div class="price-block">
                     <p class="discount">@@discount</p>
