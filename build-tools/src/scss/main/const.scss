@@ -243,6 +243,14 @@ h4 {
             flex: 72%;
         }
 
+        .col-md-5 {
+            flex: 44%;
+        }
+
+        .col-md-7 {
+            flex: 56%;
+        }
+
         @media screen and (max-width: 768px) {
             .col-sm-0 {
                 flex: 0;

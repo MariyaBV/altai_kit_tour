@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/const/_head.html', { "lang":"ru", "title":"Контакты",
+"other_css":false } )
+
+<body>
+    <div id="page">
+        @@include('components/const/_header.html')
+        <main id="main" class="not-index">
+            <div class="wrap">
+                <link rel="stylesheet" href="css/other/contacts.css">
+                <p id="breadcrumbs">
+                    <span>
+                        <span>
+                            <a href="/index.html">
+                                <span class="breadcrums-link-text">Главная</span>
+                            </a>
+                        </span>
+                        <span class="breadcrumb_last" aria-current="page">Контакты</span>
+                    </span>
+                </p>
+                <h4 class="contacts__title">Контакты</h4>
+                <div class="contacts__block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-0">
+                                <div class="contacts__left-block">
+                                    <img src="css/img/logo-altai.png" alt="Логотип">
+                                    <h4 class="subtitle">Компания «Кит-Тур»</h4>
+                                    <p class="operating-mode">Работаем: Пн-Пт 9:00–19:00</p>
+                                    <div class="contacts__block-contacts">
+                                        <div class="contact-email icon-mail-open">
+                                            <p>info@tur-altai.com</p>
+                                            <a href="mailto:info@tur-altai.com"></a>
+                                        </div>
+                                        <div class="contact-phone icon-phone">
+                                            <p>+7 903 947-96-38</p>
+                                            <a href="tel:+7 903 947-96-38"></a>
+                                        </div>
+                                        <div class="contact-address icon-baseline-place">
+                                            <p>656049, Алтайский край г.&nbsp;Барнаул, ул.&nbsp;Интернациональная,
+                                                д.&nbsp;116, офис&nbsp;3</p>
+                                            <a href="https://yandex.by/maps/-/CDXZUYi5"></a>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle-block-messengers">Подпишитесь на нас в соц.сетях:</p>
+                                    <div class="contact-messengers">
+                                        <a class="vk icon-vk" href=""></a>
+                                        <a class="youtube icon-youtube" href=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-sm-12">
+                                <div style="position:relative;overflow:hidden;"><a
+                                        href="https://yandex.by/maps/197/barnaul/?utm_medium=mapframe&utm_source=maps"
+                                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Барнаул</a><a
+                                        href="https://yandex.by/maps/197/barnaul/house/internatsionalnaya_ulitsa_116/bEoYcQBoQUMOQFtpfX9ydXtkYA==/?indoorLevel=1&ll=83.779234%2C53.334842&utm_medium=mapframe&utm_source=maps&z=17.3"
+                                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Интернациональная
+                                        улица, 116 — Яндекс Карты</a><iframe
+                                        src="https://yandex.by/map-widget/v1/?indoorLevel=1&ll=83.779234%2C53.334842&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NTk1NDE1NhJt0KDQvtGB0YHQuNGPLCDQkNC70YLQsNC50YHQutC40Lkg0LrRgNCw0LksINCR0LDRgNC90LDRg9C7LCDQmNC90YLQtdGA0L3QsNGG0LjQvtC90LDQu9GM0L3QsNGPINGD0LvQuNGG0LAsIDExNiIKDceOp0IVzlZVQg%2C%2C&z=17.3"
+                                        width="652" height="413" frameborder="1" allowfullscreen="true"
+                                        style="position:relative;"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('components/const/_footer.html')
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
