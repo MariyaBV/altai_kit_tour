@@ -217,6 +217,15 @@
 .icon-baseline-place:before {
   content: "\e90f";
 }
+.icon-attention .path1:before {
+  content: "\e93f";
+  color: rgb(235, 72, 169);
+}
+.icon-attention .path2:before {
+  content: "\e940";
+  margin-left: -1.025390625em;
+  color: rgb(255, 255, 255);
+}
 .icon-check_mark:before {
   content: "\e915";
   color: #eb48a9;

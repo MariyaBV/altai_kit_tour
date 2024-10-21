@@ -6,14 +6,19 @@
         <p class="subtitle">@@question</p>
     </div>
     <div class="otvet block-more-details">
-        <div>
+        <div class="block-more-details__description">
             <p class="txt">@@answer</p>
-            <ul>
+            <ul class="short_descriptions">
+                <!-- нужно передавать нужные иконки вместе с текстом short_descriptions -->
+                 <!-- short_descriptions нужно проверку не более 3 шт  -->
                 @@for (var i = 0; i < short_descriptions.length; i++) {
-                    <li><span class="icon-autobus"></span>`+short_descriptions[i]+`</li>
+                    <li class="txt-s"><span class="icon-bus"></span>`+short_descriptions[i]+`</li>
                 }
             </ul>
         </div>
-        <img src="css/img/tours/@@img"/>
+        <div class="block-more-details__img">
+            <img src="css/img/tour-program/@@img"/>
+        </div>
+       
     </div>
 </li>

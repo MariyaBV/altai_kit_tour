@@ -85,15 +85,15 @@
         border-bottom: 1px solid var(--light-gray);
         position: relative;
 
-        &:first-child {
-            .circle.turn {
-                top: 36px;
+        // &:first-child {
+        //     .circle.turn {
+        //         top: 36px;
 
-                @media screen and (max-width: 500px) {
-                    top: 24px;
-                }
-            }
-        }
+        //         @media screen and (max-width: 500px) {
+        //             top: 24px;
+        //         }
+        //     }
+        // }
 
         // .circle {
         //     position: relative;

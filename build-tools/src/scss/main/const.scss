@@ -354,10 +354,12 @@ a.clear-filters {
     border-radius: 50%;
     display: block;
     position: absolute;
-    top: 50%;
+    pointer-events: none;
+    top: 24px;
+    //top: 50%;
     right: 4px;
-    transform: translate(0, -50%);
-    z-index: -1;
+    //transform: translate(0, -50%);
+    //z-index: -1;
 
     @media screen and (max-width: 500px) {
         width: 24px;

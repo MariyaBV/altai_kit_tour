@@ -1,38 +1,134 @@
 .tour-program {
+    padding: 40px 0;
+
+    .attention {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27px;
+        padding: 38.5px 16.3px;
+
+        span[class^="icon-"] {
+            font-size: 40px;
+            margin-right: 14px;
+            vertical-align: middle;
+        }
+    }
+
+    &__list {
+        padding: 0;
+    }
+
+    &__title {
+        color: var(--blue);
+        margin: 24px 0 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .circle {
+        top: 16px;
+        transform: none;
+        right: 24px;
+
+        &.turn {
+            top: 16px;
+        }
+    }
+
     .otvet {
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;
-        margin: 0 0 24px 26px;
-        padding-right: 52px;
+        margin: 0 0 0 20px;
     }
-    
-    .question-block {
-        padding: 33px 52px 33px 0;
+
+    .block-more-details {
         display: flex;
-        gap: 8px;
-    
+        align-items: flex-start;
+        gap: 24px;
+
+        &__description {
+            margin: 27px 0;
+            flex: 70%;
+        }
+
+        &__img {
+            flex: 30%;
+            margin-top: 6px;
+
+            img {
+                border-top-right-radius: var(--border-radius-little);
+                max-width: 355px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        .short_descriptions {
+            display: flex;
+            padding: 0;
+            margin-top: 26px;
+            gap: 38px;
+            align-items: flex-start;
+
+            li {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: var(--dark-grey);
+                flex: 1;
+
+                span[class^="icon-"] {
+                    font-size: 40px;
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+
+    .question-block {
+        padding: 22.5px 52px;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        background-color: var(--bg-light-gray);
+        border-radius: var(--border-radius);
+
         @media screen and (max-width: 500px) {
             padding: 24px 60px 24px 0;
         }
-    
+
         &:hover {
             cursor: pointer;
         }
-    
+
+        h4,
+        h2 {
+            color: var(--light-blue);
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 27px;
+            color: var(--dark-grey);
+        }
+
         .number {
             font-weight: normal;
-    
+
             @media screen and (max-width: 500px) {
                 display: none;
             }
         }
-    
+
         .vopros {
             font-size: 16px;
             font-weight: 700;
             line-height: 22px;
-    
+
             @media screen and (max-width: 500px) {
                 font-size: 14px;
                 line-height: 16px;
