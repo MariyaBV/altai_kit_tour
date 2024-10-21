@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: {
             el: '.reviews__swiper-pagination',
             type: 'bullets',
+            clickable: true, 
         },
     });
 });

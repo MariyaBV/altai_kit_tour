@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: {
             el: '.our-team__swiper-pagination',
             type: 'bullets',
+            clickable: true, 
         },
     });
 });

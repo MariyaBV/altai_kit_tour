@@ -161,7 +161,37 @@
                 </div>
             </div>
         
-
+            <div class="video-review">
+                <link rel="stylesheet" href="css/other/video-review.css">
+                  <h2 class="video-review__title">Видеоотзывы</h2>
+                  <div class="__slider">
+                    <div class="swiper">
+                      <div class="video-review-swiper">
+                        <div class="swiper-wrapper">
+                            @@loop('components/component/video-review.html',
+                            [ 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                                {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                                "description": "Название тура и описание видео", }, 
+                            ] 
+                            )
+                        </div>
+                        <div class="swiper-pagination video-review__swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
 
         </main>
         @@include('components/const/_footer.html')

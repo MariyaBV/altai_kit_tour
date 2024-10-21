@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: {
             el: '.photoes-tour__swiper-pagination',
             type: 'bullets',
+            clickable: true, 
         },
     });
 });
