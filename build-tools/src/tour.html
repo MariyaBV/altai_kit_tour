@@ -29,10 +29,49 @@
                     @@include('components/component/achievements.html', {"subtitle": "Еда", "text": "Трехразовое питание*", "class": ""})
                 </div>
             </div>
+            <div class="tour-description wrap">
+                <link rel="stylesheet" href="css/other/tour-description.css">
+                <h4><span class="icon-horse"></span>Конный туристический маршрут</h4>
+                <div class="txt">
+                    <p>
+                        Начинается в урочище Саргольдик (в 8 км от посёлка Белый Бом, Онгудайского района, Республике Алтай). Маршрут состоит из конной активной части и днёвки на берегу Шавлинского озера. Маршрут рассчитан как для туристов имеющих опыт езды на лошадях, так и для начинающих туристов конников.
+                    </p>
+                    <p>
+                        Трасса маршрута проходит в высокогорной части Центрального Алтая по северным склонам Северо-Чуйского хребта. Средняя высота района путешествия 2500 метров над уровнем моря.
+                    </p>
+                    <p>
+                        Ландшафты района имеют ярко выраженный альпийский облик — пикообразные, покрытые вечными снегами и ледниками вершины, крутые, обрывистые склоны, глубокие ущелья с бурными реками.
+                    </p>
+                    <ul>
+                        <li>Продолжительность: 10 дней</li>
+                        <li>Протяженность маршрута на авто: 900 км</li>
+                        <li>На лошадях: 125 км</li>
+                        <li>Группу сопровождают: 1-2 инструктора, 1-2 конюха</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrap"style="margin-bottom: 40px;">
+                <link rel="stylesheet" href="css/other/popular-destinations.css">
+                @@include('components/component/popular-destinations.html', {
+                    "class": "full with_schedule", 
+                    "image": "tour1.png", 
+                    "type_tour": false, 
+                    "alt": "Гармония Алтая", 
+                    "date": "7 дней", 
+                    "title": "Сроки проведения", 
+                    "text": "", 
+                    "dates_of_event": true, 
+                    "discount": "", 
+                    "price": "51 200 ₽.", 
+                    "link": "#", 
+                    "button": "Забронировать", 
+                    "promotionHIT": true, 
+                    "promotionProcent": true})
+            </div>
             <div class="photoes-tour inner-page">
                 <link rel="stylesheet" href="css/other/photoes-tour.css">
                 <div class="wrap">
-                  <h2 class="photoes-tour__title">Фотографии из поездок</h2>
+                  <h2 class="photoes-tour__title">Фотографии из тура</h2>
                   <div class="__slider">
                     <div class="swiper">
                       <div class="photoes-tour-swiper">
@@ -52,6 +91,27 @@
                       </div>
                     </div>
                   </div>
+                </div>
+            </div>
+            <div class="tour-program">
+                <link rel="stylesheet" href="css/other/tour-program.css">
+                <div class="wrap">
+                    <h2 class="tour-program__title">Программа тура</h2>
+                    <ul class="tour-program__list accordion">
+                        @@loop('components/component/tour-program.html',
+                        [ 
+                          {"num": 1, "question": "День приезда: Встреча в г.Горно-Алтайск, аэропорт (зал прилёта)", 
+                            "answer": "(Возможно встреча в г. Барнауле (от 1000 руб.) или г. Новосибирске (от 1500 руб.). Размещение на Усадьбе КиТ в домиках, подготовка к туру, отдых, вечер знакомств (возможны дополнительные экскурсии, баня)).", 
+                            "img": "tour-program1.png", 
+                            short_descriptions: [
+                                "Встреча в г.Горно-Алтайск, аэропорт", 
+                                "Обед и ужин входят в стоимость тура", 
+                                "Размещение на Усадьбе «КиТ» в домиках.", 
+                            ]
+                            }, 
+                        ] 
+                      )
+                    </ul>
                 </div>
             </div>
             <div class="tour-schedule">
@@ -81,24 +141,7 @@
                 </div>
             </div>
         
-            <div class="wrap">
-                <link rel="stylesheet" href="css/other/popular-destinations.css">
-                @@include('components/component/popular-destinations.html', {
-                    "class": "full with_schedule", 
-                    "image": "tour1.png", 
-                    "type_tour": false, 
-                    "alt": "Гармония Алтая", 
-                    "date": "7 дней", 
-                    "title": "Сроки проведения", 
-                    "text": "", 
-                    "dates_of_event": true, 
-                    "discount": "", 
-                    "price": "51 200 ₽.", 
-                    "link": "#", 
-                    "button": "Забронировать", 
-                    "promotionHIT": true, 
-                    "promotionProcent": true})
-            </div>
+
 
         </main>
         @@include('components/const/_footer.html')

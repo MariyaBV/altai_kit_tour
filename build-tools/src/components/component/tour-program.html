@@ -1,0 +1,19 @@
+<li class="question">
+    <span class="circle plus"><span class="cross"></span></span>
+    <div class="question-block">
+        <h2 class="number">@@num</h2>
+        <h4>день</h4>
+        <p class="subtitle">@@question</p>
+    </div>
+    <div class="otvet block-more-details">
+        <div>
+            <p class="txt">@@answer</p>
+            <ul>
+                @@for (var i = 0; i < short_descriptions.length; i++) {
+                    <li><span class="icon-autobus"></span>`+short_descriptions[i]+`</li>
+                }
+            </ul>
+        </div>
+        <img src="css/img/tours/@@img"/>
+    </div>
+</li>
