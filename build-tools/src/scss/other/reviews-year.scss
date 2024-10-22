@@ -1,0 +1,90 @@
+.reviews-year {
+    .__slider>.swiper {
+        max-width: 100%;
+    }
+
+    .swiper {
+        padding: 0;
+    }
+
+    &__dropdown {
+        width: 100%;
+        padding: 16px 32px;
+        border-radius: var(--border-radius);
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--light-blue);
+        background-color: var(--bg-light-gray);
+    }
+
+    &__dropdown-wrapper {
+        position: relative;
+
+        span[class^="icon-"] {
+            color: var(--light-blue);
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 24px;
+            z-index: -1;
+        }
+
+        select {
+            background: unset;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;
+
+            option {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 27px;
+            }
+        }
+    }
+
+    &__controls-wrapper {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-unbounded);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+        color: var(--light-blue);
+        gap: 24px;
+        padding-left: 24px;
+        border-bottom: 1px solid var(--light-blue);
+        margin-bottom: 16px;
+    }
+
+    &__controls {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        li.year {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                color: var(--blue);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__slide {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+
+        .popular-destinations__item.little {
+            flex: calc(100% / 4 - 40px);
+            margin: 10px;
+        }
+
+
+    }
+}
