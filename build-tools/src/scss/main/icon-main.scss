@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'altai_main';
+    src:  url('css/fonts/altai_main.eot?fl2npe');
+    src:  url('css/fonts/altai_main.eot?fl2npe#iefix') format('embedded-opentype'),
+      url('css/fonts/altai_main.ttf?fl2npe') format('truetype'),
+      url('css/fonts/altai_main.woff?fl2npe') format('woff'),
+      url('css/fonts/altai_main.svg?fl2npe#altai_main') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-main-"], [class*=" icon-main-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'altai_main' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-main-left:before {
+    content: "\e900";
+  }
+  .icon-main-right:before {
+    content: "\e901";
+  }
+  .icon-main-up-little:before {
+    content: "\e902";
+  }
+  .icon-main-calendar:before {
+    content: "\e903";
+  }
+  .icon-main-right-little:before {
+    content: "\e904";
+  }
+  .icon-main-heart:before {
+    content: "\e906";
+  }
+  .icon-main-down-little:before {
+    content: "\e907";
+  }
+  .icon-main-checkbox-outline-check:before {
+    content: "\e908";
+  }
+  .icon-main-plus_minus:before {
+    content: "\e909";
+  }
+  .icon-main-phone-2:before {
+    content: "\e90a";
+  }
+  .icon-main-checkbox-outline:before {
+    content: "\e90b";
+  }
+  .icon-main-watch:before {
+    content: "\e90c";
+  }
+  .icon-main-phone:before {
+    content: "\e90d";
+  }
+  .icon-main-mail-open:before {
+    content: "\e90e";
+  }
+  .icon-main-baseline-place:before {
+    content: "\e90f";
+  }
+  .icon-main-whatsapp:before {
+    content: "\e910";
+  }
+  .icon-main-vk:before {
+    content: "\e911";
+  }
+  .icon-main-youtube:before {
+    content: "\e912";
+  }
+  .icon-main-search:before {
+    content: "\e913";
+  }
+  .icon-main-up-2:before {
+    content: "\e914";
+  }
+  .icon-main-check_mark:before {
+    content: "\e915";
+  }
+  .icon-main-down-2:before {
+    content: "\e924";
+  }
+  .icon-main-close:before {
+    content: "\e934";
+  }
+  .icon-main-sort-1:before {
+    content: "\e93d";
+  }
+  .icon-main-sort-2:before {
+    content: "\e93e";
+  }
+  

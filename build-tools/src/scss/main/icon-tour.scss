@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'tour';
+  src:  url('css/fonts/tour.eot?7g78a3');
+  src:  url('css/fonts/tour.eot?7g78a3#iefix') format('embedded-opentype'),
+    url('css/fonts/tour.ttf?7g78a3') format('truetype'),
+    url('css/fonts/tour.woff?7g78a3') format('woff'),
+    url('css/fonts/tour.svg?7g78a3#tour') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-tour-"], [class*=" icon-tour-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tour' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tour-bus:before {
+  content: "\e900";
+}
+.icon-tour-autobus:before {
+  content: "\e901";
+}
+.icon-tour-wind-rose:before {
+  content: "\e905";
+}
+.icon-tour-horse:before {
+  content: "\e916";
+}
+.icon-tour-truck:before {
+  content: "\e917";
+}
+.icon-tour-winter:before {
+  content: "\e918";
+}
+.icon-tour-spring:before {
+  content: "\e919";
+}
+.icon-tour-autumn:before {
+  content: "\e91a";
+}
+.icon-tour-summer:before {
+  content: "\e91b";
+}
+.icon-tour-flag:before {
+  content: "\e91c";
+}
+.icon-tour-combi:before {
+  content: "\e927";
+}
+.icon-tour-ethnotour:before {
+  content: "\e928";
+}
+.icon-tour-motorbike:before {
+  content: "\e929";
+}
+.icon-tour-car:before {
+  content: "\e92a";
+}
+.icon-tour-ascent:before {
+  content: "\e92b";
+}
+.icon-tour-theater:before {
+  content: "\e92c";
+}
+.icon-tour-gastro_tour:before {
+  content: "\e92d";
+}
+.icon-tour-camera:before {
+  content: "\e92e";
+}
+.icon-tour-mountain:before {
+  content: "\e92f";
+}
+.icon-tour-lightning:before {
+  content: "\e930";
+}
+.icon-tour-hiking:before {
+  content: "\e931";
+}
+.icon-tour-ship:before {
+  content: "\e932";
+}
+.icon-tour-baby:before {
+  content: "\e933";
+}
+.icon-tour-horse_2:before {
+  content: "\e935";
+}
+.icon-tour-house:before {
+  content: "\e936";
+}
+.icon-tour-grill:before {
+  content: "\e937";
+}
+.icon-tour-food:before {
+  content: "\e938";
+}
+.icon-tour-tent:before {
+  content: "\e939";
+}
+.icon-tour-tent_2:before {
+  content: "\e93a";
+}
+.icon-tour-many_people:before {
+  content: "\e93c";
+}

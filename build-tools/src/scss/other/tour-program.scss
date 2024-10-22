@@ -6,11 +6,23 @@
         font-weight: 700;
         line-height: 27px;
         padding: 38.5px 16.3px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
 
-        span[class^="icon-"] {
-            font-size: 40px;
-            margin-right: 14px;
-            vertical-align: middle;
+        .attention-mark {
+            background-color: var(--pink);
+            border-radius: 50%;
+            color: var(--white);
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 27px;
+
         }
     }
 

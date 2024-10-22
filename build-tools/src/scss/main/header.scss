@@ -130,6 +130,7 @@
 
                     span[class^="icon-"] {
                         font-size: 21px;
+                        color: var(--light-blue);
                     }
 
                     &__inner {
@@ -236,11 +237,11 @@
             gap: 17px;
         }
 
-        .icon-mail-open,
-        .icon-phone,
-        .icon-vk,
-        .icon-youtube,
-        .icon-whatsapp {
+        .icon-main-mail-open,
+        .icon-main-phone,
+        .icon-main-vk,
+        .icon-main-youtube,
+        .icon-main-whatsapp {
             position: relative;
             position: relative;
             display: flex;

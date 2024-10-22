@@ -75,7 +75,7 @@
                 border-radius: var(--border-radius-little);
             }
 
-            .icon-checkbox-outline {
+            .icon-main-checkbox-outline {
                 margin-left: -28px;
                 z-index: 0;
                 position: relative;
@@ -96,7 +96,7 @@
                 line-height: 16px;
             }
 
-            input[type="checkbox"]:checked + .icon-checkbox-outline::before {
+            input[type="checkbox"]:checked + .icon-main-checkbox-outline::before {
                 content: "\e908";
             }
 

@@ -5,8 +5,8 @@
             <div class="type-tour">
                 <link rel="stylesheet" href="css/other/type-tour.css">
                 <!-- можно передавать типы туров и проходить по ним циклом - это легче сразу на php реализовать -->
-                @@include('type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
-                @@include('type-tour.html', {"class": "icon-ship", "color": "var(--dark-blue-50)"})
+                @@include('type-tour.html', {"class": "icon-tour-truck", "color": "var(--dark-green-50)"})
+                @@include('type-tour.html', {"class": "icon-tour-ship", "color": "var(--dark-blue-50)"})
             </div>
         }
     </div>
@@ -22,7 +22,7 @@
                     @@include('promotion.html', {"color": "var(--violet)", "text": "%%"})
                  }
             </div>
-            <p class="date"><span class="icon-calendar"></span>@@date</p>
+            <p class="date"><span class="icon-main-calendar"></span>@@date</p>
         </div>
         <div class="popular-destinations__content">
             <h4 class="popular-destinations__subtitle">@@title</h4>

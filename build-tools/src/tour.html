@@ -14,8 +14,8 @@
                     <a class="link button-gradient" href="">Забронировать</a>
                     <div class="type-tour" style="position: relative;">
                         <link rel="stylesheet" href="css/other/type-tour.css">
-                        @@include('components/component/type-tour.html', {"class": "icon-horse", "color": "var(--dark-blue-50)"})
-                        @@include('components/component/type-tour.html', {"class": "icon-truck", "color": "var(--dark-green-50)"})
+                        @@include('components/component/type-tour.html', {"class": "icon-tour-horse", "color": "var(--dark-blue-50)"})
+                        @@include('components/component/type-tour.html', {"class": "icon-tour-truck", "color": "var(--dark-green-50)"})
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="tour-description wrap">
                 <link rel="stylesheet" href="css/other/tour-description.css">
-                <h4><span class="icon-horse"></span>Конный туристический маршрут</h4>
+                <h4><span class="icon-tour-horse"></span>Конный туристический маршрут</h4>
                 <div class="txt">
                     <p>
                         Начинается в урочище Саргольдик (в 8 км от посёлка Белый Бом, Онгудайского района, Республике Алтай). Маршрут состоит из конной активной части и днёвки на берегу Шавлинского озера. Маршрут рассчитан как для туристов имеющих опыт езды на лошадях, так и для начинающих туристов конников.
@@ -85,8 +85,8 @@
                                   ], 
                             })
                         </div>
-                        <div class="swiper-button-prev photoes-tour__swiper-button-prev icon-left"></div>
-                        <div class="swiper-button-next photoes-tour__swiper-button-next icon-right"></div>
+                        <div class="swiper-button-prev photoes-tour__swiper-button-prev icon-main-left"></div>
+                        <div class="swiper-button-next photoes-tour__swiper-button-next icon-main-right"></div>
                         <div class="swiper-pagination photoes-tour__swiper-pagination"></div>
                       </div>
                     </div>
@@ -131,7 +131,7 @@
                         ] 
                       )
                     </ul>
-                    <p class="attention"><span class="icon-attention"><span class="path1"></span><span class="path2"></span></span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
+                    <p class="attention"><span class="attention-mark">!</span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
                 </div>
             </div>
             <div class="tour-schedule">
@@ -193,6 +193,9 @@
                   </div>
             </div>
 
+            <div >
+
+            </div>
         </main>
         @@include('components/const/_footer.html')
     </div>

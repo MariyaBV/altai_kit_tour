@@ -80,32 +80,32 @@ $(document).ready(function () {
     });
 
     // Инициализация: проверка текущих значений
-    function checkSelectValues() {
-        $('.attribute-filters__select').each(function () {
-            const $selectContainer = $(this);
-            const $resetButton = $selectContainer.find('.reset-button');
-            const $verticalLine = $selectContainer.find('.vertical-line');
-            const $icon = $selectContainer.find('.icon-Down-3');
-            const $selectTrigger = $selectContainer.find('.custom-select-trigger');
-            const selectedOptionValue = $selectContainer.find('input[type="hidden"]').val().trim();
+    // function checkSelectValues() {
+    //     $('.attribute-filters__select').each(function () {
+    //         const $selectContainer = $(this);
+    //         const $resetButton = $selectContainer.find('.reset-button');
+    //         const $verticalLine = $selectContainer.find('.vertical-line');
+    //         const $icon = $selectContainer.find('.icon-Down-3');
+    //         const $selectTrigger = $selectContainer.find('.custom-select-trigger');
+    //         const selectedOptionValue = $selectContainer.find('input[type="hidden"]').val().trim();
 
-            if (selectedOptionValue !== '') {
-                $selectContainer.addClass('option-selected');
-                $resetButton.css('display', 'block');
-                $verticalLine.css('display', 'block');
-                $icon.css('display', 'none');
-                $selectTrigger.addClass('selected-item-menu');
-            } else {
-                $selectContainer.removeClass('option-selected');
-                $resetButton.css('display', 'none');
-                $verticalLine.css('display', 'none');
-                $icon.css('display', 'block');
-                $selectTrigger.removeClass('selected-item-menu');
-            }
-        });
-    }
+    //         if (selectedOptionValue !== '') {
+    //             $selectContainer.addClass('option-selected');
+    //             $resetButton.css('display', 'block');
+    //             $verticalLine.css('display', 'block');
+    //             $icon.css('display', 'none');
+    //             $selectTrigger.addClass('selected-item-menu');
+    //         } else {
+    //             $selectContainer.removeClass('option-selected');
+    //             $resetButton.css('display', 'none');
+    //             $verticalLine.css('display', 'none');
+    //             $icon.css('display', 'block');
+    //             $selectTrigger.removeClass('selected-item-menu');
+    //         }
+    //     });
+    // }
 
-    checkSelectValues();
+    // checkSelectValues();
 
     // Сброс выбранного фильтра
     $('.reset-button').on('click', function () {
