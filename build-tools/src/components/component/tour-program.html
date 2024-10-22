@@ -17,8 +17,20 @@
             </ul>
         </div>
         <div class="block-more-details__img">
-            <img src="css/img/tour-program/@@img"/>
+            <div class="__slider photoes-program-tour__slider">
+                <div class="swiper photoes-program-tour__swiper" id="pptour_@@num">
+                    <div class="swiper-wrapper photoes-program-tour__swiper-wrapper">
+                        @@for (var i = 0; i < img.length; i++) {
+                            <div class="swiper-slide">
+                                <img src="css/img/tour-program/`+img[i]+`"/>
+                            </div>
+                        }
+                    </div>
+                    <div id="prev_pptour_@@num" class="swiper-button-prev swiper-button-prev_pptour_@@num icon-main-left"></div>
+                    <div id="next_pptour_@@num" class="swiper-button-next swiper-button-next_pptour_@@num icon-main-right"></div>
+                    <div id="pagination_pptour_@@num" class="swiper-pagination swiper-pagination_pptour_@@num"></div>
+                </div>
+            </div>
         </div>
-       
     </div>
 </li>

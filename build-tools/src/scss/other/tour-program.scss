@@ -67,12 +67,40 @@
         &__img {
             flex: 30%;
             margin-top: 6px;
+            max-width: 355px;
 
             img {
                 border-top-right-radius: var(--border-radius-little);
                 max-width: 355px;
                 width: 100%;
                 object-fit: cover;
+            }
+
+            .swiper-pagination {
+                bottom: -30px;
+            }
+
+            .__slider {
+                padding: 0;
+            }
+
+            .__slider>.swiper {
+                max-width: 100%;
+            }
+
+            .swiper {
+                padding: 0;
+                position: static;
+                margin-bottom: 30px;
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+                width: 40px;
+                height: 40px;
+
+                &::before {
+                    font-size: 40px;
+                }
             }
         }
 
@@ -98,6 +126,10 @@
                 }
             }
         }
+    }
+
+    .question {
+        margin-bottom: 16px;
     }
 
     .question-block {
