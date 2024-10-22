@@ -4,6 +4,7 @@
 "other_css":false } )
 
 <body>
+    <div id="overlay" class="overlay"></div>
     <div id="page">
         @@include('components/const/_header.html')
         <main id="main" class="not-index">
@@ -19,7 +20,7 @@
                     </span>
                 </p>
             </div>
-            <div class="container wrap">
+            <section class="container wrap">
                 <div class="row">
                     <div class="col-md-3 col-sm-0">
                         @@include('components/component/sidebar.html')
@@ -206,9 +207,7 @@
                           </div>
                     </div>
                 </div>
-            </div>
-
-
+            </section>
         </main>
         @@include('components/const/_footer.html')
     </div>

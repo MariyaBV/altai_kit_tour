@@ -9,9 +9,10 @@
 
 
 <body>
+    <div id="overlay" class="overlay"></div>
     <div id="page">
         <header class="header" id="main-header">
-  <div class="wrap">
+  <div class="wrap desktop">
     <div class="header-menu-container">
       <div class="header-operating-mode">
         <p class="operating-mode-description">Работаем: Пн-Пт 9:00–19:00</p>
@@ -33,21 +34,110 @@
       </div>
     </div>
   </div>
+  <div class="mobile top-menu">
+    <div class="header-menu">
+      <div class="block-logo">
+        <a class="link" href="/">
+          <p class="logo-text">Кит тур</p>
+          <p class="description-title">Алтай с&nbsp;комфортом</p>
+        </a>
+      </div>
+      <button class="menu-burger" id="burger-menu"><span class="middle"></span></button>
+    </div>
+  </div>
   <div class="top-menu">
     <div class="wrap">
       <div class="header-menu">
-        <div class="block-logo">
+        <div class="block-logo desktop">
           <a class="link" href="/">
             <p class="logo-text">Кит тур</p>
             <p class="description-title">Алтай с&nbsp;комфортом</p>
           </a>
         </div>
-        <div class="menu-list">
+        <nav class="menu-list" id="site-navigation">
           <ul class="menu-list__list">
-            <li class="menu-list__item_all_tours">
-              <a class="menu-list__link button-gradient" href="#all_tours">
-                Все туры<span class="icon-main-down-little"></span>
+            <li id="menu-back-button" class="hidden">
+              <a href="#" class="back-button">
+                  <span class="icon-main-right-little"></span><span class="back-text">Все туры</span>
               </a>
+            </li>
+            <li class="menu-list__item_all_tours menu-item-has-children">
+              <a class="menu-list__link button-gradient" href="#all_tours">
+                <p>Все туры<span class="icon-main-down-little"></span></p>
+              </a>
+              <ul class="menu-list__item mobile sub-menu">
+                <li class="menu-list__item menu-item-has-children">
+                  <a class="link visible" href="">
+                    <p>Туры по России</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                  <ul class="menu-list__item sub-menu">
+                    <li><a href="">Барнаул и Алтайский край</a></li>
+                    <li><a href="">Золотое Кольцо</a></li>
+                    <li><a href="">Калининград</a></li>
+                    <li><a href="">Крым и Черное море</a></li>
+                    <li><a href="">Москва</a></li>
+                    <li><a href="">Санкт-Петербург</a></li>
+                    <li><a href="">Новосибирск</a></li>
+                    <li><a href="">Горный Алтай</a></li>
+                    <li><a href="">Омск</a></li>
+                    <li><a href="">Томск</a></li>
+                    <li><a href="">Казань</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>Зарубежные туры</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+                <li class="menu-list__item menu-item-has-children">
+                  <a class="link" href="">
+                    <p>По количеству дней</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                  <ul class="menu-list__item sub-menu">
+                    <li><a href="">10 дней</a></li>
+                    <li><a href="">12 дней</a></li>
+                    <li><a href="">15 дней</a></li>
+                    <li><a href="">20 дней</a></li>
+                    <li><a href="">25 дней</a></li>
+                    <li><a href="">5 дней</a></li>
+                    <li><a href="">1 день</a></li>
+                    <li><a href="">7 дней</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>Коллекции</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>По региону</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>По виду отдыха</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>Сезоны</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+                <li class="menu-list__item">
+                  <a class="link" href="">
+                    <p>Месяцы</p>
+                    <span class="icon-main-right-little"></span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="menu-list__item"><a href="http://">Расписание туров</a></li>
             <li class="menu-list__item"><a href="http://">Города выезда</a></li>
@@ -56,6 +146,21 @@
             <li class="menu-list__item"><a href="http://">Блог</a></li>
             <li class="menu-list__item"><a href="http://">О нас</a></li>
           </ul>
+        </nav>
+        <div class="header-contacts mobile">
+          <div class="contact-tel icon-main-phone">
+            <p>+7 903 947-96-38</p>
+            <a href="tel:+7 903 947-96-38"></a>
+          </div>
+          <div class="contact-email icon-main-mail-open">
+            <p>info@tur-altai.com</p>
+            <a href="mailto:info@tur-altai.com"></a>
+          </div>
+          <div class="contact-messengers">
+            <a class="vk icon-main-vk" href=""></a>
+            <a class="youtube icon-main-youtube" href=""></a>
+            <a class="whatsapp icon-main-whatsapp" href=""></a>
+          </div>
         </div>
       </div>
   
@@ -67,12 +172,12 @@
             <a class="link" href="">Все туры</a>
           </div>
           <ul class="block-tours__list">
-            <li class="block-tours__list_item">
+            <li class="block-tours__list_item menu-item-has-children">
               <a class="link visible" href="">
                 <p>Туры по России</p>
                 <span class="icon-main-right-little"></span>
               </a>
-              <ul class="block-tours__list_item__inner hidden children">
+              <ul class="block-tours__list_item__inner hidden children sub-menu">
                 <li><a href="">Барнаул и Алтайский край</a></li>
                 <li><a href="">Золотое Кольцо</a></li>
                 <li><a href="">Калининград</a></li>
@@ -151,7 +256,7 @@
   </div>
 </header>
         <main id="main" class="not-index">
-            <div class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
+            <section class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
                 <div class="wrap">
                     <p class="title">К Шавлинским озерам</p>
                     <h3 class="subtitle">Конный туристический маршрут</h3>
@@ -162,8 +267,8 @@
                         <span class="icon-tour-truck" style="background-color: var(--dark-green-50)"></span>
                     </div>
                 </div>
-            </div>
-            <div class="achievements" style="background-color: var(--bg-light-gray);">
+            </section>
+            <section class="achievements" style="background-color: var(--bg-light-gray);">
                 <div class="wrap">
                     <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
                     <link rel="stylesheet" href="css/other/achievements.css">
@@ -184,8 +289,8 @@
     <p class="achievements__text">Трехразовое питание*</p>
 </div>
                 </div>
-            </div>
-            <div class="tour-description wrap">
+            </section>
+            <section class="tour-description wrap">
                 <link rel="stylesheet" href="css/other/tour-description.css">
                 <h4><span class="icon-tour-horse"></span>Конный туристический маршрут</h4>
                 <div class="txt">
@@ -205,8 +310,8 @@
                         <li>Группу сопровождают: 1-2 инструктора, 1-2 конюха</li>
                     </ul>
                 </div>
-            </div>
-            <div class="wrap"style="margin-bottom: 40px;">
+            </section>
+            <section class="wrap"style="margin-bottom: 40px;">
                 <link rel="stylesheet" href="css/other/popular-destinations.css">
                 <div class="popular-destinations__item full with_schedule">
     <div class="popular-destinations__image">
@@ -275,8 +380,8 @@
         </div>
     </div>
 </div>
-            </div>
-            <div class="photoes-tour inner-page">
+            </section>
+            <section class="photoes-tour inner-page">
                 <link rel="stylesheet" href="css/other/photoes-tour.css">
                 <div class="wrap">
                   <h2 class="photoes-tour__title">Фотографии из тура</h2>
@@ -309,8 +414,8 @@
                     </div>
                   </div>
                 </div>
-            </div>
-            <div class="tour-program">
+            </section>
+            <section class="tour-program">
                 <link rel="stylesheet" href="css/other/tour-program.css">
                 <div class="wrap">
                     <h2 class="tour-program__title">Программа тура</h2>
@@ -461,8 +566,8 @@
                     </ul>
                     <p class="attention"><span class="attention-mark">!</span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
                 </div>
-            </div>
-            <div class="tour-schedule">
+            </section>
+            <section class="tour-schedule">
                 <link rel="stylesheet" href="css/other/tour-schedule.css">
                 <div class="tour-schedule__block">
                     <h2 class="tour-schedule__title">Расписание тура</h2>
@@ -501,9 +606,8 @@
                     </ul>
                     <a class="link button" href="">Забронировать</a>
                 </div>
-            </div>
-        
-            <div class="video-review">
+            </section>
+            <section class="video-review">
                 <link rel="stylesheet" href="css/other/video-review.css">
                 <h2 class="video-review__title">Видеоотзывы</h2>
                 <div class="__slider">
@@ -537,9 +641,8 @@
                     </div>
                 </div>
                 </div>
-            </div>
-
-            <div class="reviews-year">
+            </section>
+            <section class="reviews-year">
                 <div class="reviews-year__slider wrap">
                     <link rel="stylesheet" href="css/other/reviews-year.css">
                     <div class="reviews-year__controls-wrapper">
@@ -1108,7 +1211,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer" id="main-footer">
   <div class="footer-bg">

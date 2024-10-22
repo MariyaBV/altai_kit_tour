@@ -69,13 +69,15 @@
                 letter-spacing: 0.11em;
                 text-transform: uppercase;
                 filter: drop-shadow(0px 4.87px 29.22px rgba(36, 83, 125, 0.3));
+                margin-left: 35px;
             }
 
             .title {
+                margin-top: -40px;
                 font-family: var(--font-unbounded);
                 font-size: 183.87px;
                 font-weight: 800;
-                line-height: 138px;
+                line-height: 222px;
                 background: linear-gradient(84.71deg, #FFFFFF 5.9%, #D6EEFF 64.51%, #FFFFFF 98.19%);
                 background-clip: text;
                 color: transparent;
@@ -83,6 +85,7 @@
             }
 
             .under-subtitle {
+                margin-top: -45px;
                 font-family: var(--font-unbounded);
                 font-size: 82.62px;
                 font-weight: 800;
@@ -91,6 +94,7 @@
                 background-clip: text;
                 color: transparent;
                 filter: drop-shadow(0px 4.87px 29.22px rgba(36, 83, 125, 0.3));
+                text-transform: uppercase;
             }
 
             .description-block {
@@ -98,7 +102,8 @@
                 padding: 10px 139px 10px 40px;
                 max-width: 950px;
                 box-shadow: 0px 5.01px 30.06px 0px #24537D4D;
-                clip-path: polygon(0 0, 61% 0, 59% 100%, 0% 100%);
+                clip-path: polygon(0 0, 70% 0, 69% 100%, 0% 100%);
+                text-transform: uppercase;
             }
 
             .description {

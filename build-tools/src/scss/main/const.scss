@@ -425,3 +425,18 @@ a.clear-filters {
 .question {
     position: relative;
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4F2CE066;
+    z-index: 10;
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+}

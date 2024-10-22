@@ -1,6 +1,29 @@
 .sidebar {
     max-width: 315px;
 
+    @media screen and (max-width: 768px) {
+        &.visible-mobile {
+            visibility: unset;
+            opacity: 1;
+        }
+
+        &.mobile {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+            transition: transform var(--transition);
+            max-width: none;
+            width: 100%;
+            background-color: var(--white);
+            overflow: scroll;
+        }
+    }
+
     &__title {
         display: flex;
         justify-content: space-between;
@@ -33,14 +56,14 @@
                 border: none;
                 max-width: 150px;
                 width: 100%;
-    
+
                 &:hover {
                     cursor: pointer;
                 }
             }
         }
 
-        
+
     }
 
     .form {
@@ -89,14 +112,14 @@
                 }
             }
 
-            input[type="checkbox"] + label {
+            input[type="checkbox"]+label {
                 font-family: 'PT Sans Caption', sans-serif;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 16px;
             }
 
-            input[type="checkbox"]:checked + .icon-main-checkbox-outline::before {
+            input[type="checkbox"]:checked+.icon-main-checkbox-outline::before {
                 content: "\e908";
             }
 

@@ -71,7 +71,11 @@
         &.little {
             flex: calc(100% / 3 - 40px);
             max-width: 260px;
-            min-width: 135px;
+            min-width: 235px;
+
+            @media screen and (max-width: 500px) {
+                min-width: 135px;
+            }
 
             .popular-destinations__about-block {
                 .about {

@@ -4,10 +4,11 @@
 "other_css":false } )
 
 <body>
+    <div id="overlay" class="overlay"></div>
     <div id="page">
         @@include('components/const/_header.html')
         <main id="main" class="not-index">
-            <div class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
+            <section class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
                 <div class="wrap">
                     <p class="title">К Шавлинским озерам</p>
                     <h3 class="subtitle">Конный туристический маршрут</h3>
@@ -18,8 +19,8 @@
                         @@include('components/component/type-tour.html', {"class": "icon-tour-truck", "color": "var(--dark-green-50)"})
                     </div>
                 </div>
-            </div>
-            <div class="achievements" style="background-color: var(--bg-light-gray);">
+            </section>
+            <section class="achievements" style="background-color: var(--bg-light-gray);">
                 <div class="wrap">
                     <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
                     <link rel="stylesheet" href="css/other/achievements.css">
@@ -28,8 +29,8 @@
                     @@include('components/component/achievements.html', {"subtitle": "125 км", "text": "На лошадях", "class": ""})
                     @@include('components/component/achievements.html', {"subtitle": "Еда", "text": "Трехразовое питание*", "class": ""})
                 </div>
-            </div>
-            <div class="tour-description wrap">
+            </section>
+            <section class="tour-description wrap">
                 <link rel="stylesheet" href="css/other/tour-description.css">
                 <h4><span class="icon-tour-horse"></span>Конный туристический маршрут</h4>
                 <div class="txt">
@@ -49,8 +50,8 @@
                         <li>Группу сопровождают: 1-2 инструктора, 1-2 конюха</li>
                     </ul>
                 </div>
-            </div>
-            <div class="wrap"style="margin-bottom: 40px;">
+            </section>
+            <section class="wrap"style="margin-bottom: 40px;">
                 <link rel="stylesheet" href="css/other/popular-destinations.css">
                 @@include('components/component/popular-destinations.html', {
                     "class": "full with_schedule", 
@@ -67,8 +68,8 @@
                     "button": "Забронировать", 
                     "promotionHIT": true, 
                     "promotionProcent": true})
-            </div>
-            <div class="photoes-tour inner-page">
+            </section>
+            <section class="photoes-tour inner-page">
                 <link rel="stylesheet" href="css/other/photoes-tour.css">
                 <div class="wrap">
                   <h2 class="photoes-tour__title">Фотографии из тура</h2>
@@ -92,8 +93,8 @@
                     </div>
                   </div>
                 </div>
-            </div>
-            <div class="tour-program">
+            </section>
+            <section class="tour-program">
                 <link rel="stylesheet" href="css/other/tour-program.css">
                 <div class="wrap">
                     <h2 class="tour-program__title">Программа тура</h2>
@@ -145,8 +146,8 @@
                     </ul>
                     <p class="attention"><span class="attention-mark">!</span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
                 </div>
-            </div>
-            <div class="tour-schedule">
+            </section>
+            <section class="tour-schedule">
                 <link rel="stylesheet" href="css/other/tour-schedule.css">
                 <div class="tour-schedule__block">
                     <h2 class="tour-schedule__title">Расписание тура</h2>
@@ -171,9 +172,8 @@
                     </ul>
                     <a class="link button" href="">Забронировать</a>
                 </div>
-            </div>
-        
-            <div class="video-review">
+            </section>
+            <section class="video-review">
                 <link rel="stylesheet" href="css/other/video-review.css">
                 <h2 class="video-review__title">Видеоотзывы</h2>
                 <div class="__slider">
@@ -203,9 +203,8 @@
                     </div>
                 </div>
                 </div>
-            </div>
-
-            <div class="reviews-year">
+            </section>
+            <section class="reviews-year">
                 <div class="reviews-year__slider wrap">
                     <link rel="stylesheet" href="css/other/reviews-year.css">
                     <div class="reviews-year__controls-wrapper">
@@ -502,7 +501,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
         @@include('components/const/_footer.html')
     </div>

@@ -4,10 +4,11 @@
 "other_css":false } )
 
 <body>
+  <div id="overlay" class="overlay"></div>
   <div id="page">
     @@include('components/const/_header.html')
     <main id="main">
-      <div class="banner-block main-page">
+      <section class="banner-block main-page">
         <div class="banner-block__block-title">
           <p class="top-subtitle">туры на</p>
           <p class="title">АЛТАЙ</p>
@@ -16,8 +17,8 @@
             <p class="description">ближайший тур 22.10.2024</p>
           </div>
         </div>
-      </div>
-      <div class="achievements">
+      </section>
+      <section class="achievements">
         <div class="wrap">
           <!-- for делать не стала - тк нужно передавать обьект с данными через gulp - доп заморочки -->
           <link rel="stylesheet" href="css/other/achievements.css">
@@ -26,8 +27,8 @@
           @@include('components/component/achievements.html', {"subtitle": "300+", "text": "маршрутов", "class": ""})
           @@include('components/component/achievements.html', {"subtitle": "97%", "text": "туристов хотят поехать с&nbsp;нами снова", "class": "heart"})
         </div>
-      </div>
-      <div class="popular-destinations">
+      </section>
+      <section class="popular-destinations">
         <div class="wrap">
           <link rel="stylesheet" href="css/other/popular-destinations.css">
           <h2 class="popular-destinations__title">Популярные направления</h2>
@@ -81,8 +82,8 @@
             "promotionProcent": true})
           </div>
         </div>
-      </div>
-      <div class="tours-by-type-recreation wrap">
+      </section>
+      <section class="tours-by-type-recreation wrap">
         <link rel="stylesheet" href="css/other/tours-by-type-recreation.css">
         <h2 class="tours-by-type-recreation__title">Туры по&nbsp;виду отдыха</h2>
         <div class="tours-by-type-recreation__block">
@@ -138,8 +139,8 @@
           "subtitle": "Водные туры / сплавы", 
           "link": "#"})
         </div>
-      </div>
-      <div class="reviews">
+      </section>
+      <section class="reviews">
         <link rel="stylesheet" href="css/other/reviews.css">
         <div class="reviews__bg">
           <h2 class="reviews__title">отзывы</h2>
@@ -237,8 +238,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="our-team wrap">
+      </section>
+      <section class="our-team wrap">
         <link rel="stylesheet" href="css/other/our-team.css">
         <h2 class="our-team__title">наша команда</h2>
         <h4 class="our-team__subtitle">это 17 удивительных людей</h4>
@@ -301,8 +302,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="video-about-us">
+      </section>
+      <section class="video-about-us">
         <link rel="stylesheet" href="css/other/video-about-us.css">
         <div class="video-about-us__bg">
           <div class="wrap">
@@ -318,8 +319,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="our-advantages">
+      </section>
+      <section class="our-advantages">
         <link rel="stylesheet" href="css/other/our-advantages.css">
         <div class="wrap">
           <h2 class="our-advantages__title">Наши преимущества</h2>
@@ -353,8 +354,8 @@
             </ol>
           </div>
         </div>
-      </div>
-      <div class="photoes-tour">
+      </section>
+      <section class="photoes-tour">
         <link rel="stylesheet" href="css/other/photoes-tour.css">
         <div class="wrap">
           <h2 class="photoes-tour__title">Фотографии из поездок</h2>
@@ -378,8 +379,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="how-booking">
+      </section>
+      <section class="how-booking">
         <link rel="stylesheet" href="css/other/how-booking.css">
         <div class="wrap">
           <h2 class="how-booking__title">Как забронировать</h2>
@@ -404,8 +405,8 @@
             )
           </div>
         </div>
-      </div>
-      <div class="frequently-asked-questions">
+      </section>
+      <section class="frequently-asked-questions">
         <link rel="stylesheet" href="css/other/frequently-asked-questions.css">
         <div class="wrap">
           <h2 class="frequently-asked-questions__title">Частые вопросы</h2>
@@ -437,8 +438,8 @@
               или&nbsp;по&nbsp;электронной&nbsp;почте: <a href="mailto:info@tur-altai.com">info@tur-altai.com</a></p>
           </div>
         </div>
-      </div>
-      <div class="seo-block wrap">
+      </section>
+      <section class="seo-block wrap">
         <link rel="stylesheet" href="css/other/seo-block.css">
         <h4 class="seo-block__title">SEO BLOCK</h4>
         <p class="seo-block__text txt-s">Алтай — это великолепная площадка для разных видов активного туризма. 
@@ -454,7 +455,7 @@
           В горном Алтае есть множество красивых местечек, куда невозможно добраться на автомобиле и дойти пешком. 
           Активные туры — верхом на лошадях — удобный способ путешествия: необходимая поклажа на коне, 
           а турист наслаждается окружающими ландшафтами</p>
-      </div>
+      </section>
     </main>
     @@include('components/const/_footer.html')
   </div>
