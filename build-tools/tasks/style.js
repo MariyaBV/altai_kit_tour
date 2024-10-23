@@ -2,7 +2,7 @@ const { src, dest } = require("gulp");
 const sass = require("gulp-dart-sass");//(require("sass"));
 const bulk = require("gulp-sass-bulk-importer");
 const prefixer = require("autoprefixer");
-const clean = require("gulp-clean-css");
+//const clean = require("gulp-clean-css");
 const concat = require("gulp-concat");
 const map = require("gulp-sourcemaps");
 const bs = require("browser-sync");
@@ -14,7 +14,8 @@ module.exports = function style() {
     .pipe(bulk())
     .pipe(
       sass({
-        outputStyle: "compressed",
+        //outputStyle: "compressed",
+        outputStyle: "expanded", 
         silenceDeprecations: ['legacy-js-api'],
       }).on("error", sass.logError)
     )
@@ -34,11 +35,11 @@ module.exports = function style() {
         }),
       ])
     )
-    .pipe(
-      clean({
-        level: 2,
-      })
-    )
+    // .pipe(
+    //   clean({
+    //     level: 2,
+    //   })
+    // )
     .pipe(concat("style.css"))
     //.pipe(map.write("/css/sourcemaps/"))
     .pipe(dest("../altai_kit_tour/"))

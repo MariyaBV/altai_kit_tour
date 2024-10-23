@@ -3,7 +3,7 @@ const sass = require("gulp-dart-sass");//(require("sass"));
 const bulk = require("gulp-sass-bulk-importer");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const clean = require("gulp-clean-css");
+//const clean = require("gulp-clean-css");
 const concat = require("gulp-concat");
 const map = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
@@ -14,7 +14,8 @@ module.exports = function style_other() {
     .pipe(bulk())
     .pipe(
       sass({
-        outputStyle: "compressed",
+        //outputStyle: "compressed",
+        outputStyle: "expanded", 
         silenceDeprecations: ['legacy-js-api'],
       }).on("error", sass.logError)
     )
@@ -26,11 +27,11 @@ module.exports = function style_other() {
         }),
       ])
     )
-    .pipe(
-      clean({
-        level: 2,
-      })
-    )
+    // .pipe(
+    //   clean({
+    //     level: 2,
+    //   })
+    // )
     .pipe(
       rename(function (path) {
         path.basename;

@@ -1,1 +1,161 @@
-.tours-by-type-recreation{margin-bottom:24px}.tours-by-type-recreation .button-border{margin:24px auto 0;display:block;max-width:128px}@media screen and (max-width:500px){.tours-by-type-recreation{background-color:var(--bg-light-gray)}.tours-by-type-recreation .button-border{max-width:288px}}.tours-by-type-recreation__block,.tours-by-type-recreation__block-more{display:-webkit-box;display:-ms-flexbox;display:flex;gap:40px;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.tours-by-type-recreation__block-more{display:none;margin-top:40px}@media screen and (max-width:1024px){.tours-by-type-recreation__block,.tours-by-type-recreation__block-more{gap:8px}.tours-by-type-recreation__block-more{margin-top:8px}}.tours-by-type-recreation__item{-webkit-box-flex:calc(25% - 40px);-ms-flex:calc(25% - 40px);flex:calc(25% - 40px);border-radius:var(--border-radius-medium);overflow:hidden;max-width:260px;min-width:132px}@media screen and (max-width:768px){.tours-by-type-recreation__item{-webkit-box-flex:calc(50% - 8px);-ms-flex:calc(50% - 8px);flex:calc(50% - 8px)}}.tours-by-type-recreation__item:first-child .tours-by-type-recreation__image img{-o-object-position:35%;object-position:35%}.tours-by-type-recreation__item:nth-child(4) .tours-by-type-recreation__image img{-o-object-position:50%;object-position:50%}.tours-by-type-recreation__image{max-width:260px;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}.tours-by-type-recreation__image img{-o-object-fit:cover;object-fit:cover;height:380px;-o-object-position:88%;object-position:88%}@media screen and (max-width:768px){.tours-by-type-recreation__image img{height:240px}}@media screen and (max-width:1150px){.tours-by-type-recreation__image .type-tour span{width:40px;height:40px}}@media screen and (max-width:390px){.tours-by-type-recreation__image .type-tour span{width:32px;height:32px}}.tours-by-type-recreation__title{padding:62px 0 38px;color:transparent;background:var(--main-gradient);-webkit-background-clip:text;background-clip:text;text-transform:uppercase;background-size:82%;line-height:32px;text-align:center}@media screen and (max-width:500px){.tours-by-type-recreation__title{padding:36px 0 28px;background-size:auto}}.tours-by-type-recreation__about{position:absolute;bottom:0;left:0;padding:16px}.tours-by-type-recreation__about .subtitle{font-family:var(--font-unbounded);font-size:22px;font-weight:700;line-height:26px;color:var(--white);margin-bottom:16px}@media screen and (max-width:500px){.tours-by-type-recreation__about .subtitle{font-size:20px;line-height:20px}}.tours-by-type-recreation__about .count-tours{font-family:var(--font-unbounded);font-size:12px;font-weight:500;line-height:22px;letter-spacing:.07em;color:var(--white);padding:8px 16px;background-color:var(--dark-violet);max-width:90px;border-radius:var(--border-radius)}.tours-by-type-recreation__link{position:absolute;top:0;left:0;width:100%;height:100%}
+.tours-by-type-recreation {
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 500px) {
+  .tours-by-type-recreation {
+    background-color: var(--bg-light-gray);
+  }
+}
+.tours-by-type-recreation .button-border {
+  margin: 24px auto 0;
+  display: block;
+  max-width: 128px;
+}
+@media screen and (max-width: 500px) {
+  .tours-by-type-recreation .button-border {
+    max-width: 288px;
+  }
+}
+.tours-by-type-recreation__block, .tours-by-type-recreation__block-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .tours-by-type-recreation__block, .tours-by-type-recreation__block-more {
+    gap: 8px;
+  }
+}
+.tours-by-type-recreation__block-more {
+  display: none;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .tours-by-type-recreation__block-more {
+    margin-top: 8px;
+  }
+}
+.tours-by-type-recreation__item {
+  -webkit-box-flex: calc(25% - 40px);
+  -ms-flex: calc(25% - 40px);
+  flex: calc(25% - 40px);
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  max-width: 260px;
+  min-width: 132px;
+}
+@media screen and (max-width: 768px) {
+  .tours-by-type-recreation__item {
+    -webkit-box-flex: calc(50% - 8px);
+    -ms-flex: calc(50% - 8px);
+    flex: calc(50% - 8px);
+  }
+}
+.tours-by-type-recreation__item:first-child .tours-by-type-recreation__image img {
+  -o-object-position: 35%;
+  object-position: 35%;
+}
+.tours-by-type-recreation__item:nth-child(4) .tours-by-type-recreation__image img {
+  -o-object-position: 50%;
+  object-position: 50%;
+}
+.tours-by-type-recreation__image {
+  max-width: 260px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+.tours-by-type-recreation__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 380px;
+  -o-object-position: 88%;
+  object-position: 88%;
+}
+@media screen and (max-width: 768px) {
+  .tours-by-type-recreation__image img {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .tours-by-type-recreation__image .type-tour span {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .tours-by-type-recreation__image .type-tour span {
+    width: 32px;
+    height: 32px;
+  }
+}
+.tours-by-type-recreation__title {
+  padding: 62px 0 38px;
+  color: transparent;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+  background-size: 82%;
+  line-height: 32px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .tours-by-type-recreation__title {
+    padding: 36px 0 28px;
+    background-size: auto;
+  }
+}
+.tours-by-type-recreation__about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+.tours-by-type-recreation__about .subtitle {
+  font-family: var(--font-unbounded);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 500px) {
+  .tours-by-type-recreation__about .subtitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.tours-by-type-recreation__about .count-tours {
+  font-family: var(--font-unbounded);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.07em;
+  color: var(--white);
+  padding: 8px 16px;
+  background-color: var(--dark-violet);
+  max-width: 90px;
+  border-radius: var(--border-radius);
+}
+.tours-by-type-recreation__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

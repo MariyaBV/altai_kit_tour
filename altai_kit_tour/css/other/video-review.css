@@ -1,1 +1,53 @@
-.video-review{padding:40px 0}.video-review__title{color:var(--blue);text-align:center;margin-bottom:24px;text-transform:uppercase}.video-review .swiper{padding:0}.video-review .swiper-wrapper{margin-left:auto;margin-right:auto}.video-review .__slider>.swiper{max-width:100%}.video-review .swiper-pagination{bottom:-36px}.video-review .slider-container .swiper-wrapper .swiper-slide:first-child{margin-left:auto}.video-review .slider-container .swiper-wrapper .swiper-slide:last-child{margin-right:auto}.video-review .swiper-slide{max-height:340px;height:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:39vw}.video-review__item .description{color:var(--white);position:absolute;bottom:0;left:0;padding:24px}.video-review__item .iframe{width:560px;height:340px}
+.video-review {
+  padding: 40px 0;
+}
+.video-review__title {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.video-review .swiper {
+  padding: 0;
+}
+.video-review .swiper-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.video-review .__slider > .swiper {
+  max-width: 100%;
+}
+.video-review .swiper-pagination {
+  bottom: -36px;
+}
+.video-review .slider-container .swiper-wrapper .swiper-slide:first-child {
+  margin-left: auto;
+}
+.video-review .slider-container .swiper-wrapper .swiper-slide:last-child {
+  margin-right: auto;
+}
+.video-review .swiper-slide {
+  max-height: 340px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 39vw;
+}
+.video-review__item .description {
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 24px;
+}
+.video-review__item .iframe {
+  width: 560px;
+  height: 340px;
+}

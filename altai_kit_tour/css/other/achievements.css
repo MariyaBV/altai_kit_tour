@@ -1,1 +1,115 @@
-.achievements{padding:44px 0}.achievements .wrap{max-width:1300px;padding:0 14px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:24px;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}@media screen and (max-width:1024px){.achievements{gap:8px}}.achievements__item{border-radius:var(--border-radius-big);padding:24px;border:1px solid var(--pink);max-width:300px;min-width:134px;-webkit-box-flex:1;-ms-flex:1;flex:1}@media screen and (max-width:1000px){.achievements__item{-webkit-box-flex:calc(50% - 8px);-ms-flex:calc(50% - 8px);flex:calc(50% - 8px)}}.achievements__item.heart{position:relative;background:linear-gradient(69.71deg,#fff 78.33%,#ffe9f6 97.13%)}.achievements__item.heart::after{background-image:url(../../css/img/heart.png);background-repeat:no-repeat;background-position:center;background-size:contain;position:absolute;top:15px;right:24px;height:52px;width:52px;content:""}@media screen and (max-width:500px){.achievements{margin:16px auto}.achievements__item{padding:12px}.achievements__item.heart::after{height:23px;width:23px;top:14px;right:12px}}.achievements__item.background-gradient{background:var(--main-gradient);border:transparent}.achievements__item.background-gradient h3,.achievements__item.background-gradient p{color:var(--white)}.achievements__subtitle{background:var(--main-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:64%;margin-bottom:12px}.achievements__text{color:var(--black);font-size:20px;font-weight:700;line-height:24px}@media screen and (max-width:500px){.achievements__subtitle{margin-bottom:6px;background-size:70%}.achievements__text{font-size:14px;font-weight:400;line-height:16px}}
+.achievements {
+  padding: 44px 0;
+}
+.achievements .wrap {
+  max-width: 1300px;
+  padding: 0 14px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 24px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1024px) {
+  .achievements {
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .achievements {
+    margin: 16px auto;
+  }
+}
+.achievements__item {
+  border-radius: var(--border-radius-big);
+  padding: 24px;
+  border: 1px solid var(--pink);
+  max-width: 300px;
+  min-width: 134px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+@media screen and (max-width: 1000px) {
+  .achievements__item {
+    -webkit-box-flex: calc(50% - 8px);
+    -ms-flex: calc(50% - 8px);
+    flex: calc(50% - 8px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .achievements__item {
+    padding: 12px;
+  }
+}
+.achievements__item.heart {
+  position: relative;
+  background: linear-gradient(69.71deg, #FFFFFF 78.33%, #FFE9F6 97.13%);
+}
+.achievements__item.heart::after {
+  background-image: url("../../css/img/heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  right: 24px;
+  height: 52px;
+  width: 52px;
+  content: "";
+}
+@media screen and (max-width: 500px) {
+  .achievements__item.heart::after {
+    height: 23px;
+    width: 23px;
+    top: 14px;
+    right: 12px;
+  }
+}
+.achievements__item.background-gradient {
+  background: var(--main-gradient);
+  border: transparent;
+}
+.achievements__item.background-gradient h3,
+.achievements__item.background-gradient p {
+  color: var(--white);
+}
+.achievements__subtitle {
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 64%;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 500px) {
+  .achievements__subtitle {
+    margin-bottom: 6px;
+    background-size: 70%;
+  }
+}
+.achievements__text {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+@media screen and (max-width: 500px) {
+  .achievements__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
