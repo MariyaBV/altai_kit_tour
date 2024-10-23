@@ -4,6 +4,11 @@
 .contacts__left-block {
   padding-left: 40px;
 }
+@media screen and (max-width: 768px) {
+  .contacts__left-block {
+    padding-left: 0;
+  }
+}
 .contacts__block {
   margin: 40px 0;
 }
@@ -35,6 +40,15 @@
   font-weight: 700;
   line-height: 22px;
   margin-bottom: 8px;
+}
+.contacts__block .block-map iframe {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .contacts__block .block-map {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
 }
 .contacts__block-contacts {
   display: -webkit-box;
