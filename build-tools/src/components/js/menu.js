@@ -125,6 +125,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.header .top-menu').toggleClass('visible');
         $('#overlay').toggleClass('visible');
+        $('body').toggleClass('overflow-hidden');
     });
 });
 

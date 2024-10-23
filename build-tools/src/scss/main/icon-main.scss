@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'altai_main';
-    src:  url('css/fonts/altai_main.eot?fl2npe');
-    src:  url('css/fonts/altai_main.eot?fl2npe#iefix') format('embedded-opentype'),
-      url('css/fonts/altai_main.ttf?fl2npe') format('truetype'),
-      url('css/fonts/altai_main.woff?fl2npe') format('woff'),
-      url('css/fonts/altai_main.svg?fl2npe#altai_main') format('svg');
+    src:  url('css/fonts/altai_main.eot?1cg5tp');
+    src:  url('css/fonts/altai_main.eot?1cg5tp#iefix') format('embedded-opentype'),
+      url('css/fonts/altai_main.ttf?1cg5tp') format('truetype'),
+      url('css/fonts/altai_main.woff?1cg5tp') format('woff'),
+      url('css/fonts/altai_main.svg?1cg5tp#altai_main') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-main-left-little:before {
+    content: "\e905";
+  }
   .icon-main-left:before {
     content: "\e900";
   }
