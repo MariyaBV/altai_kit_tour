@@ -297,6 +297,10 @@
                 max-height: 544px;
                 min-height: auto;
 
+                @media screen and (max-width: 1120px) and (min-width: 768px) {
+                    min-height: 460px;
+                }
+
                 img {
                     @media screen and (max-width: 768px) {
                         min-height: 210px;
@@ -312,9 +316,19 @@
                 text-align: center;
             }
 
+            .popular-destinations__content {
+                @media screen and (max-width: 1120px) {
+                    padding: 15px;
+                }
+            }
+
             .popular-destinations__price {
                 .price-block {
                     margin: 40px 0 16px;
+
+                    @media screen and (max-width: 1190px) {
+                        margin-top: 16px;
+                    }
                 }
             }
 

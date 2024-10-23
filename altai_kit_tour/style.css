@@ -2720,7 +2720,11 @@ input[type=tel]::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__form_button-block {
+    margin: 10px;
+  }
 }
 .sidebar__form_button-block .button-border {
   display: -webkit-box;

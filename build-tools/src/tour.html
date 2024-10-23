@@ -185,19 +185,19 @@
                     <div class="swiper-wrapper">
                         @@loop('components/component/video-review.html',
                         [ 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
+                            {"video": "", 
                             "description": "Название тура и описание видео", }, 
                         ] 
                         )
@@ -210,90 +210,61 @@
             <section class="reviews-year">
                 <div class="reviews-year__slider wrap">
                     <link rel="stylesheet" href="css/other/reviews-year.css">
-                    <div class="reviews-year__controls-wrapper">
+                    <div class="reviews-year__controls-wrapper tab">
                         <p>Отзывы по годам</p>
-                        <ul class="reviews-year__controls" id="reviews_year_swiper_slider_1_controls">
-                            <li class="year">2020</li>
-                            <li class="year">2021</li>
-                            <li class="year">2022</li>
-                            <li class="year">2023</li>
-                            <li class="year">2024</li>
-                        </ul>
+                        <button class="year tablinks active" onclick="openCity(event, '2020')">2020</button>
+                        <button class="year tablinks" onclick="openCity(event, '2021')">2021</button>
+                        <button class="year tablinks" onclick="openCity(event, '2022')">2022</button>
+                        <button class="year tablinks" onclick="openCity(event, '2023')">2023</button>
+                        <button class="year tablinks" onclick="openCity(event, '2024')">2024</button>
                     </div>
+                    <h2 class="reviews-year__title">Отзывы по годам</h2>
                     <div class="reviews-year__dropdown-wrapper">
                         <span class="icon-main-down-little"></span>
-                        <select class="reviews-year__dropdown" id="reviews_year_swiper_slider_1_dropdown">
-                            <option value="0" class="year">2020</option>
-                            <option value="1" class="year">2021</option>
-                            <option value="2" class="year">2022</option>
-                            <option value="3" class="year">2023</option>
-                            <option value="4" class="year">2024</option>
+                        <select class="reviews-year__dropdown" id="reviews_year_dropdown">
+                            <option value="2020" class="year">2020</option>
+                            <option value="2021" class="year">2021</option>
+                            <option value="2022" class="year">2022</option>
+                            <option value="2023" class="year">2023</option>
+                            <option value="2024" class="year">2024</option>
                         </select>
                     </div>
-                    <div class="__slider">
-                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_slider_1">
+                    <div class="__slider tabcontent" style="display: block;" id="2020">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2020">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide reviews-year__slide">
-                                        @@include('components/component/popular-destinations.html', { 
-                                            "class": "little", 
-                                            "image": "review1.png", 
-                                            "type_tour": false, 
-                                            "alt": "Легенды Алтая отзыв", 
-                                            "date": "02.08.2021", 
-                                            "title": "Легенды Алтая", 
-                                            "text": "Автобусный тур по самым интересным местам", 
-                                            "dates_of_event": false, 
-                                            "discount": "", 
-                                            "price": "", 
-                                            "link": "#", 
-                                            "button": "Подробнее", 
-                                            "promotionHIT": false, 
-                                            "promotionProcent": false})
-                                            @@include('components/component/popular-destinations.html', { 
-                                                "class": "little", 
-                                                "image": "review1.png", 
-                                                "type_tour": false, 
-                                                "alt": "Легенды Алтая отзыв", 
-                                                "date": "02.08.2021", 
-                                                "title": "Легенды Алтая", 
-                                                "text": "Автобусный тур по самым интересным местам", 
-                                                "dates_of_event": false, 
-                                                "discount": "", 
-                                                "price": "", 
-                                                "link": "#", 
-                                                "button": "Подробнее", 
-                                                "promotionHIT": false, 
-                                                "promotionProcent": false})
-                                                @@include('components/component/popular-destinations.html', { 
-                                                    "class": "little", 
-                                                    "image": "review1.png", 
-                                                    "type_tour": false, 
-                                                    "alt": "Легенды Алтая отзыв", 
-                                                    "date": "02.08.2021", 
-                                                    "title": "Легенды Алтая", 
-                                                    "text": "Автобусный тур по самым интересным местам", 
-                                                    "dates_of_event": false, 
-                                                    "discount": "", 
-                                                    "price": "", 
-                                                    "link": "#", 
-                                                    "button": "Подробнее", 
-                                                    "promotionHIT": false, 
-                                                    "promotionProcent": false})
-                                                    @@include('components/component/popular-destinations.html', { 
-                                                        "class": "little", 
-                                                        "image": "review1.png", 
-                                                        "type_tour": false, 
-                                                        "alt": "Легенды Алтая отзыв", 
-                                                        "date": "02.08.2021", 
-                                                        "title": "Легенды Алтая", 
-                                                        "text": "Автобусный тур по самым интересным местам", 
-                                                        "dates_of_event": false, 
-                                                        "discount": "", 
-                                                        "price": "", 
-                                                        "link": "#", 
-                                                        "button": "Подробнее", 
-                                                        "promotionHIT": false, 
-                                                        "promotionProcent": false})
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
                                 </div>
                                 <div class="swiper-slide reviews-year__slide">
                                     @@include('components/component/popular-destinations.html', { 
@@ -311,83 +282,6 @@
                                         "button": "Подробнее", 
                                         "promotionHIT": false, 
                                         "promotionProcent": false})
-                                        @@include('components/component/popular-destinations.html', { 
-                                            "class": "little", 
-                                            "image": "review1.png", 
-                                            "type_tour": false, 
-                                            "alt": "Легенды Алтая отзыв", 
-                                            "date": "02.08.2021", 
-                                            "title": "Легенды Алтая", 
-                                            "text": "Автобусный тур по самым интересным местам", 
-                                            "dates_of_event": false, 
-                                            "discount": "", 
-                                            "price": "", 
-                                            "link": "#", 
-                                            "button": "Подробнее", 
-                                            "promotionHIT": false, 
-                                            "promotionProcent": false})
-                                            @@include('components/component/popular-destinations.html', { 
-                                                "class": "little", 
-                                                "image": "review1.png", 
-                                                "type_tour": false, 
-                                                "alt": "Гармония Алтая отзыв", 
-                                                "date": "02.08.2021", 
-                                                "title": "Гармония Алтая", 
-                                                "text": "Автобусный тур по самым интересным местам", 
-                                                "dates_of_event": false, 
-                                                "discount": "", 
-                                                "price": "", 
-                                                "link": "#", 
-                                                "button": "Подробнее", 
-                                                "promotionHIT": false, 
-                                                "promotionProcent": false})
-                                                @@include('components/component/popular-destinations.html', { 
-                                                    "class": "little", 
-                                                    "image": "review1.png", 
-                                                    "type_tour": false, 
-                                                    "alt": "Легенды Алтая отзыв", 
-                                                    "date": "02.08.2021", 
-                                                    "title": "Легенды Алтая", 
-                                                    "text": "Автобусный тур по самым интересным местам", 
-                                                    "dates_of_event": false, 
-                                                    "discount": "", 
-                                                    "price": "", 
-                                                    "link": "#", 
-                                                    "button": "Подробнее", 
-                                                    "promotionHIT": false, 
-                                                    "promotionProcent": false})
-                                                    @@include('components/component/popular-destinations.html', { 
-                                                        "class": "little", 
-                                                        "image": "review1.png", 
-                                                        "type_tour": false, 
-                                                        "alt": "Легенды Алтая отзыв", 
-                                                        "date": "02.08.2021", 
-                                                        "title": "Легенды Алтая", 
-                                                        "text": "Автобусный тур по самым интересным местам", 
-                                                        "dates_of_event": false, 
-                                                        "discount": "", 
-                                                        "price": "", 
-                                                        "link": "#", 
-                                                        "button": "Подробнее", 
-                                                        "promotionHIT": false, 
-                                                        "promotionProcent": false})
-                                </div>
-                                <div class="swiper-slide reviews-year__slide">
-                                                    @@include('components/component/popular-destinations.html', { 
-                                                        "class": "little", 
-                                                        "image": "review1.png", 
-                                                        "type_tour": false, 
-                                                        "alt": "Легенды Алтая отзыв", 
-                                                        "date": "02.08.2021", 
-                                                        "title": "Легенды Алтая", 
-                                                        "text": "Автобусный тур по самым интересным местам", 
-                                                        "dates_of_event": false, 
-                                                        "discount": "", 
-                                                        "price": "", 
-                                                        "link": "#", 
-                                                        "button": "Подробнее", 
-                                                        "promotionHIT": false, 
-                                                        "promotionProcent": false})
                                 </div>
                                 <div class="swiper-slide reviews-year__slide">
                                     @@include('components/component/popular-destinations.html', { 
@@ -405,102 +299,309 @@
                                         "button": "Подробнее", 
                                         "promotionHIT": false, 
                                         "promotionProcent": false})
-                                        @@include('components/component/popular-destinations.html', { 
-                                            "class": "little", 
-                                            "image": "review1.png", 
-                                            "type_tour": false, 
-                                            "alt": "Легенды Алтая отзыв", 
-                                            "date": "02.08.2021", 
-                                            "title": "Легенды Алтая", 
-                                            "text": "Автобусный тур по самым интересным местам", 
-                                            "dates_of_event": false, 
-                                            "discount": "", 
-                                            "price": "", 
-                                            "link": "#", 
-                                            "button": "Подробнее", 
-                                            "promotionHIT": false, 
-                                            "promotionProcent": false})
-                                            @@include('components/component/popular-destinations.html', { 
-                                                "class": "little", 
-                                                "image": "review1.png", 
-                                                "type_tour": false, 
-                                                "alt": "Легенды Алтая отзыв", 
-                                                "date": "02.08.2021", 
-                                                "title": "Легенды Алтая", 
-                                                "text": "Автобусный тур по самым интересным местам", 
-                                                "dates_of_event": false, 
-                                                "discount": "", 
-                                                "price": "", 
-                                                "link": "#", 
-                                                "button": "Подробнее", 
-                                                "promotionHIT": false, 
-                                                "promotionProcent": false})
-                                                @@include('components/component/popular-destinations.html', { 
-                                                    "class": "little", 
-                                                    "image": "review1.png", 
-                                                    "type_tour": false, 
-                                                    "alt": "Легенды Алтая отзыв", 
-                                                    "date": "02.08.2021", 
-                                                    "title": "Легенды Алтая", 
-                                                    "text": "Автобусный тур по самым интересным местам", 
-                                                    "dates_of_event": false, 
-                                                    "discount": "", 
-                                                    "price": "", 
-                                                    "link": "#", 
-                                                    "button": "Подробнее", 
-                                                    "promotionHIT": false, 
-                                                    "promotionProcent": false})
-                                                    @@include('components/component/popular-destinations.html', { 
-                                                        "class": "little", 
-                                                        "image": "review1.png", 
-                                                        "type_tour": false, 
-                                                        "alt": "Легенды Алтая отзыв", 
-                                                        "date": "02.08.2021", 
-                                                        "title": "Легенды Алтая", 
-                                                        "text": "Автобусный тур по самым интересным местам", 
-                                                        "dates_of_event": false, 
-                                                        "discount": "", 
-                                                        "price": "", 
-                                                        "link": "#", 
-                                                        "button": "Подробнее", 
-                                                        "promotionHIT": false, 
-                                                        "promotionProcent": false})
-                                </div>
-                                <div class="swiper-slide reviews-year__slide">
-
-                                            @@include('components/component/popular-destinations.html', { 
-                                                "class": "little", 
-                                                "image": "review1.png", 
-                                                "type_tour": false, 
-                                                "alt": "Легенды Алтая отзыв", 
-                                                "date": "02.08.2021", 
-                                                "title": "Легенды Алтая", 
-                                                "text": "Автобусный тур по самым интересным местам", 
-                                                "dates_of_event": false, 
-                                                "discount": "", 
-                                                "price": "", 
-                                                "link": "#", 
-                                                "button": "Подробнее", 
-                                                "promotionHIT": false, 
-                                                "promotionProcent": false})
-                                                @@include('components/component/popular-destinations.html', { 
-                                                    "class": "little", 
-                                                    "image": "review1.png", 
-                                                    "type_tour": false, 
-                                                    "alt": "Легенды Алтая отзыв", 
-                                                    "date": "02.08.2021", 
-                                                    "title": "Легенды Алтая", 
-                                                    "text": "Автобусный тур по самым интересным местам", 
-                                                    "dates_of_event": false, 
-                                                    "discount": "", 
-                                                    "price": "", 
-                                                    "link": "#", 
-                                                    "button": "Подробнее", 
-                                                    "promotionHIT": false, 
-                                                    "promotionProcent": false})
-                                                    
                                 </div>
                             </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2020"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2021">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2021">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2021"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2022">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2022">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2022"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2023">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2023">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2023"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2024">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2024">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                    "class": "little", 
+                                    "image": "review1.png", 
+                                    "type_tour": false, 
+                                    "alt": "Легенды Алтая отзыв", 
+                                    "date": "02.08.2021", 
+                                    "title": "Легенды Алтая", 
+                                    "text": "Автобусный тур по самым интересным местам", 
+                                    "dates_of_event": false, 
+                                    "discount": "", 
+                                    "price": "", 
+                                    "link": "#", 
+                                    "button": "Подробнее", 
+                                    "promotionHIT": false, 
+                                    "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    @@include('components/component/popular-destinations.html', { 
+                                        "class": "little", 
+                                        "image": "review1.png", 
+                                        "type_tour": false, 
+                                        "alt": "Легенды Алтая отзыв", 
+                                        "date": "02.08.2021", 
+                                        "title": "Легенды Алтая", 
+                                        "text": "Автобусный тур по самым интересным местам", 
+                                        "dates_of_event": false, 
+                                        "discount": "", 
+                                        "price": "", 
+                                        "link": "#", 
+                                        "button": "Подробнее", 
+                                        "promotionHIT": false, 
+                                        "promotionProcent": false})
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2024"></div>
                         </div>
                     </div>
                 </div>

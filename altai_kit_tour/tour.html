@@ -631,25 +631,25 @@
                     <div class="video-review-swiper">
                     <div class="swiper-wrapper">
                         <div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div>
                     </div>
@@ -661,124 +661,30 @@
             <section class="reviews-year">
                 <div class="reviews-year__slider wrap">
                     <link rel="stylesheet" href="css/other/reviews-year.css">
-                    <div class="reviews-year__controls-wrapper">
+                    <div class="reviews-year__controls-wrapper tab">
                         <p>Отзывы по годам</p>
-                        <ul class="reviews-year__controls" id="reviews_year_swiper_slider_1_controls">
-                            <li class="year">2020</li>
-                            <li class="year">2021</li>
-                            <li class="year">2022</li>
-                            <li class="year">2023</li>
-                            <li class="year">2024</li>
-                        </ul>
+                        <button class="year tablinks active" onclick="openCity(event, '2020')">2020</button>
+                        <button class="year tablinks" onclick="openCity(event, '2021')">2021</button>
+                        <button class="year tablinks" onclick="openCity(event, '2022')">2022</button>
+                        <button class="year tablinks" onclick="openCity(event, '2023')">2023</button>
+                        <button class="year tablinks" onclick="openCity(event, '2024')">2024</button>
                     </div>
+                    <h2 class="reviews-year__title">Отзывы по годам</h2>
                     <div class="reviews-year__dropdown-wrapper">
                         <span class="icon-main-down-little"></span>
-                        <select class="reviews-year__dropdown" id="reviews_year_swiper_slider_1_dropdown">
-                            <option value="0" class="year">2020</option>
-                            <option value="1" class="year">2021</option>
-                            <option value="2" class="year">2022</option>
-                            <option value="3" class="year">2023</option>
-                            <option value="4" class="year">2024</option>
+                        <select class="reviews-year__dropdown" id="reviews_year_dropdown">
+                            <option value="2020" class="year">2020</option>
+                            <option value="2021" class="year">2021</option>
+                            <option value="2022" class="year">2022</option>
+                            <option value="2023" class="year">2023</option>
+                            <option value="2024" class="year">2024</option>
                         </select>
                     </div>
-                    <div class="__slider">
-                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_slider_1">
+                    <div class="__slider tabcontent" style="display: block;" id="2020">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2020">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide reviews-year__slide">
-                                        <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                            <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                    <div class="popular-destinations__item little">
+                                    <div class="popular-destinations__item little">
     <div class="popular-destinations__image">
         <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
         
@@ -842,133 +748,9 @@
         </div>
     </div>
 </div>
-                                        <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                            <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Гармония Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Гармония Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                    <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
                                 </div>
                                 <div class="swiper-slide reviews-year__slide">
-                                                    <div class="popular-destinations__item little">
+                                    <div class="popular-destinations__item little">
     <div class="popular-destinations__image">
         <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
         
@@ -1032,198 +814,565 @@
         </div>
     </div>
 </div>
-                                        <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                            <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                    <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                </div>
-                                <div class="swiper-slide reviews-year__slide">
-
-                                            <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                <div class="popular-destinations__item little">
-    <div class="popular-destinations__image">
-        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
-        
-    </div>
-    <div class="popular-destinations__about-block">
-        <div class="about">
-            <link rel="stylesheet" href="css/other/promotion.css">
-            <div class="promotion-block">
-                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
-                 
-                 
-            </div>
-            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
-        </div>
-        <div class="popular-destinations__content">
-            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
-            
-                <p class="txt">Автобусный тур по самым интересным местам</p>
-            
-            
-            <div class="popular-destinations__price">
-                <div class="price-block">
-                    <p class="discount"></p>
-                    <p class="price"></p>
-                </div>
-                <a href="#" class="button popular-destinations__button">Подробнее</a>
-            </div>
-        </div>
-    </div>
-</div>
-                                                    
                                 </div>
                             </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2020"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2021">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2021">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2021"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2022">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2022">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2022"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2023">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2023">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2023"></div>
+                        </div>
+                    </div>
+                    <div class="__slider tabcontent" id="2024">
+                        <div class="swiper reviews-year__swiper-slider" id="reviews_year_swiper_2024">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                                <div class="swiper-slide reviews-year__slide">
+                                    <div class="popular-destinations__item little">
+    <div class="popular-destinations__image">
+        <img src="css/img/popular-destinations/review1.png" alt="Легенды Алтая отзыв" srcset="">
+        
+    </div>
+    <div class="popular-destinations__about-block">
+        <div class="about">
+            <link rel="stylesheet" href="css/other/promotion.css">
+            <div class="promotion-block">
+                <!-- можно передавать типы акций и проходить по ним циклом - это легче сразу на php реализовать -->
+                 
+                 
+            </div>
+            <p class="date"><span class="icon-main-calendar"></span>02.08.2021</p>
+        </div>
+        <div class="popular-destinations__content">
+            <h4 class="popular-destinations__subtitle">Легенды Алтая</h4>
+            
+                <p class="txt">Автобусный тур по самым интересным местам</p>
+            
+            
+            <div class="popular-destinations__price">
+                <div class="price-block">
+                    <p class="discount"></p>
+                    <p class="price"></p>
+                </div>
+                <a href="#" class="button popular-destinations__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination_reviews_year_swiper_2024"></div>
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,44 @@
 .reviews-year {
+    .tab {
+        overflow: hidden;
+    }
+
+    .tabcontent {
+        display: none;
+    }
+
     .__slider>.swiper {
         max-width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .__slider {
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
     }
 
     .swiper {
         padding: 0;
+
+        .swiper-pagination {
+            bottom: 0;
+        }
+    }
+
+    &__title {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            color: var(--light-blue);
+            text-transform: uppercase;
+            font-family: var(--font-unbounded);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
     }
 
     &__dropdown {
@@ -32,14 +66,14 @@
             top: 50%;
             transform: translate(0, -50%);
             font-size: 24px;
-            z-index: -1;
         }
 
         select {
-            background: unset;
             font-size: 20px;
             font-weight: 700;
             line-height: 27px;
+            background: none;
+            background-color: var(--bg-light-gray);
 
             option {
                 font-size: 20px;
@@ -52,35 +86,36 @@
     &__controls-wrapper {
         display: flex;
         align-items: center;
-        font-family: var(--font-unbounded);
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 40px;
-        color: var(--light-blue);
         gap: 24px;
         padding-left: 24px;
         border-bottom: 1px solid var(--light-blue);
         margin-bottom: 16px;
+
+        button,
+        p {
+            font-family: var(--font-unbounded);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 40px;
+            color: var(--light-blue);
+            background-color: inherit;
+            border: none;
+        }
 
         @media screen and (max-width: 768px) {
             display: none;
         }
     }
 
-    &__controls {
-        display: flex;
-        gap: 24px;
-        align-items: center;
+    .year {
+        &:hover {
+            cursor: pointer;
+            color: var(--blue);
+        }
 
-        li.year {
-            &:hover {
-                cursor: pointer;
-            }
-
-            &.active {
-                color: var(--blue);
-                text-decoration: underline;
-            }
+        &.active {
+            color: var(--blue);
+            text-decoration: underline;
         }
     }
 

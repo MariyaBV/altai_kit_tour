@@ -2,56 +2,75 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchSections = document.querySelectorAll('.reviews-year');
 
     searchSections.forEach(searchSection => {
-        const swiperElement = searchSection.querySelector('.swiper');
-        if (swiperElement) {
-            const swiperIDSlider = swiperElement.getAttribute('id');
-            if (swiperIDSlider) {
-                const controls = searchSection.querySelectorAll("#" + swiperIDSlider + "_controls li");
-                const slides = searchSection.querySelectorAll("#" + swiperIDSlider + "_slide .swiper-slide.reviews-year__slide");
-                const dropdown = searchSection.querySelector("#" + swiperIDSlider + "_dropdown");
+        const swiperElementAll = searchSection.querySelectorAll('.swiper');
 
-                
-                const swiper_saved_money = new Swiper("#" + swiperIDSlider, {
-                    direction: "horizontal",
-                    loop: true,
-                    slidesPerView: 1,
-                    autoHeight: true,
-                    spaceBetween: 40,
-                });
+        swiperElementAll.forEach(swiperElement => {
+            if (swiperElement) {
+                const swiperIDSlider = swiperElement.getAttribute('id');
+                console.log(swiperIDSlider);
+                if (swiperIDSlider) {
+                    const sliderPagination = searchSection.querySelector('.swiper-pagination_' + swiperIDSlider);
 
-                function updateActiveControl() {
-                    const swiperRealIndex = swiper_saved_money.realIndex;
-                    controls.forEach((control, index) => {
-                        if (index === swiperRealIndex) {
-                            control.classList.add('active');
-                        } else {
-                            control.classList.remove('active');
-                        }
+                    console.log(sliderPagination);
+
+                    const swiper_saved_money = new Swiper("#" + swiperIDSlider, {
+                        direction: "horizontal",
+                        loop: true,
+                        slidesPerView: 1.5,
+                        slidesPerGroup: 1,
+                        autoHeight: true,
+                        spaceBetween: 10,
+                        pagination: {
+                            el: sliderPagination,
+                            type: 'bullets',
+                            clickable: true, 
+                        },
+                        breakpoints: {
+                            500: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                                spaceBetween: 10,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                slidesPerGroup: 3,
+                                spaceBetween: 20,
+                            },
+                            1200: {
+                                slidesPerView: 4,
+                                slidesPerGroup: 4,
+                                spaceBetween: 40,
+                            },
+                        },
                     });
-                    slides.forEach((slide, index) => {
-                        if (index === swiperRealIndex) {
-                            slide.classList.add('swiper-slide-active');
-                        } else {
-                            slide.classList.remove('swiper-slide-active');
-                        }
-                    });
-                    dropdown.value = swiperRealIndex;
                 }
-
-                swiper_saved_money.on('slideChange', updateActiveControl);
-
-                controls.forEach((control, index) => {
-                    control.addEventListener('click', () => {
-                        swiper_saved_money.slideToLoop(index);
-                    });
-                });
-
-                dropdown.addEventListener('change', () => {
-                    swiper_saved_money.slideToLoop(parseInt(dropdown.value));
-                });
-
-                updateActiveControl();
             }
-        }
-    })
+        });
+    });
+});
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    
+    // Показ выбранного таба
+    const selectedTab = document.getElementById(cityName);
+    selectedTab.style.display = "block";
+
+    if (evt) {
+        evt.currentTarget.className += " active";
+    }
+}
+
+// Обработчик для выпадающего списка
+document.getElementById('reviews_year_dropdown').addEventListener('change', function(event) {
+    var selectedYear = event.target.value;
+    openCity(null, selectedYear);
 });

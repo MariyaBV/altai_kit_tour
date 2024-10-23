@@ -1,8 +1,38 @@
+.reviews-year .tab {
+  overflow: hidden;
+}
+.reviews-year .tabcontent {
+  display: none;
+}
 .reviews-year .__slider > .swiper {
   max-width: 100%;
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .reviews-year .__slider {
+    max-width: 100%;
+  }
 }
 .reviews-year .swiper {
   padding: 0;
+}
+.reviews-year .swiper .swiper-pagination {
+  bottom: 0;
+}
+.reviews-year__title {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .reviews-year__title {
+    display: block;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    font-family: var(--font-unbounded);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
 }
 .reviews-year__dropdown {
   width: 100%;
@@ -30,13 +60,13 @@
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   font-size: 24px;
-  z-index: -1;
 }
 .reviews-year__dropdown-wrapper select {
-  background: unset;
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
+  background: none;
+  background-color: var(--bg-light-gray);
 }
 .reviews-year__dropdown-wrapper select option {
   font-size: 20px;
@@ -50,34 +80,31 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 24px;
+  padding-left: 24px;
+  border-bottom: 1px solid var(--light-blue);
+  margin-bottom: 16px;
+}
+.reviews-year__controls-wrapper button,
+.reviews-year__controls-wrapper p {
   font-family: var(--font-unbounded);
   font-size: 16px;
   font-weight: 600;
   line-height: 40px;
   color: var(--light-blue);
-  gap: 24px;
-  padding-left: 24px;
-  border-bottom: 1px solid var(--light-blue);
-  margin-bottom: 16px;
+  background-color: inherit;
+  border: none;
 }
 @media screen and (max-width: 768px) {
   .reviews-year__controls-wrapper {
     display: none;
   }
 }
-.reviews-year__controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 24px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.reviews-year__controls li.year:hover {
+.reviews-year .year:hover {
   cursor: pointer;
+  color: var(--blue);
 }
-.reviews-year__controls li.year.active {
+.reviews-year .year.active {
   color: var(--blue);
   text-decoration: underline;
 }

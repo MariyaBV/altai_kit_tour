@@ -318,6 +318,11 @@
   max-height: 544px;
   min-height: auto;
 }
+@media screen and (max-width: 1120px) and (min-width: 768px) {
+  .popular-destinations__item.with_schedule .popular-destinations__image {
+    min-height: 460px;
+  }
+}
 @media screen and (max-width: 768px) {
   .popular-destinations__item.with_schedule .popular-destinations__image img {
     min-height: 210px;
@@ -329,8 +334,18 @@
   line-height: var(--txt-line-height);
   text-align: center;
 }
+@media screen and (max-width: 1120px) {
+  .popular-destinations__item.with_schedule .popular-destinations__content {
+    padding: 15px;
+  }
+}
 .popular-destinations__item.with_schedule .popular-destinations__price .price-block {
   margin: 40px 0 16px;
+}
+@media screen and (max-width: 1190px) {
+  .popular-destinations__item.with_schedule .popular-destinations__price .price-block {
+    margin-top: 16px;
+  }
 }
 .popular-destinations__item.with_schedule .popular-destinations__button {
   max-width: unset;
