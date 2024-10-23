@@ -9,15 +9,25 @@
         @media screen and (max-width: 768px) {
             padding-left: 0;
         }
+
+        img {
+            @media screen and (max-width: 768px) {
+                max-width: 80px;
+            }
+        }
     }
 
     &__block {
         margin: 40px 0;
 
+        @media screen and (max-width: 768px) {
+            margin-top: 0;
+        }
+
         .contact-messengers {
             display: flex;
             gap: 17px;
-    
+
             a {
                 &::before {
                     background: var(--main-gradient);
@@ -38,6 +48,10 @@
 
         .subtitle {
             margin: 16px 0 4px;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+            }
         }
 
         .subtitle-block-messengers {
@@ -50,11 +64,16 @@
         .block-map {
             iframe {
                 width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    max-height: 240px;
+                }
             }
 
             @media screen and (max-width: 768px) {
                 margin-left: -16px;
                 margin-right: -16px;
+                
             }
         }
     }

@@ -22,3 +22,17 @@ $(document).ready(function() {
         showButton.show();
     });
 });
+
+$(document).ready(function () {
+    $('#button_filteres').on('click', function (e) {
+        e.preventDefault(); 
+        $('#sidebar').toggleClass('visible-mobile');
+        $('body').toggleClass('overflow-hidden');
+    });
+
+    $('#close-sidebar').on('click', function (e) {
+        e.preventDefault(); 
+        $('#sidebar').removeClass('visible-mobile');
+        $('body').removeClass('overflow-hidden');
+    });
+});

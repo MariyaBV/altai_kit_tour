@@ -2,25 +2,29 @@
     max-width: 315px;
 
     @media screen and (max-width: 768px) {
-        &.visible-mobile {
-            visibility: unset;
-            opacity: 1;
-        }
-
         &.mobile {
             position: fixed;
             left: 0;
             right: 0;
-            top: 0;
             bottom: 0;
-            z-index: 1000;
+            z-index: -1;
             visibility: hidden;
             opacity: 0;
             transition: transform var(--transition);
-            max-width: none;
-            width: 100%;
-            background-color: var(--white);
             overflow: scroll;
+            top: 100px;
+            background-color: var(--white);
+            height: calc(100% - 100px);
+            width: 100%;
+            left: 0;
+            right: 0;
+            max-width: 100%;
+        }
+
+        &.visible-mobile {
+            visibility: unset;
+            opacity: 1;
+            z-index: 1000;
         }
     }
 
@@ -28,7 +32,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 25px;
+        margin: 0 10px 25px 10px;
 
         &_count {
             font-size: 10px;
@@ -36,6 +40,20 @@
             line-height: 14px;
             color: var(--pink);
             vertical-align: super;
+        }
+
+        .mobile.close-link {
+            display: none;
+            border: none;
+            background: none;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+
+            span[class^="icon-"] {
+                font-size: 24px;
+            }
         }
     }
 
@@ -46,6 +64,7 @@
             gap: 8px;
             max-width: 324px;
             justify-content: space-between;
+            margin: 10px;
 
             .button-border {
                 display: flex;
@@ -68,7 +87,7 @@
 
     .form {
         &__block {
-            margin: 4px 0 15px 7px;
+            margin: 4px 0 15px 10px;
 
             &_more {
                 display: none;
@@ -92,12 +111,6 @@
                 margin-bottom: 5px;
             }
 
-            input {
-                border: 1px solid var(--light-gray);
-                padding: 5px;
-                border-radius: var(--border-radius-little);
-            }
-
             .icon-main-checkbox-outline {
                 margin-left: -28px;
                 z-index: 0;
@@ -112,20 +125,11 @@
                 }
             }
 
-            input[type="checkbox"]+label {
-                font-family: 'PT Sans Caption', sans-serif;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 16px;
-            }
 
-            input[type="checkbox"]:checked+.icon-main-checkbox-outline::before {
-                content: "\e908";
-            }
 
             &_date {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 gap: 8px;
 
                 &_calendar {
@@ -137,23 +141,7 @@
                 }
 
                 select {
-                    border: 1px solid var(--light-gray);
-                    padding: 8px 8px 8px 10px;
-                    border-radius: var(--border-radius-little);
                     width: 83px;
-                }
-
-
-                input[type="text"] {
-                    &::placeholder {
-                        color: var(--black);
-                    }
-                }
-
-                input[type="number"] {
-                    &::placeholder {
-                        color: var(--gray);
-                    }
                 }
 
                 input.txt-s {

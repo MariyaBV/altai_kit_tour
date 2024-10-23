@@ -207,3 +207,16 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function() {
+    // Проверка при загрузке страницы
+    if ($(window).height() < 800 && $(window).width() < 768) {
+        $('.header .top-menu .menu-list__item.sub-menu').css('height', 'calc(100% - 130px)');
+    }
+
+    // Проверка при изменении размера окна
+    $(window).resize(function() {
+        if ($(window).height() < 800 && $(window).width() < 768) {
+            $('.header .top-menu .menu-list__item.sub-menu').css('height', 'calc(100% - 130px)');
+        }
+    });
+});

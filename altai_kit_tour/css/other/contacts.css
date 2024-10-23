@@ -9,8 +9,18 @@
     padding-left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .contacts__left-block img {
+    max-width: 80px;
+  }
+}
 .contacts__block {
   margin: 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .contacts__block {
+    margin-top: 0;
+  }
 }
 .contacts__block .contact-messengers {
   display: -webkit-box;
@@ -35,6 +45,11 @@
 .contacts__block .subtitle {
   margin: 16px 0 4px;
 }
+@media screen and (max-width: 768px) {
+  .contacts__block .subtitle {
+    margin-top: 20px;
+  }
+}
 .contacts__block .subtitle-block-messengers {
   font-size: 16px;
   font-weight: 700;
@@ -43,6 +58,11 @@
 }
 .contacts__block .block-map iframe {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .contacts__block .block-map iframe {
+    max-height: 240px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contacts__block .block-map {

@@ -10,7 +10,32 @@
 
     &.inner-page {
         padding-top: 97px;
-        max-height: 561px;
+        max-height: 550px;
+
+        @media screen and (max-width: 768px) {
+            background-image: none !important;
+            height: auto;
+            max-height: 100%;
+            color: var(--light-blue);
+            padding-top: 68px;
+        }
+
+        .img-block {
+            &.mobile {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+
+                }
+
+                img {
+                    max-height: 91px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
 
         &::after {
             display: none;
@@ -22,30 +47,80 @@
             font-weight: 800;
             line-height: 99.2px;
             text-align: center;
+            text-transform: uppercase;
 
+            @media screen and (max-width: 990px) {
+                font-size: 55px;
+                line-height: 60.2px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28px;
+                padding-top: 60px;
+            }
+        }
+
+        .wrap {
+            @media screen and (max-width: 768px) {
+                position: relative;
+            }
         }
 
         .subtitle {
             text-align: center;
-            margin: 32px 0;
+            margin: 18px 0 37px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: var(--black);
+            }
         }
 
-        .link {
-            max-width: 200px;
-            margin: 0 auto;
+        button.button-gradient {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
 
         .type-tour {
             margin-top: 32px;
+            position: relative;
+
+            @media screen and (max-width: 990px) {
+                position: absolute;
+                bottom: 0;
+                top: auto;
+            }
+
+            @media screen and (max-width: 768px) {
+                bottom: auto;
+                top: 16px;
+                margin-top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
 
             span {
                 width: 80px;
                 height: 80px;
                 display: block;
 
+                @media screen and (max-width: 768px) {
+                    width: 40px;
+                    height: 40px;
+                }
+
                 &::before {
                     color: var(--white);
                     font-size: 38px;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 20px;
+                    }
                 }
             }
         }

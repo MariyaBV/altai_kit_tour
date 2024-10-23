@@ -41,8 +41,13 @@
         flex-wrap: wrap;
         gap: 40px;
 
+        @media screen and (max-width: 1000px) {
+            gap: 20px;
+        }
+
         @media screen and (max-width: 500px) {
             gap: 8px;
+            align-items: flex-start;
         }
     }
 
@@ -73,13 +78,22 @@
             max-width: 260px;
             min-width: 235px;
 
+            @media screen and (max-width: 1000px) {
+                flex: calc(100% / 2 - 40px);
+                min-width: 200px;
+            }
+
             @media screen and (max-width: 500px) {
                 min-width: 135px;
             }
 
             .popular-destinations__about-block {
                 .about {
-                    height: 56px;
+                    //height: 56px;
+
+                    @media screen and (max-width: 500px) {
+                        height: auto;
+                    }
 
                     .date {
                         margin: 0;
@@ -104,6 +118,11 @@
                     margin-bottom: 16px;
                     display: flex;
                     gap: 12px;
+
+                    @media screen and (max-width: 1000px) {
+                        gap: 0;
+                        flex-direction: column;
+                    }
                 }
             }
 
@@ -170,8 +189,6 @@
                 }
 
                 .about {
-
-
                     .promotion-block {
                         @media screen and (max-width: 630px) {
                             height: auto;
@@ -270,10 +287,22 @@
         &.with_schedule {
             .popular-destinations__about-block {
                 max-width: 400px;
+
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                }
             }
 
             .popular-destinations__image {
                 max-height: 544px;
+                min-height: auto;
+
+                img {
+                    @media screen and (max-width: 768px) {
+                        min-height: 210px;
+                    }
+                }
+
             }
 
             .popular-destinations__subtitle {
@@ -391,6 +420,7 @@
 
             @media screen and (max-width: 630px) {
                 flex-direction: column;
+                height: auto;
             }
 
 

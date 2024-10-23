@@ -17,6 +17,11 @@
 .video-review .__slider > .swiper {
   max-width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .video-review .__slider {
+    max-width: 100%;
+  }
+}
 .video-review .swiper-pagination {
   bottom: -36px;
 }

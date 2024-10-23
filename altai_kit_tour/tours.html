@@ -256,6 +256,18 @@
     </div>
   </div>
 </header>
+<div class="block-booking" id="block_booking">
+  <p class="block-booking__title">Забронировать тур</p>
+  <button id="close_booking_form"><span class="icon-main-close close-catalog-menu"></span></button>
+  <form class="block-booking__form">
+    <input required class="block-booking__input" type="text" placeholder="Имя*"  />
+    <input required class="block-booking__input" type="text" placeholder="Фамилия*" />
+    <input required class="block-booking__input" type="tel" placeholder="Телефон*" />
+    <input required class="block-booking__input" type="email" placeholder="e-mail*" />
+    <input type="submit" class="block-booking__button button-gradient" value="Забронировать">
+  </form>
+  <p class="block-booking__text">Нажимая кнопку «Забронировать», вы соглашаетесь с обработкой своих персональных данных в соответствии с нашей Политикой конфиденциальности.</p>
+</div>
         <main id="main" class="not-index">
             <div class="wrap">
                 <p id="breadcrumbs">
@@ -272,8 +284,9 @@
             <section class="container wrap">
                 <div class="row">
                     <div class="col-md-3 col-sm-0">
-                        <div class="sidebar" id="sidebar">
+                        <div class="sidebar mobile" id="sidebar">
     <div class="sidebar__title">
+        <button class="mobile close-link" id="close-sidebar"><span class="icon-main-close"></span></button>
         <h4>Туры<span class="sidebar__title_count">303</span></h4>
         <a id="clear_filters" href="" class="clear-filters">Очистить фильтры</a>
     </div>
@@ -282,8 +295,7 @@
             <p class="txt">Дата тура</p>
             <div class="form__block_date">
                 <div class="form__block_date_calendar">
-                    <input class="txt-s" required="" placeholder="Выберите дату" type="text" name="date" id="min_days"
-                        onfocus="(this.type='date')">
+                    <input class="txt-s" type="date" name="date" id="min_days">
                     <span class="icon-main-calendar"></span>
                 </div>
                 <select placeholder="дней" name="days" id="days">
@@ -541,7 +553,7 @@
         </div>
         <div class="sidebar__form_button-block">
             <a id="clear_filters_2" href="" class="button-border">Очистить фильтр</a>
-            <input class="button-gradient"  type="submit" value="Применить">
+            <button class="button-gradient"  type="submit">Применить</button>
         </div>
     </form>
 </div>
@@ -555,15 +567,16 @@
     <input type="hidden" name="paged" value="1">
     <input type="hidden" name="orderby" value="default">
     <div class="custom-ordering__select" data-attribute="orderby">
+        <button id="button_filteres" class="button-sort">
+            <span class="icon-main-sort-1"></span>Фильтры
+        </button>
         <div class="custom-ordering-select">
             <div class="custom-ordering-trigger button-sort" data-attribute-label="Сортировать">
-                <span class="icon-main-sort-1"></span>
                 <span class="icon-main-sort-2"></span>Сортировать
             </div>
             <ul class="custom-ordering-options">
                 <li class="custom-ordering-option selected" data-value="default">
                     <input type="radio" name="orderby" value="default" checked="checked">
-                    <span class="icon-main-sort-1"></span>
                     <span class="icon-main-sort-2"></span>Сортировать
                 </li>
                 <li class="custom-ordering-option " data-value="price">

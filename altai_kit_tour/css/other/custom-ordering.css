@@ -7,12 +7,27 @@
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
+  gap: 8px;
+}
+.custom-ordering__select button.button-sort {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .custom-ordering__select button.button-sort {
+    display: block;
+  }
 }
 .custom-ordering .custom-ordering-select {
   position: relative;
   display: inline-block;
   cursor: pointer;
   min-width: 224px;
+}
+@media screen and (max-width: 400px) {
+  .custom-ordering .custom-ordering-select {
+    position: static;
+    min-width: auto;
+  }
 }
 .custom-ordering .custom-ordering-select.opened .custom-ordering-options {
   display: block;

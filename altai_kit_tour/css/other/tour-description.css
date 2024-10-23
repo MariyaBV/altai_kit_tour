@@ -5,6 +5,23 @@
 .tour-description h4 {
   margin-bottom: 22px;
 }
+@media screen and (max-width: 768px) {
+  .tour-description h4 {
+    font-family: var(--font-unbounded);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
 .tour-description h4 span[class^=icon-] {
   width: 40px;
   height: 40px;

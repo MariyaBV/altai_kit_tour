@@ -7,13 +7,13 @@
     <div id="overlay" class="overlay"></div>
     <div id="page">
         @@include('components/const/_header.html')
-        <main id="main" class="not-index">
+        <main id="main">
             <section class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
                 <div class="wrap">
                     <p class="title">К Шавлинским озерам</p>
                     <h3 class="subtitle">Конный туристический маршрут</h3>
-                    <a class="link button-gradient" href="">Забронировать</a>
-                    <div class="type-tour" style="position: relative;">
+                    <a class="button-gradient" href="#booking">Забронировать</a>
+                    <div class="type-tour">
                         <link rel="stylesheet" href="css/other/type-tour.css">
                         @@include('components/component/type-tour.html', {"class": "icon-tour-horse", "color": "var(--dark-blue-50)"})
                         @@include('components/component/type-tour.html', {"class": "icon-tour-truck", "color": "var(--dark-green-50)"})
@@ -64,7 +64,7 @@
                     "dates_of_event": true, 
                     "discount": "", 
                     "price": "51 200 ₽.", 
-                    "link": "#", 
+                    "link": "#booking", 
                     "button": "Забронировать", 
                     "promotionHIT": true, 
                     "promotionProcent": true})
@@ -144,7 +144,10 @@
                         ] 
                       )
                     </ul>
-                    <p class="attention"><span class="attention-mark">!</span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
+                    <p class="attention">
+                        <span class="attention-mark">!</span>
+                        <span>Программа маршрута может быть незначительно изменена по объективным причинам.</span>
+                    </p>
                 </div>
             </section>
             <section class="tour-schedule">
@@ -156,21 +159,21 @@
                         @@include('components/component/schedule.html', {
                             "month_year":"Сентябрь 2024", 
                             date_price: [
-                              '10.09.2024 - 20.09.2024 20 000 р.', 
-                              '23.09.2024 - 27.09.2024 25 000 р.', 
-                              '23.09.2024 - 27.09.2024 19 000 р.', 
+                              '10.09.2024 - 20.09.2024 20&nbsp;000&nbsp;р.', 
+                              '23.09.2024 - 27.09.2024 25&nbsp;000&nbsp;р.', 
+                              '23.09.2024 - 27.09.2024 19&nbsp;000&nbsp;р.', 
                             ], 
                         })
                         @@include('components/component/schedule.html', {
                             "month_year":"Октябрь 2024", 
                             date_price: [
-                              '10.10.2024 - 20.10.2024 20 000 р.', 
-                              '23.10.2024 - 27.10.2024 25 000 р.', 
-                              '23.10.2024 - 27.10.2024 19 000 р.', 
+                              '10.10.2024 - 20.10.2024 20&nbsp;000&nbsp;р.', 
+                              '23.10.2024 - 27.10.2024 25&nbsp;000&nbsp;р.', 
+                              '23.10.2024 - 27.10.2024 19&nbsp;000&nbsp;р.', 
                             ], 
                         })
                     </ul>
-                    <a class="link button" href="">Забронировать</a>
+                    <a class="link button" href="#booking">Забронировать</a>
                 </div>
             </section>
             <section class="video-review">
@@ -182,19 +185,19 @@
                     <div class="swiper-wrapper">
                         @@loop('components/component/video-review.html',
                         [ 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
-                            {"video": "", 
+                            {"video": "https://www.youtube.com/embed/jxYmOOnmgi8", 
                             "description": "Название тура и описание видео", }, 
                         ] 
                         )

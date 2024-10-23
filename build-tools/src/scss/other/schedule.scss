@@ -25,6 +25,10 @@
             border-bottom: 1px solid var(--light-blue);
             text-align: center;
 
+            @media screen and (max-width: 500px) {
+                line-height: 25px;
+            }
+
             &:last-child {
                 border-bottom: none;
             }
@@ -52,10 +56,14 @@
     .plus {
         position: absolute;
         right: 20px;
-        top: 0;
         top: 10px;
         font-size: 24px;
         color: var(--light-blue);
+        z-index: -1;
+
+        @media screen and (max-width: 500px) {
+            top: 6px;
+        }
 
         &.turn {
             &::before {

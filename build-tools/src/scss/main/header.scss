@@ -214,6 +214,32 @@
                     height: calc(100% - 280px);
                     box-shadow: 0px 2px 16px 0px #0000001A;
                     scroll-behavior: auto;
+                    overflow-y: auto;
+
+                    li {
+                        a {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            padding: 12.5px 9px 12.5px 32px;
+
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                            }
+
+                            span[class*="icon"] {
+                                font-size: 24px;
+                            }
+                        }
+
+                        &:first-child {
+                            a {
+                                padding-top: 27px;
+                            }
+                        }
+                    }
 
                     &.show {
                         display: block;
@@ -291,11 +317,12 @@
 
                 a {
                     @media screen and (max-width: 768px) {
-                        padding: 15px 32px;
+                        padding: 14px 32px;
                         display: flex;
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 22px;
+                        align-items: center;
                     }
 
                     span[class^="icon-"] {
@@ -307,11 +334,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin: 0;
 
                     @media screen and (max-width: 768px) {
                         justify-content: space-between;
                     }
-    
+
                     span[class^="icon-"] {
                         color: var(--white);
                         font-size: 24px;
@@ -389,7 +417,7 @@
 
             }
 
-            
+
 
         }
 
@@ -619,7 +647,7 @@
                 justify-content: center;
                 padding: 15px;
                 background: linear-gradient(180deg, #F8F8F8 74.5%, #E7F5FF 100%);
-                margin-top: 3px;
+                margin-top: 2px;
                 border-bottom-left-radius: var(--border-radius-big);
                 border-bottom-right-radius: var(--border-radius-big);
                 width: 100%;
@@ -627,7 +655,7 @@
 
             a {
                 @media screen and (max-width: 768px) {
-                    padding: 11px 27px;
+                    padding: 8px 27px;
                 }
 
                 &::before {
@@ -660,7 +688,7 @@
             gap: 4px;
 
             @media screen and (max-width: 768px) {
-                padding: 15px 32px;
+                padding: 14px 32px;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 22px;

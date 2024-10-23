@@ -1,0 +1,92 @@
+.block-booking {
+    box-shadow: 0px 8px 28px 0px #00000029;
+    background-color: var(--white);
+    position: fixed;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius-medium);
+    max-width: 450px;
+    padding: 40px;
+    display: none;
+    min-width: 300px;
+
+    @media screen and (max-width: 500px) {
+        padding: 16px;
+    }
+
+    &.visible {
+        display: block;
+    }
+
+    #close_booking_form {
+        border: none;
+        background: none;
+        font-size: 33px;
+        color: var(--gray);
+        position: absolute;
+        top: 45px;
+        right: 38px;
+
+        @media screen and (max-width: 500px) {
+            top: 16px;
+            right: 10px;
+            font-size: 24px;
+        }
+    }
+
+    input[type="submit"] {
+        margin-top: 5px;
+        padding: 16.5px 0;
+        background: var(--main-gradient);
+
+        @media screen and (max-width: 500px) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-family: var(--font-unbounded);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: center;
+        color: var(--blue);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        padding-top: 40px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        @media screen and (max-width: 500px) {
+            gap: 16px;
+        }
+    }
+
+    &__text {
+        font-family: var(--font-inter);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: center;
+        color: #ACACAC;
+
+        @media screen and (max-width: 500px) {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 12px;
+        }
+    }
+}

@@ -21,6 +21,11 @@
   border-bottom: 1px solid var(--light-blue);
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  .schedule .otvet li {
+    line-height: 25px;
+  }
+}
 .schedule .otvet li:last-child {
   border-bottom: none;
 }
@@ -42,10 +47,15 @@
 .schedule .plus {
   position: absolute;
   right: 20px;
-  top: 0;
   top: 10px;
   font-size: 24px;
   color: var(--light-blue);
+  z-index: -1;
+}
+@media screen and (max-width: 500px) {
+  .schedule .plus {
+    top: 6px;
+  }
 }
 .schedule .plus.turn::before {
   content: "\e902";

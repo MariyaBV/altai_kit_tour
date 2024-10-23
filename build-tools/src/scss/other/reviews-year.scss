@@ -19,6 +19,12 @@
     &__dropdown-wrapper {
         position: relative;
 
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
         span[class^="icon-"] {
             color: var(--light-blue);
             position: absolute;
@@ -55,6 +61,10 @@
         padding-left: 24px;
         border-bottom: 1px solid var(--light-blue);
         margin-bottom: 16px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     &__controls {

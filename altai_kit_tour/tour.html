@@ -256,13 +256,25 @@
     </div>
   </div>
 </header>
-        <main id="main" class="not-index">
+<div class="block-booking" id="block_booking">
+  <p class="block-booking__title">Забронировать тур</p>
+  <button id="close_booking_form"><span class="icon-main-close close-catalog-menu"></span></button>
+  <form class="block-booking__form">
+    <input required class="block-booking__input" type="text" placeholder="Имя*"  />
+    <input required class="block-booking__input" type="text" placeholder="Фамилия*" />
+    <input required class="block-booking__input" type="tel" placeholder="Телефон*" />
+    <input required class="block-booking__input" type="email" placeholder="e-mail*" />
+    <input type="submit" class="block-booking__button button-gradient" value="Забронировать">
+  </form>
+  <p class="block-booking__text">Нажимая кнопку «Забронировать», вы соглашаетесь с обработкой своих персональных данных в соответствии с нашей Политикой конфиденциальности.</p>
+</div>
+        <main id="main">
             <section class="banner-block inner-page" style="background-image: url(css/img/bg-tour.jpeg);">
                 <div class="wrap">
                     <p class="title">К Шавлинским озерам</p>
                     <h3 class="subtitle">Конный туристический маршрут</h3>
-                    <a class="link button-gradient" href="">Забронировать</a>
-                    <div class="type-tour" style="position: relative;">
+                    <a class="button-gradient" href="#booking">Забронировать</a>
+                    <div class="type-tour">
                         <link rel="stylesheet" href="css/other/type-tour.css">
                         <span class="icon-tour-horse" style="background-color: var(--dark-blue-50)"></span>
                         <span class="icon-tour-truck" style="background-color: var(--dark-green-50)"></span>
@@ -376,7 +388,7 @@
                     <p class="discount"></p>
                     <p class="price">51 200 ₽.</p>
                 </div>
-                <a href="#" class="button popular-destinations__button">Забронировать</a>
+                <a href="#booking" class="button popular-destinations__button">Забронировать</a>
             </div>
         </div>
     </div>
@@ -565,7 +577,10 @@
     </div>
 </li>
                     </ul>
-                    <p class="attention"><span class="attention-mark">!</span>Программа маршрута может быть незначительно изменена по объективным причинам.</p>
+                    <p class="attention">
+                        <span class="attention-mark">!</span>
+                        <span>Программа маршрута может быть незначительно изменена по объективным причинам.</span>
+                    </p>
                 </div>
             </section>
             <section class="tour-schedule">
@@ -581,11 +596,11 @@
     </div>
     <ul class="otvet">
         
-            <li><span class="icon-main-calendar"></span>10.09.2024 - 20.09.2024 20 000 р.</li>
+            <li><span class="icon-main-calendar"></span>10.09.2024 - 20.09.2024 20&nbsp;000&nbsp;р.</li>
         
-            <li><span class="icon-main-calendar"></span>23.09.2024 - 27.09.2024 25 000 р.</li>
+            <li><span class="icon-main-calendar"></span>23.09.2024 - 27.09.2024 25&nbsp;000&nbsp;р.</li>
         
-            <li><span class="icon-main-calendar"></span>23.09.2024 - 27.09.2024 19 000 р.</li>
+            <li><span class="icon-main-calendar"></span>23.09.2024 - 27.09.2024 19&nbsp;000&nbsp;р.</li>
         
     </ul>
 </li>
@@ -596,16 +611,16 @@
     </div>
     <ul class="otvet">
         
-            <li><span class="icon-main-calendar"></span>10.10.2024 - 20.10.2024 20 000 р.</li>
+            <li><span class="icon-main-calendar"></span>10.10.2024 - 20.10.2024 20&nbsp;000&nbsp;р.</li>
         
-            <li><span class="icon-main-calendar"></span>23.10.2024 - 27.10.2024 25 000 р.</li>
+            <li><span class="icon-main-calendar"></span>23.10.2024 - 27.10.2024 25&nbsp;000&nbsp;р.</li>
         
-            <li><span class="icon-main-calendar"></span>23.10.2024 - 27.10.2024 19 000 р.</li>
+            <li><span class="icon-main-calendar"></span>23.10.2024 - 27.10.2024 19&nbsp;000&nbsp;р.</li>
         
     </ul>
 </li>
                     </ul>
-                    <a class="link button" href="">Забронировать</a>
+                    <a class="link button" href="#booking">Забронировать</a>
                 </div>
             </section>
             <section class="video-review">
@@ -616,25 +631,25 @@
                     <div class="video-review-swiper">
                     <div class="swiper-wrapper">
                         <div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div><div class="video-review__item swiper-slide">
-    <iframe class="iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" src="https://www.youtube.com/embed/jxYmOOnmgi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h4 class="description">Название тура и описание видео</h4> 
 </div>
                     </div>

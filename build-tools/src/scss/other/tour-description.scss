@@ -5,6 +5,17 @@
     h4 {
         margin-bottom: 22px;
 
+        @media screen and (max-width: 768px) {
+            font-family: var(--font-unbounded);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
         span[class^="icon-"] {
             width: 40px;
             height: 40px;

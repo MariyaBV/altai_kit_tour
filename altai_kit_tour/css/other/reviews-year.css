@@ -14,6 +14,12 @@
 }
 .reviews-year__dropdown-wrapper {
   position: relative;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .reviews-year__dropdown-wrapper {
+    display: block;
+  }
 }
 .reviews-year__dropdown-wrapper span[class^=icon-] {
   color: var(--light-blue);
@@ -53,6 +59,11 @@
   padding-left: 24px;
   border-bottom: 1px solid var(--light-blue);
   margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .reviews-year__controls-wrapper {
+    display: none;
+  }
 }
 .reviews-year__controls {
   display: -webkit-box;
