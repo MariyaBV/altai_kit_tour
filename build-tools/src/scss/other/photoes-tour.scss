@@ -35,6 +35,14 @@
         @media screen and (max-width: 500px) {
             padding: 0;
         }
+
+        img {
+            max-height: 500px;
+            height: 100%;
+            max-width: 998px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .__slider>.swiper {

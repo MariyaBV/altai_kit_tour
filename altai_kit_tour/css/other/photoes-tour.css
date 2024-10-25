@@ -34,6 +34,15 @@
     padding: 0;
   }
 }
+.photoes-tour .wrap img,
+.photoes-tour .swiper img {
+  max-height: 500px;
+  height: 100%;
+  max-width: 998px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 .photoes-tour .__slider > .swiper {
   max-width: calc(100% - 82px);
 }
