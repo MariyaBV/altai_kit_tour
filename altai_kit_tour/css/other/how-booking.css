@@ -31,14 +31,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   text-transform: uppercase;
-  background-size: 82%;
   line-height: 39px;
   text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .how-booking__title {
-    background-size: auto;
-  }
 }
 .how-booking__subtitle {
   text-align: center;
@@ -138,6 +132,5 @@
   background: var(--main-gradient);
   -webkit-background-clip: text;
   background-clip: text;
-  background-size: 98%;
   margin-bottom: 21px;
 }

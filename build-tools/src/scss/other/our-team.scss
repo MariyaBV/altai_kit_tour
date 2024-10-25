@@ -90,12 +90,10 @@
         background: var(--main-gradient);
         background-clip: text;
         text-transform: uppercase;
-        background-size: 82%;
         line-height: 39px;
 
         @media screen and (max-width: 500px) {
             margin-bottom: 0;
-            background-size: auto;
         }
     }
 

@@ -90,13 +90,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   text-transform: uppercase;
-  background-size: 82%;
   line-height: 39px;
 }
 @media screen and (max-width: 500px) {
   .our-team__title {
     margin-bottom: 0;
-    background-size: auto;
   }
 }
 .our-team__subtitle {

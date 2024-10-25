@@ -79,12 +79,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        background-size: 64%;
         margin-bottom: 12px;
 
         @media screen and (max-width: 500px) {
             margin-bottom: 6px;
-            background-size: 70%;
         }
     }
 

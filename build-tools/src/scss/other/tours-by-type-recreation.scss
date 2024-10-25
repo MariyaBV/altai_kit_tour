@@ -106,13 +106,11 @@
         -webkit-background-clip: text;
         background-clip: text;
         text-transform: uppercase;
-        background-size: 82%;
         line-height: 32px;
         text-align: center;
 
         @media screen and (max-width: 500px) {
             padding: 36px 0 28px;
-            background-size: auto;
         }
     }
 

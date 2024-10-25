@@ -32,13 +32,8 @@
         -webkit-background-clip: text;
         background-clip: text;
         text-transform: uppercase;
-        background-size: 82%;
         line-height: 39px;
         text-align: center;
-
-        @media screen and (max-width: 500px) {
-            background-size: auto;
-        }
     }
 
     &__subtitle {
@@ -126,7 +121,6 @@
             color: transparent;
             background: var(--main-gradient);
             background-clip: text;
-            background-size: 98%;
             margin-bottom: 21px;
         }
     }

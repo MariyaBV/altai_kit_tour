@@ -13,13 +13,11 @@
         background: var(--main-gradient);
         background-clip: text;
         text-transform: uppercase;
-        background-size: 82%;
         line-height: 39px;
         text-align: center;
 
         @media screen and (max-width: 500px) {
             line-height: 32px;
-            background-size: 95%;
             margin-bottom: 0;
         }
     }
@@ -172,7 +170,6 @@
             color: transparent;
             background: var(--main-gradient);
             background-clip: text;
-            background-size: 82%;
             padding-right: 42px;
 
             @media screen and (max-width: 1000px) {
