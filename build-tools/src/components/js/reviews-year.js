@@ -7,11 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
         swiperElementAll.forEach(swiperElement => {
             if (swiperElement) {
                 const swiperIDSlider = swiperElement.getAttribute('id');
-                console.log(swiperIDSlider);
+
                 if (swiperIDSlider) {
                     const sliderPagination = searchSection.querySelector('.swiper-pagination_' + swiperIDSlider);
-
-                    console.log(sliderPagination);
 
                     const swiper_saved_money = new Swiper("#" + swiperIDSlider, {
                         direction: "horizontal",
@@ -70,7 +68,11 @@ function openCity(evt, cityName) {
 }
 
 // Обработчик для выпадающего списка
-document.getElementById('reviews_year_dropdown').addEventListener('change', function(event) {
-    var selectedYear = event.target.value;
-    openCity(null, selectedYear);
+$(document).ready(function() {
+    if ($('#reviews_year_dropdown').length) {
+        $('#reviews_year_dropdown').on('change', function(event) {
+            var selectedYear = $(this).val();
+            openCity(null, selectedYear);
+        });
+    }
 });

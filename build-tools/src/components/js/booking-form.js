@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('#block_booking').addClass('visible');
         $('body').addClass('overflow-hidden');
         $('#overlay').addClass('visible');
+        lockBodyScroll();
     });
 
     $('#close_booking_form').on('click', function(event) {
@@ -11,6 +12,7 @@ $(document).ready(function() {
         $('#block_booking').removeClass('visible');
         $('body').removeClass('overflow-hidden');
         $('#overlay').removeClass('visible');
+        unlockBodyScroll();
     });
 
     $('#overlay').on('click', function(event) {
@@ -18,5 +20,6 @@ $(document).ready(function() {
         $('#block_booking').removeClass('visible');
         $('body').removeClass('overflow-hidden');
         $('#overlay').removeClass('visible');
+        unlockBodyScroll();
     });
 });

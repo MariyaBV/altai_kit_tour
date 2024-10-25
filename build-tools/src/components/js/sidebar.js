@@ -28,11 +28,18 @@ $(document).ready(function () {
         e.preventDefault(); 
         $('#sidebar').toggleClass('visible-mobile');
         $('body').toggleClass('overflow-hidden');
+
+        if ($('body').hasClass('overflow-hidden')) {
+            unlockBodyScroll();
+        } else {
+            lockBodyScroll();
+        }
     });
 
     $('#close-sidebar').on('click', function (e) {
         e.preventDefault(); 
         $('#sidebar').removeClass('visible-mobile');
         $('body').removeClass('overflow-hidden');
+        unlockBodyScroll();
     });
 });

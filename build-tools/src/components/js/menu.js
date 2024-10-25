@@ -126,6 +126,12 @@ $(document).ready(function () {
         $('.header .top-menu').toggleClass('visible');
         $('#overlay').toggleClass('visible');
         $('body').toggleClass('overflow-hidden');
+
+        if ($('body').hasClass('overflow-hidden')) {
+            unlockBodyScroll();
+        } else {
+            lockBodyScroll();
+        }
     });
 });
 
