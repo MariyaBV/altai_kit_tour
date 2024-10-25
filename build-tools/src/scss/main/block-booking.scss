@@ -10,10 +10,11 @@
     max-width: 450px;
     padding: 40px;
     display: none;
-    min-width: 300px;
+    min-width: 360px;
 
     @media screen and (max-width: 500px) {
         padding: 16px;
+        min-width: 300px;
     }
 
     &.visible {
@@ -28,6 +29,11 @@
         position: absolute;
         top: 45px;
         right: 38px;
+
+        @media screen and (max-width: 768px) {
+            top: 30px;
+            right: 30px;
+        }
 
         @media screen and (max-width: 500px) {
             top: 16px;
